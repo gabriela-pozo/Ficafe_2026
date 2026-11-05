@@ -2,6 +2,8 @@
 
 Registro histórico, con fuente enlazada, de la Feria Internacional de Cafés Especiales del Perú (FICAFE), de 2016 a 2026.
 
+**Tablero en línea:** https://gabriela-pozo.github.io/Ficafe_2026/
+
 ## Para qué sirve
 
 Reúne lo que se sabe de las diez ediciones de la feria para decidir con evidencia a quién le conviene, qué cifra se puede citar y qué todavía nadie ha medido. Está pensado para cuatro lectores:
