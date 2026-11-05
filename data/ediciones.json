@@ -1,0 +1,1696 @@
+{
+  "meta": {
+    "titulo": "Archivo histórico de FICAFÉ - Feria Internacional de Cafés Especiales del Perú",
+    "version": "0.2.0",
+    "actualizado": "2026-11-04",
+    "licencia": "CC BY 4.0",
+    "estados_permitidos": [
+      "verificado",
+      "parcial",
+      "no_verificado",
+      "en_conflicto"
+    ],
+    "glosario_estados": {
+      "verificado": "Cifra o dato reportado por la fuente después del evento (resultado), o dato de sede/fecha confirmado.",
+      "parcial": "Cifra que es una proyección/expectativa previa al evento, un dato preliminar o un dato al que le falta parte de la información.",
+      "no_verificado": "No se encontró el dato. El valor es null y debe mostrarse como 'sin dato'.",
+      "en_conflicto": "Dos o más fuentes dan valores distintos. Ver conflictos[]."
+    },
+    "advertencia_montos": "Las cifras de dinero NO son comparables entre años: cada medio reporta un criterio distinto (balance económico, movimiento económico, negocios generados, expectativas, ruedas de negocio). Lee siempre el campo 'criterio'.",
+    "convenciones": [
+      "fuentes[].respalda usa rutas de campo, por ejemplo 'metricas.visitantes' o 'ganadores.taza_excelencia'.",
+      "otras_cifras[] guarda cifras relevantes que no caben en las tres métricas principales (ruedas de negocio parciales, stands, organizaciones, compradores). Cada una lleva su fuente.",
+      "monto_negocios_pen solo guarda cifras que la fuente presenta como total de la feria. Los montos de una sola rueda de negocios o de un subconjunto de organizaciones van en otras_cifras[].",
+      "En 2020 no hubo edición presencial (pandemia). No se encontró evidencia de una edición virtual peruana; ver HUECOS.md.",
+      "subasta.precio_usd_lb es el precio del lote A del primer puesto cuando ACE divide el lote en A y B; el precio del lote B va en subasta.nota.",
+      "subasta.lotes cuenta los puestos premiados, no las filas de la tabla (los 5 primeros puestos se dividen en A y B).",
+      "Puntajes, precios y subastas de la Taza de Excelencia vienen de Alliance for Coffee Excellence (ACE), organizador oficial. Los resultados de ACE para 2017-2019 y 2021-2025 se leyeron el 2026-11-04.",
+      "data/lotes_taza.json guarda cada lote premiado de la Taza de Excelencia (223 filas, 2017-2025, sin 2020) tal como lo imprime ACE, con compradores. Los totales por año suman lo que ACE imprime en 2017-2023."
+    ]
+  },
+  "ediciones": [
+    {
+      "edicion": 10,
+      "anio": 2026,
+      "nombre_oficial": "FICAFÉ Cusco 2026",
+      "sede": {
+        "ciudad": "Cusco",
+        "region": "Cusco",
+        "recinto": null
+      },
+      "fecha_inicio": "2026-11-02",
+      "fecha_fin": "2026-11-06",
+      "estado": "proxima",
+      "metricas": {
+        "visitantes": {
+          "valor": null,
+          "criterio": null,
+          "estado": "no_verificado"
+        },
+        "expositores": {
+          "valor": null,
+          "criterio": null,
+          "estado": "no_verificado"
+        },
+        "monto_negocios_pen": {
+          "valor": null,
+          "criterio": null,
+          "estado": "no_verificado"
+        }
+      },
+      "otras_cifras": [
+        {
+          "descripcion": "Expectativa de negociaciones en la Rueda de Negocios Internacional (3 de noviembre)",
+          "valor": 7500000,
+          "moneda": "USD",
+          "criterio": "Se espera que la edición 2026 genere negociaciones de venta por un valor cercano a los USD 7,5 millones",
+          "estado": "parcial",
+          "fuente_url": "https://www.cira.org.ar/?p=26436"
+        },
+        {
+          "descripcion": "Compradores internacionales esperados en la rueda de negocios",
+          "valor": 25,
+          "moneda": null,
+          "criterio": "25 compradores internacionales (previsión)",
+          "estado": "parcial",
+          "fuente_url": "https://www.cira.org.ar/?p=26436"
+        }
+      ],
+      "ganadores": {
+        "taza_excelencia": [],
+        "barismo": [],
+        "catacion": []
+      },
+      "subasta": {
+        "lote_top_puntaje": null,
+        "precio_usd_lb": null,
+        "estado": "no_verificado"
+      },
+      "fuentes": [
+        {
+          "url": "https://andina.pe/agencia/noticia-peru-president-leads-international-specialty-coffee-fair-ficafe-launch-1083974.aspx",
+          "medio": "Andina",
+          "fecha_publicacion": "2026-07-17",
+          "respalda": [
+            "sede",
+            "fecha_inicio",
+            "fecha_fin",
+            "notas"
+          ]
+        },
+        {
+          "url": "https://agraria.pe/noticias/cusco-sera-sede-de-la-x-edicion-de-la-taza-de-excelencia-per-42260",
+          "medio": "Agraria.pe",
+          "fecha_publicacion": "2026-05-14",
+          "respalda": [
+            "sede",
+            "fecha_inicio",
+            "fecha_fin"
+          ]
+        },
+        {
+          "url": "https://caretas.pe/?p=774442",
+          "medio": "Caretas",
+          "fecha_publicacion": "2025-11-10",
+          "respalda": [
+            "edicion",
+            "sede"
+          ]
+        },
+        {
+          "url": "https://www.cira.org.ar/?p=26436",
+          "medio": "CIRA (Cámara de Importadores de la República Argentina), difundiendo convocatoria de PROMPERÚ",
+          "fecha_publicacion": "2026-09-10",
+          "respalda": [
+            "otras_cifras",
+            "conflictos"
+          ]
+        }
+      ],
+      "conflictos": [
+        {
+          "campo": "fecha_inicio / fecha_fin",
+          "valores": [
+            {
+              "valor": "2026-11-02 al 2026-11-06",
+              "fuente_url": "https://andina.pe/agencia/noticia-peru-president-leads-international-specialty-coffee-fair-ficafe-launch-1083974.aspx",
+              "medio": "Andina",
+              "texto": "The event will take place in the city of Cusco from November 2 to 6."
+            },
+            {
+              "valor": "2026-11-01 al 2026-11-04",
+              "fuente_url": "https://www.cira.org.ar/?p=26436",
+              "medio": "CIRA / PROMPERÚ",
+              "texto": "1 al 4 de noviembre de 2026"
+            }
+          ],
+          "nota": "Agraria.pe (14/05/2026) coincide con Andina (2 al 6). La convocatoria de PROMPERÚ difundida por CIRA dice 1 al 4. Se mantiene 2-6 por ser el anuncio oficial del lanzamiento, pero queda marcado."
+        }
+      ],
+      "notas": "Lanzada oficialmente en Palacio de Gobierno el 17/07/2026. Incluye ruedas de negocios, concursos de calidad y espacios de exhibición. Dentro de la feria se realiza la X Taza de Excelencia Perú. Cusco fue designada sede durante FICAFÉ 2025 en Chachapoyas."
+    },
+    {
+      "edicion": 9,
+      "anio": 2025,
+      "nombre_oficial": "IX Feria Internacional de Cafés Especiales - Ficafé Amazonas 2025",
+      "sede": {
+        "ciudad": "Chachapoyas",
+        "region": "Amazonas",
+        "recinto": "Universidad Nacional Toribio Rodríguez de Mendoza"
+      },
+      "fecha_inicio": "2025-11-06",
+      "fecha_fin": "2025-11-09",
+      "estado": "realizada",
+      "metricas": {
+        "visitantes": {
+          "valor": 25000,
+          "criterio": "proyecta recibir a más de 25 mil visitantes (previsión antes de la feria)",
+          "estado": "parcial"
+        },
+        "expositores": {
+          "valor": null,
+          "criterio": null,
+          "estado": "no_verificado"
+        },
+        "monto_negocios_pen": {
+          "valor": 53000000,
+          "criterio": "espera generar negocios por más de S/53 millones (EXPECTATIVA previa a la feria, no resultado)",
+          "estado": "parcial"
+        }
+      },
+      "otras_cifras": [
+        {
+          "descripcion": "Expectativa: rueda de negocios internacional",
+          "valor": 30000000,
+          "moneda": "PEN",
+          "criterio": "la rueda de negocios internacional por S/30 millones (expectativa)",
+          "estado": "parcial",
+          "fuente_url": "https://andina.pe/agencia/noticia-⁠amazonas-ficafe-2025-espera-generar-negocios-mas-s53-millones-1042350.aspx"
+        },
+        {
+          "descripcion": "Expectativa: rueda de negocios nacional",
+          "valor": 20000000,
+          "moneda": "PEN",
+          "criterio": "la rueda de negocios nacional por unos S/ 20 millones (expectativa)",
+          "estado": "parcial",
+          "fuente_url": "https://andina.pe/agencia/noticia-⁠amazonas-ficafe-2025-espera-generar-negocios-mas-s53-millones-1042350.aspx"
+        },
+        {
+          "descripcion": "Resultado de un SUBCONJUNTO: 11 organizaciones de café libre de deforestación apoyadas por el Minam (no es el total de la feria)",
+          "valor": 20500000,
+          "moneda": "PEN",
+          "criterio": "generaron oportunidades de negocios por un monto superior a los S/20 millones: intenciones de compra por S/10,7 millones (ruedas nacionales) + S/9,8 millones (rueda internacional). Estas oportunidades podrán concretarse en 2026.",
+          "estado": "parcial",
+          "fuente_url": "https://www.corresponsables.com/per/actualidad/minam-impulsa-la-movilizacion-de-s-20-millones-en-oportunidades-de-negocio-para-productores-de-cafe-libre-de-deforestacion/"
+        },
+        {
+          "descripcion": "Stands de exhibición previstos",
+          "valor": 300,
+          "moneda": null,
+          "criterio": "contará con más de 300 stands de oferta de los productores",
+          "estado": "parcial",
+          "fuente_url": "https://andina.pe/agencia/noticia-⁠amazonas-ficafe-2025-espera-generar-negocios-mas-s53-millones-1042350.aspx"
+        },
+        {
+          "descripcion": "Organizaciones caficultoras participantes",
+          "valor": 314,
+          "moneda": null,
+          "criterio": "permitirá a 314 organizaciones caficultoras contactarse con mercados (de las 16 regiones caficultoras del país)",
+          "estado": "parcial",
+          "fuente_url": "https://andina.pe/agencia/noticia-⁠amazonas-ficafe-2025-espera-generar-negocios-mas-s53-millones-1042350.aspx"
+        },
+        {
+          "descripcion": "Valor total de la subasta internacional Taza de Excelencia Perú 2025",
+          "valor": 490752.66,
+          "moneda": "USD",
+          "criterio": "subasta internacional total: US $490,752.66",
+          "estado": "verificado",
+          "fuente_url": "https://panamericana.pe/locales/460616-taza-excelencia-peru-2025-rompe-record-historico-subasta-internacional-supera-us-490-mil-cifra-alta-creacion"
+        }
+      ],
+      "ganadores": {
+        "taza_excelencia": [
+          {
+            "puesto": 1,
+            "nombre": "Ángel Antonio Manosalva Palomino",
+            "region": "Cajamarca",
+            "detalle": "Finca La Catarata, distrito de Jaén. Variedad geisha.",
+            "puntaje": 90.64,
+            "fuente_url": "https://agraria.pe/noticias/taza-de-excelencia-peru-2025-el-mejor-cafe-del-peru-es-de-ca-41124"
+          },
+          {
+            "puesto": 2,
+            "nombre": "Dreyde Pérez Delgado",
+            "region": "Cajamarca",
+            "detalle": "Finca La Ponderoza. Variedad geisha.",
+            "puntaje": 90.42,
+            "fuente_url": "https://agraria.pe/noticias/taza-de-excelencia-peru-2025-el-mejor-cafe-del-peru-es-de-ca-41124"
+          },
+          {
+            "puesto": 3,
+            "nombre": "Gilber Huayllas Huamán",
+            "region": "Cusco",
+            "detalle": "Llaqta Pata. Variedad SL-09.",
+            "puntaje": 89.97,
+            "fuente_url": "https://agraria.pe/noticias/taza-de-excelencia-peru-2025-el-mejor-cafe-del-peru-es-de-ca-41124"
+          }
+        ],
+        "barismo": [],
+        "catacion": []
+      },
+      "subasta": {
+        "lote_top_puntaje": 90.64,
+        "precio_usd_lb": 80.1,
+        "estado": "verificado",
+        "nota": "ACE confirma US$ 80.10/lb para los dos lotes del primer puesto (330.75 y 297.68 lb; US$ 50,337.25 en total). La página de ACE no imprime el total ni el promedio: US$ 490,752.66 es la suma de las 32 filas de ACE y coincide con la cifra de Panamericana; US$ 25.53/lb es un cálculo propio (total sobre libras). Fecha de subasta: 2 de diciembre de 2025.",
+        "lotes": 30,
+        "fecha": "2025-12-02",
+        "total_usd": 490752.66,
+        "promedio_usd_lb": 25.53
+      },
+      "fuentes": [
+        {
+          "url": "https://andina.pe/agencia/noticia-⁠amazonas-ficafe-2025-espera-generar-negocios-mas-s53-millones-1042350.aspx",
+          "medio": "Andina",
+          "fecha_publicacion": "2025-08-25",
+          "respalda": [
+            "edicion",
+            "nombre_oficial",
+            "sede",
+            "fecha_inicio",
+            "fecha_fin",
+            "metricas.visitantes",
+            "metricas.monto_negocios_pen",
+            "otras_cifras"
+          ]
+        },
+        {
+          "url": "https://agraria.pe/noticias/taza-de-excelencia-peru-2025-el-mejor-cafe-del-peru-es-de-ca-41124",
+          "medio": "Agraria.pe",
+          "fecha_publicacion": "2025-11-10",
+          "respalda": [
+            "ganadores.taza_excelencia",
+            "subasta.lote_top_puntaje",
+            "sede",
+            "fecha_inicio",
+            "fecha_fin"
+          ]
+        },
+        {
+          "url": "https://panamericana.pe/locales/460616-taza-excelencia-peru-2025-rompe-record-historico-subasta-internacional-supera-us-490-mil-cifra-alta-creacion",
+          "medio": "Panamericana",
+          "fecha_publicacion": null,
+          "respalda": [
+            "subasta.precio_usd_lb",
+            "otras_cifras"
+          ]
+        },
+        {
+          "url": "https://www.corresponsables.com/per/actualidad/minam-impulsa-la-movilizacion-de-s-20-millones-en-oportunidades-de-negocio-para-productores-de-cafe-libre-de-deforestacion/",
+          "medio": "Corresponsables (reproduce nota de prensa del Minam)",
+          "fecha_publicacion": "2025-11-25",
+          "respalda": [
+            "otras_cifras"
+          ]
+        },
+        {
+          "url": "https://www.gob.pe/institucion/minam/noticias/1288182-minam-impulsa-la-movilizacion-de-s-20-millones-en-oportunidades-de-negocio-para-productores-de-cafe-libre-de-deforestacion",
+          "medio": "Minam (gob.pe) - fuente original, no se pudo abrir en la verificación",
+          "fecha_publicacion": null,
+          "respalda": [
+            "otras_cifras"
+          ]
+        },
+        {
+          "url": "https://allianceforcoffeeexcellence.org/peru-2025/",
+          "medio": "Alliance for Coffee Excellence (resultados oficiales Taza de Excelencia Perú)",
+          "fecha_publicacion": null,
+          "respalda": [
+            "ganadores.taza_excelencia",
+            "subasta"
+          ]
+        }
+      ],
+      "conflictos": [
+        {
+          "campo": "numeración del Campeonato Nacional de Catación",
+          "valores": [
+            {
+              "valor": "VII Campeonato Nacional de Catación (2025)",
+              "fuente_url": "https://andina.pe/agencia/noticia-⁠amazonas-ficafe-2025-espera-generar-negocios-mas-s53-millones-1042350.aspx",
+              "medio": "Andina",
+              "texto": "VII Campeonato Nacional de Catación"
+            },
+            {
+              "valor": "VII Campeonato Nacional de Catación (2024)",
+              "fuente_url": "https://agraria.pe/noticias/junior-zanabria-es-campeon-nacional-de-catacion-y-jhosseline-37625",
+              "medio": "Agraria.pe",
+              "texto": "VII Campeonato Nacional de Catación"
+            }
+          ],
+          "nota": "Dos ediciones distintas del campeonato llevan el mismo ordinal. La serie V (2022) - VI (2023) - VII (2024) sugiere que 2025 sería la VIII, pero no se ha confirmado."
+        }
+      ],
+      "notas": "Organizada por el Gobierno Regional de Amazonas con la Municipalidad Provincial de Chachapoyas, la universidad anfitriona, ministerios y PromPerú. Incluyó la IX Taza de Excelencia, el XII Campeonato Nacional de Barismo y el II Campeonato Nacional de Brew. No se encontró balance oficial posterior a la feria: las cifras de visitantes y monto son expectativas."
+    },
+    {
+      "edicion": 8,
+      "anio": 2024,
+      "nombre_oficial": "VIII Feria Internacional de Cafés Especiales (Ficafé) 2024",
+      "sede": {
+        "ciudad": "Tingo María",
+        "region": "Huánuco",
+        "recinto": null
+      },
+      "fecha_inicio": "2024-11-07",
+      "fecha_fin": "2024-11-10",
+      "estado": "realizada",
+      "metricas": {
+        "visitantes": {
+          "valor": 45000,
+          "criterio": "Tingo María recibió aproximadamente 45.000 visitantes durante la feria",
+          "estado": "verificado"
+        },
+        "expositores": {
+          "valor": null,
+          "criterio": null,
+          "estado": "no_verificado"
+        },
+        "monto_negocios_pen": {
+          "valor": 91000000,
+          "criterio": "generó un balance económico de más de S/91 millones (según el gobernador regional de Huánuco, Antonio Pulgar Lucas)",
+          "estado": "verificado"
+        }
+      },
+      "otras_cifras": [
+        {
+          "descripcion": "Rueda de negocios internacional (PromPerú)",
+          "valor": 55000000,
+          "moneda": "PEN",
+          "criterio": "generó compromisos de S/55 millones",
+          "estado": "verificado",
+          "fuente_url": "https://agraria.pe/noticias/ficafe-2024-genero-mas-de-s-91-millones-38184"
+        },
+        {
+          "descripcion": "Rueda de negocios nacional (Ministerio de la Producción)",
+          "valor": 32400000,
+          "moneda": "PEN",
+          "criterio": "alcanzó acuerdos por S/32.4 millones",
+          "estado": "verificado",
+          "fuente_url": "https://agraria.pe/noticias/ficafe-2024-genero-mas-de-s-91-millones-38184"
+        },
+        {
+          "descripcion": "Movimiento económico local generado por visitantes",
+          "valor": 2500000,
+          "moneda": "PEN",
+          "criterio": "movimiento económico local estimado en S/2.5 millones",
+          "estado": "verificado",
+          "fuente_url": "https://agraria.pe/noticias/ficafe-2024-genero-mas-de-s-91-millones-38184"
+        },
+        {
+          "descripcion": "Subasta de café en la feria (distinta de la subasta Taza de Excelencia)",
+          "valor": 125000,
+          "moneda": "PEN",
+          "criterio": "logró la venta de S/125.000, alcanzando un precio récord de S/160 por kilo (café de Cholón)",
+          "estado": "verificado",
+          "fuente_url": "https://agraria.pe/noticias/ficafe-2024-genero-mas-de-s-91-millones-38184"
+        }
+      ],
+      "ganadores": {
+        "taza_excelencia": [
+          {
+            "puesto": 1,
+            "nombre": "Miguel Padilla Chinguel",
+            "region": "Cajamarca",
+            "detalle": "Finca El Mirador (La Coipa, San Ignacio). Geisha y Bourbon.",
+            "puntaje": 90.54,
+            "fuente_url": "https://agraria.pe/noticias/taza-de-excelencia-peru-2024-el-mejor-cafe-del-peru-es-de-ca-37602"
+          },
+          {
+            "puesto": 2,
+            "nombre": "Wilfredo Arias Candia",
+            "region": "Cusco",
+            "detalle": "Mezcla de Geisha y Bourbon.",
+            "puntaje": 90.21,
+            "fuente_url": "https://agraria.pe/noticias/taza-de-excelencia-peru-2024-el-mejor-cafe-del-peru-es-de-ca-37602"
+          },
+          {
+            "puesto": 3,
+            "nombre": "David Guevara Cotrina",
+            "region": "Cajamarca",
+            "detalle": "Geisha.",
+            "puntaje": 89.86,
+            "fuente_url": "https://agraria.pe/noticias/taza-de-excelencia-peru-2024-el-mejor-cafe-del-peru-es-de-ca-37602"
+          }
+        ],
+        "barismo": [
+          {
+            "puesto": 1,
+            "nombre": "Jhosseline Benites Velazco",
+            "region": "Lima",
+            "detalle": "XI Campeonato Nacional de Barismo. Origen Tostadores de Café.",
+            "puntaje": null,
+            "fuente_url": "https://agraria.pe/noticias/junior-zanabria-es-campeon-nacional-de-catacion-y-jhosseline-37625"
+          },
+          {
+            "puesto": 2,
+            "nombre": "Francisco Silva Mercado",
+            "region": "Lima",
+            "detalle": "Punto Café.",
+            "puntaje": null,
+            "fuente_url": "https://agraria.pe/noticias/junior-zanabria-es-campeon-nacional-de-catacion-y-jhosseline-37625"
+          },
+          {
+            "puesto": 3,
+            "nombre": "Diego Cisneros Pinto",
+            "region": "Arequipa",
+            "detalle": "Kafi Wasi.",
+            "puntaje": null,
+            "fuente_url": "https://agraria.pe/noticias/junior-zanabria-es-campeon-nacional-de-catacion-y-jhosseline-37625"
+          }
+        ],
+        "catacion": [
+          {
+            "puesto": 1,
+            "nombre": "Junior Zanabria Alfaro",
+            "region": "Cusco",
+            "detalle": "VII Campeonato Nacional de Catación. 7 de 8 aciertos en 3 min 6 s.",
+            "puntaje": null,
+            "fuente_url": "https://agraria.pe/noticias/junior-zanabria-es-campeon-nacional-de-catacion-y-jhosseline-37625"
+          },
+          {
+            "puesto": 2,
+            "nombre": "Kit Paye Sullca",
+            "region": "Puno",
+            "detalle": "7 aciertos en 4 min.",
+            "puntaje": null,
+            "fuente_url": "https://agraria.pe/noticias/junior-zanabria-es-campeon-nacional-de-catacion-y-jhosseline-37625"
+          },
+          {
+            "puesto": 3,
+            "nombre": "Leider Cruz Huamán",
+            "region": "Cajamarca",
+            "detalle": "6 aciertos en 2 min 54 s.",
+            "puntaje": null,
+            "fuente_url": "https://agraria.pe/noticias/junior-zanabria-es-campeon-nacional-de-catacion-y-jhosseline-37625"
+          }
+        ]
+      },
+      "subasta": {
+        "lote_top_puntaje": 90.54,
+        "precio_usd_lb": 72.2,
+        "estado": "verificado",
+        "nota": "Lote ganador de 617.29 lb (280 kg) en dos partes: A a US$ 72.20/lb (US$ 23,875.82) y B a US$ 72.00/lb (US$ 20,635.20), US$ 44,511.02 en total (Agraria: US$ 44,512). La página de ACE no imprime el total ni el promedio de la subasta: US$ 421,386.58 y US$ 26.66/lb son cálculos propios sumando las 27 filas de ACE (data/lotes_taza.json). El promedio coincide con el 'cerca de US$ 27/lb' de Agraria.",
+        "total_usd": 421386.58,
+        "lotes": 25,
+        "fecha": "2024-12-03",
+        "promedio_usd_lb": 26.66
+      },
+      "fuentes": [
+        {
+          "url": "https://agraria.pe/noticias/ficafe-2024-genero-mas-de-s-91-millones-38184",
+          "medio": "Agraria.pe",
+          "fecha_publicacion": "2025-01-06",
+          "respalda": [
+            "edicion",
+            "sede",
+            "fecha_inicio",
+            "fecha_fin",
+            "metricas.visitantes",
+            "metricas.monto_negocios_pen",
+            "otras_cifras"
+          ]
+        },
+        {
+          "url": "https://agraria.pe/noticias/taza-de-excelencia-peru-2024-el-mejor-cafe-del-peru-es-de-ca-37602",
+          "medio": "Agraria.pe",
+          "fecha_publicacion": "2024-11-11",
+          "respalda": [
+            "ganadores.taza_excelencia"
+          ]
+        },
+        {
+          "url": "https://agraria.pe/noticias/junior-zanabria-es-campeon-nacional-de-catacion-y-jhosseline-37625",
+          "medio": "Agraria.pe",
+          "fecha_publicacion": "2024-11-12",
+          "respalda": [
+            "ganadores.barismo",
+            "ganadores.catacion",
+            "sede"
+          ]
+        },
+        {
+          "url": "https://agraria.pe/index.php/noticias/el-mejor-cafe-del-peru-logro-mas-de-us-44-512-en-subasta-int-37901",
+          "medio": "Agraria.pe",
+          "fecha_publicacion": "2024-12-05",
+          "respalda": [
+            "subasta"
+          ]
+        },
+        {
+          "url": "https://allianceforcoffeeexcellence.org/peru-2024/",
+          "medio": "Alliance for Coffee Excellence (resultados oficiales Taza de Excelencia Perú)",
+          "fecha_publicacion": null,
+          "respalda": [
+            "ganadores.taza_excelencia",
+            "subasta"
+          ]
+        }
+      ],
+      "conflictos": [],
+      "notas": "La cifra de S/91 millones es un 'balance económico' declarado por el gobernador regional; algunos medios la titulan como 'transacciones'. No equivale a ventas cerradas. Las ruedas de negocio (S/55 M + S/32.4 M) son parte de ese balance."
+    },
+    {
+      "edicion": 7,
+      "anio": 2023,
+      "nombre_oficial": "VII Feria Internacional de Cafés Especiales - Ficafé Puno 2023",
+      "sede": {
+        "ciudad": "Puno",
+        "region": "Puno",
+        "recinto": "Centro de Convenciones de la Universidad Nacional del Altiplano"
+      },
+      "fecha_inicio": "2023-11-03",
+      "fecha_fin": "2023-11-06",
+      "estado": "realizada",
+      "metricas": {
+        "visitantes": {
+          "valor": 15000,
+          "criterio": "Se espera 15 mil asistentes al cierre de la feria (previsión publicada durante la feria)",
+          "estado": "parcial"
+        },
+        "expositores": {
+          "valor": 2500,
+          "criterio": "la participación de 2.500 expositores (dato publicado durante la feria; 185 stands)",
+          "estado": "parcial"
+        },
+        "monto_negocios_pen": {
+          "valor": null,
+          "criterio": null,
+          "estado": "no_verificado"
+        }
+      },
+      "otras_cifras": [
+        {
+          "descripcion": "Rueda de negocios internacional / exportadora (PromPerú)",
+          "valor": 15500000,
+          "moneda": "USD",
+          "criterio": "ventas proyectadas por US$ 15.5 millones a concretarse en los siguientes doce meses (27 compradores de 13 nacionalidades)",
+          "estado": "en_conflicto",
+          "fuente_url": "https://agraria.pe/noticias/rueda-de-negocios-internacional-en-ficafe-puno-2023-dio-como-33831"
+        },
+        {
+          "descripcion": "6ta Rueda de Negocios Nacional (Ministerio de la Producción)",
+          "valor": 41500000,
+          "moneda": "PEN",
+          "criterio": "más de S/ 41.5 millones en compromisos de venta (93 mipymes, 22 compradores nacionales)",
+          "estado": "verificado",
+          "fuente_url": "https://agraria.pe/noticias/ficafe-sexta-rueda-genero-negocios-por-mas-de-s-41-5-millone-33750"
+        },
+        {
+          "descripcion": "Rueda de negocios de turismo",
+          "valor": 2300000,
+          "moneda": "PEN",
+          "criterio": "S/ 2.3 millones en negocios, superior a los S/1.5 millones estimados inicialmente",
+          "estado": "verificado",
+          "fuente_url": "https://agraria.pe/noticias/rueda-de-negocios-internacional-en-ficafe-puno-2023-dio-como-33831"
+        },
+        {
+          "descripcion": "Meta previa de la rueda de negocios de cafés especiales",
+          "valor": 4500000,
+          "moneda": "PEN",
+          "criterio": "aspira a alcanzar ventas por S/ 4.5 millones en la rueda de negocios de cafés especiales (expectativa)",
+          "estado": "parcial",
+          "fuente_url": "https://agraria.pe/noticias/feria-ficafe-puno-2023-espera-alcanzar-un-aproximado-de-s-4--33005"
+        }
+      ],
+      "ganadores": {
+        "taza_excelencia": [
+          {
+            "puesto": 1,
+            "nombre": "Yoniser Mego Silva",
+            "region": "Cajamarca",
+            "detalle": "Finca Alto Mirador (Jaén). Geisha. Lotes a US$ 80.20 y 80.30/lb.",
+            "puntaje": 90.74,
+            "fuente_url": "https://allianceforcoffeeexcellence.org/peru-2023/"
+          },
+          {
+            "puesto": 2,
+            "nombre": "Franco Huaches Montalván",
+            "region": "Cajamarca",
+            "detalle": "La Lucuma. Geisha.",
+            "puntaje": 90.68,
+            "fuente_url": "https://allianceforcoffeeexcellence.org/peru-2023/"
+          },
+          {
+            "puesto": 3,
+            "nombre": "Edwin Quea Pacco",
+            "region": "Cusco",
+            "detalle": "Chiriloma. Geisha.",
+            "puntaje": 90.32,
+            "fuente_url": "https://allianceforcoffeeexcellence.org/peru-2023/"
+          }
+        ],
+        "barismo": [],
+        "catacion": [
+          {
+            "puesto": 1,
+            "nombre": "Eric Jara Dávila",
+            "region": "Cajamarca",
+            "detalle": "VI Campeonato Nacional de Catadores del Perú. Escuela de Excelencia de Cafés de Origen Quea Coffee Company.",
+            "puntaje": null,
+            "fuente_url": "https://agraria.pe/noticias/el-cajamarquino-eric-jara-davila-es-reconocido-como-el-mejor-33810"
+          },
+          {
+            "puesto": 2,
+            "nombre": "John Edilson Jiménez Ramírez",
+            "region": null,
+            "detalle": "Escuela de Excelencia de Cafés de Origen Quea Coffee Company.",
+            "puntaje": null,
+            "fuente_url": "https://agraria.pe/noticias/el-cajamarquino-eric-jara-davila-es-reconocido-como-el-mejor-33810"
+          },
+          {
+            "puesto": 3,
+            "nombre": "Joimer Eli Vargas Coronel",
+            "region": null,
+            "detalle": "Escuela de Catación del Bosque de Protección Alto Mayo-Sernanp.",
+            "puntaje": null,
+            "fuente_url": "https://agraria.pe/noticias/el-cajamarquino-eric-jara-davila-es-reconocido-como-el-mejor-33810"
+          }
+        ]
+      },
+      "subasta": {
+        "lote_top_puntaje": 90.74,
+        "precio_usd_lb": 80.2,
+        "estado": "verificado",
+        "total_usd": 431106.26,
+        "promedio_usd_lb": 21.39,
+        "lotes": 30,
+        "fecha": "2023-11-30",
+        "nota": "Lote ganador dividido: A a US$ 80.20/lb y B a US$ 80.30/lb."
+      },
+      "fuentes": [
+        {
+          "url": "https://agraria.pe/noticias/feria-ficafe-puno-2023-espera-alcanzar-un-aproximado-de-s-4--33005",
+          "medio": "Agraria.pe",
+          "fecha_publicacion": "2023-08-29",
+          "respalda": [
+            "edicion",
+            "nombre_oficial",
+            "sede",
+            "fecha_inicio",
+            "fecha_fin",
+            "otras_cifras"
+          ]
+        },
+        {
+          "url": "https://agraria.pe/noticias/rueda-de-negocio-en-ficafe-puno-2023-habria-generado-negocio-33737",
+          "medio": "Agraria.pe",
+          "fecha_publicacion": "2023-11-06",
+          "respalda": [
+            "metricas.visitantes",
+            "metricas.expositores",
+            "conflictos"
+          ]
+        },
+        {
+          "url": "https://agraria.pe/noticias/ficafe-sexta-rueda-genero-negocios-por-mas-de-s-41-5-millone-33750",
+          "medio": "Agraria.pe",
+          "fecha_publicacion": "2023-11-07",
+          "respalda": [
+            "otras_cifras"
+          ]
+        },
+        {
+          "url": "https://agraria.pe/noticias/rueda-de-negocios-internacional-en-ficafe-puno-2023-dio-como-33831",
+          "medio": "Agraria.pe",
+          "fecha_publicacion": "2023-11-14",
+          "respalda": [
+            "otras_cifras",
+            "conflictos"
+          ]
+        },
+        {
+          "url": "https://forbes.pe/forbes-life/2023-11-10/cafes-de-cajamarca-destacan-como-los-mejores-de-peru/",
+          "medio": "Forbes Perú",
+          "fecha_publicacion": "2023-11-10",
+          "respalda": [
+            "ganadores.taza_excelencia"
+          ]
+        },
+        {
+          "url": "https://agraria.pe/noticias/el-cajamarquino-eric-jara-davila-es-reconocido-como-el-mejor-33810",
+          "medio": "Agraria.pe",
+          "fecha_publicacion": "2023-11-13",
+          "respalda": [
+            "ganadores.catacion"
+          ]
+        },
+        {
+          "url": "https://allianceforcoffeeexcellence.org/peru-2023/",
+          "medio": "Alliance for Coffee Excellence (resultados oficiales Taza de Excelencia Perú)",
+          "fecha_publicacion": null,
+          "respalda": [
+            "ganadores.taza_excelencia",
+            "subasta"
+          ]
+        }
+      ],
+      "conflictos": [
+        {
+          "campo": "otras_cifras: rueda de negocios internacional",
+          "valores": [
+            {
+              "valor": "US$ 3.5 millones",
+              "fuente_url": "https://agraria.pe/noticias/rueda-de-negocio-en-ficafe-puno-2023-habria-generado-negocio-33737",
+              "medio": "Agraria.pe",
+              "texto": "Se espera haya superado los US$ 3.5 millones en proyecciones comerciales"
+            },
+            {
+              "valor": "US$ 15.5 millones",
+              "fuente_url": "https://agraria.pe/noticias/rueda-de-negocios-internacional-en-ficafe-puno-2023-dio-como-33831",
+              "medio": "Agraria.pe",
+              "texto": "ventas proyectadas por US$ 15.5 millones a concretarse en los siguientes doce meses"
+            }
+          ],
+          "nota": "La nota posterior (14/11) dice que US$ 15.5 M 'supera largamente el monto inicial calculado de US$ 3.5 millones'. Probablemente es una actualización, pero ambas cifras son proyecciones."
+        }
+      ],
+      "notas": "Hubo una antesala de la feria en Lima (Circuito Mágico del Agua). No se encontró un monto total oficial de la feria: solo cifras por rueda de negocios, en monedas distintas (USD y PEN), que no deben sumarse. Nombre de la finca ganadora de la Taza: Alto Mirador, según ACE (Forbes la llamaba El Mirador). El ganador de catación aparece en una nota que menciona el apoyo del Gobierno Regional de Puno, pero no nombra explícitamente a Ficafé."
+    },
+    {
+      "edicion": 6,
+      "anio": 2022,
+      "nombre_oficial": "VI Feria Internacional de Cafés Especiales - Ficafé Ayacucho-Vraem 2022",
+      "sede": {
+        "ciudad": "Ayacucho",
+        "region": "Ayacucho",
+        "recinto": "Centro de Exposiciones Canaán"
+      },
+      "fecha_inicio": "2022-10-28",
+      "fecha_fin": "2022-10-31",
+      "estado": "realizada",
+      "metricas": {
+        "visitantes": {
+          "valor": 20500,
+          "criterio": "20,500 visitantes (balance posterior a la feria)",
+          "estado": "verificado"
+        },
+        "expositores": {
+          "valor": null,
+          "criterio": null,
+          "estado": "no_verificado"
+        },
+        "monto_negocios_pen": {
+          "valor": 56000000,
+          "criterio": "generó más de 56 millones de soles de movimiento económico (estimación del gobernador regional Carlos Rua Carbajal)",
+          "estado": "verificado"
+        }
+      },
+      "otras_cifras": [
+        {
+          "descripcion": "Previsión de visitantes especializados",
+          "valor": 1500,
+          "moneda": null,
+          "criterio": "reunirá a 1.500 visitantes especializados (previsión)",
+          "estado": "parcial",
+          "fuente_url": "https://agraria.pe/noticias/ayacucho-sera-sede-de-vi-edicion-de-ficafe-2022-28414"
+        },
+        {
+          "descripcion": "Previsión de asistentes en general",
+          "valor": 20000,
+          "moneda": null,
+          "criterio": "más de 20 mil apasionados del buen café y sus derivados (previsión)",
+          "estado": "parcial",
+          "fuente_url": "https://agraria.pe/noticias/ayacucho-sera-sede-de-vi-edicion-de-ficafe-2022-28414"
+        },
+        {
+          "descripcion": "Rueda de negocios nacional (Produce-CCL)",
+          "valor": 32700000,
+          "moneda": "PEN",
+          "criterio": "32 millones 700,000 soles (compromisos de venta)",
+          "estado": "verificado",
+          "fuente_url": "https://andina.pe/agencia/noticia-ficafe-2022-feria-del-cafe-ayacucho-genero-s-56-millones-movimiento-economico-915943.aspx"
+        },
+        {
+          "descripcion": "Rueda de negocios internacional (PromPerú)",
+          "valor": 13600000,
+          "moneda": "PEN",
+          "criterio": "13 millones 600,000 soles (compromisos de venta)",
+          "estado": "verificado",
+          "fuente_url": "https://andina.pe/agencia/noticia-ficafe-2022-feria-del-cafe-ayacucho-genero-s-56-millones-movimiento-economico-915943.aspx"
+        },
+        {
+          "descripcion": "Subasta Taza de Excelencia (dentro del movimiento económico)",
+          "valor": 3200000,
+          "moneda": "PEN",
+          "criterio": "3 millones 200,000 (moneda no explícita en la nota; se asume soles por contexto)",
+          "estado": "en_conflicto",
+          "fuente_url": "https://andina.pe/agencia/noticia-ficafe-2022-feria-del-cafe-ayacucho-genero-s-56-millones-movimiento-economico-915943.aspx"
+        },
+        {
+          "descripcion": "Stands de exposición",
+          "valor": 250,
+          "moneda": null,
+          "criterio": "más de 250 estand de exposición",
+          "estado": "verificado",
+          "fuente_url": "https://andina.pe/agencia/noticia-ficafe-2022-feria-del-cafe-ayacucho-genero-s-56-millones-movimiento-economico-915943.aspx"
+        },
+        {
+          "descripcion": "Ventas de cafés especiales (citado un año después)",
+          "valor": 3000000,
+          "moneda": "PEN",
+          "criterio": "logró ventas de cafés especiales por más de S/ 3 millones (citado en una nota de agosto 2023 sobre la edición 2022)",
+          "estado": "verificado",
+          "fuente_url": "https://agraria.pe/noticias/feria-ficafe-puno-2023-espera-alcanzar-un-aproximado-de-s-4--33005"
+        }
+      ],
+      "ganadores": {
+        "taza_excelencia": [
+          {
+            "puesto": 1,
+            "nombre": "Blanca Flor Córdova Jiménez",
+            "region": "Cajamarca",
+            "detalle": "Finca La Bola, San Ignacio. Geisha.",
+            "puntaje": 90.39,
+            "fuente_url": "https://allianceforcoffeeexcellence.org/peru-2022/"
+          },
+          {
+            "puesto": 2,
+            "nombre": "Julio César Chávez Nieve",
+            "region": "Cusco",
+            "detalle": "San Sebastián. Geisha.",
+            "puntaje": 90.25,
+            "fuente_url": "https://allianceforcoffeeexcellence.org/peru-2022/"
+          },
+          {
+            "puesto": 3,
+            "nombre": "Efraín Carhuallocllo Salvador",
+            "region": "Cajamarca",
+            "detalle": "El Cerro. Geisha.",
+            "puntaje": 90,
+            "fuente_url": "https://allianceforcoffeeexcellence.org/peru-2022/"
+          },
+          {
+            "puesto": 4,
+            "nombre": "Nory Quispe Santos",
+            "region": "Cusco",
+            "detalle": "Chiriloma. Geisha.",
+            "puntaje": 89.8,
+            "fuente_url": "https://allianceforcoffeeexcellence.org/peru-2022/"
+          },
+          {
+            "puesto": 5,
+            "nombre": "Hortencia Victoria Berrocal",
+            "region": "Huancavelica",
+            "detalle": "Tayacaja, fundo Puquiopata.",
+            "puntaje": 89.66,
+            "fuente_url": "https://allianceforcoffeeexcellence.org/peru-2022/"
+          }
+        ],
+        "barismo": [
+          {
+            "puesto": 1,
+            "nombre": "Jhosseline Benites",
+            "region": null,
+            "detalle": "Campeonato Nacional de Barismo. Origen Tostadores y Café.",
+            "puntaje": null,
+            "fuente_url": "https://agraria.pe/noticias/mujeres-brillaron-en-ficafe-ayacucho-vraem-2022-29869"
+          },
+          {
+            "puesto": 2,
+            "nombre": "Jeraldine Torres",
+            "region": null,
+            "detalle": null,
+            "puntaje": null,
+            "fuente_url": "https://agraria.pe/noticias/mujeres-brillaron-en-ficafe-ayacucho-vraem-2022-29869"
+          },
+          {
+            "puesto": 3,
+            "nombre": "Diana Landeo",
+            "region": null,
+            "detalle": null,
+            "puntaje": null,
+            "fuente_url": "https://agraria.pe/noticias/mujeres-brillaron-en-ficafe-ayacucho-vraem-2022-29869"
+          }
+        ],
+        "catacion": [
+          {
+            "puesto": 1,
+            "nombre": "Junior Zanabria Alfaro",
+            "region": null,
+            "detalle": "V Campeonato Nacional de Catadores.",
+            "puntaje": null,
+            "fuente_url": "https://agraria.pe/noticias/mujeres-brillaron-en-ficafe-ayacucho-vraem-2022-29869"
+          },
+          {
+            "puesto": 2,
+            "nombre": "Mariel Anyosa",
+            "region": null,
+            "detalle": null,
+            "puntaje": null,
+            "fuente_url": "https://agraria.pe/noticias/mujeres-brillaron-en-ficafe-ayacucho-vraem-2022-29869"
+          },
+          {
+            "puesto": 3,
+            "nombre": "Jhon Jiménez",
+            "region": null,
+            "detalle": null,
+            "puntaje": null,
+            "fuente_url": "https://agraria.pe/noticias/mujeres-brillaron-en-ficafe-ayacucho-vraem-2022-29869"
+          }
+        ]
+      },
+      "subasta": {
+        "lote_top_puntaje": 90.39,
+        "precio_usd_lb": 75,
+        "estado": "verificado",
+        "total_usd": 303504.9,
+        "promedio_usd_lb": 19.76,
+        "lotes": 29,
+        "fecha": "2022-12-06",
+        "nota": "Lote ganador dividido: A a US$ 75.00/lb y B a US$ 78.50/lb. ACE imprime 'December 6th' sin año; se asigna 2022 por ser la página de esa competencia. El promedio de US$ 19.76/lb es el impreso por ACE; dividiendo el total entre las libras de las 32 filas sale US$ 17.02/lb, y no se pudo explicar la diferencia."
+      },
+      "fuentes": [
+        {
+          "url": "https://agraria.pe/noticias/ayacucho-sera-sede-de-vi-edicion-de-ficafe-2022-28414",
+          "medio": "Agraria.pe",
+          "fecha_publicacion": "2022-06-22",
+          "respalda": [
+            "edicion",
+            "nombre_oficial",
+            "sede",
+            "fecha_inicio",
+            "fecha_fin",
+            "otras_cifras"
+          ]
+        },
+        {
+          "url": "https://andina.pe/agencia/noticia-ficafe-2022-feria-del-cafe-ayacucho-genero-s-56-millones-movimiento-economico-915943.aspx",
+          "medio": "Andina",
+          "fecha_publicacion": "2022-10-31",
+          "respalda": [
+            "metricas.visitantes",
+            "metricas.monto_negocios_pen",
+            "otras_cifras",
+            "conflictos"
+          ]
+        },
+        {
+          "url": "https://agraria.pe/noticias/mujeres-brillaron-en-ficafe-ayacucho-vraem-2022-29869",
+          "medio": "Agraria.pe",
+          "fecha_publicacion": "2022-11-08",
+          "respalda": [
+            "ganadores.taza_excelencia",
+            "ganadores.barismo",
+            "ganadores.catacion",
+            "subasta.lote_top_puntaje"
+          ]
+        },
+        {
+          "url": "https://agraria.pe/noticias/feria-ficafe-puno-2023-espera-alcanzar-un-aproximado-de-s-4--33005",
+          "medio": "Agraria.pe",
+          "fecha_publicacion": "2023-08-29",
+          "respalda": [
+            "otras_cifras"
+          ]
+        },
+        {
+          "url": "https://allianceforcoffeeexcellence.org/peru-2022/",
+          "medio": "Alliance for Coffee Excellence (resultados oficiales Taza de Excelencia Perú)",
+          "fecha_publicacion": null,
+          "respalda": [
+            "ganadores.taza_excelencia",
+            "subasta"
+          ]
+        }
+      ],
+      "conflictos": [
+        {
+          "campo": "ganadores.barismo[0].nombre (ortografía)",
+          "valores": [
+            {
+              "valor": "Jhosseline Benites",
+              "fuente_url": "https://agraria.pe/noticias/mujeres-brillaron-en-ficafe-ayacucho-vraem-2022-29869",
+              "medio": "Agraria.pe",
+              "texto": "Jhosseline Benites"
+            },
+            {
+              "valor": "Jhosselime Benites",
+              "fuente_url": "https://andina.pe/agencia/noticia-ficafe-2022-feria-del-cafe-ayacucho-genero-s-56-millones-movimiento-economico-915943.aspx",
+              "medio": "Andina",
+              "texto": "Jhosselime Benites"
+            }
+          ],
+          "nota": "Se usa 'Jhosseline', que coincide con Agraria 2022 y con su nombre completo en 2024 (Jhosseline Benites Velazco)."
+        },
+        {
+          "campo": "otras_cifras: valor de la subasta Taza de Excelencia",
+          "valores": [
+            {
+              "valor": "3 millones 200,000 (moneda no explícita)",
+              "fuente_url": "https://andina.pe/agencia/noticia-ficafe-2022-feria-del-cafe-ayacucho-genero-s-56-millones-movimiento-economico-915943.aspx",
+              "medio": "Andina",
+              "texto": "3 millones 200,000"
+            },
+            {
+              "valor": "US$ 303,504.90 (total de la subasta)",
+              "fuente_url": "https://allianceforcoffeeexcellence.org/peru-2022/",
+              "medio": "Alliance for Coffee Excellence",
+              "texto": "Total Auction Value $303,504.90"
+            }
+          ],
+          "nota": "Los dos montos no coinciden en orden de magnitud y no se pudieron reconciliar. Se toma el de ACE como total de la subasta; el de Andina queda en conflicto."
+        }
+      ],
+      "notas": "El 'movimiento económico' de S/56 M es un criterio distinto al de las 'ventas de cafés especiales' (S/3 M) citadas después; no son una contradicción sino métricas distintas. Asistieron 15 compradores internacionales y 25 nacionales."
+    },
+    {
+      "edicion": 5,
+      "anio": 2021,
+      "nombre_oficial": "V Feria Internacional de Cafés Especiales (FICAFÉ 2021)",
+      "sede": {
+        "ciudad": "Quillabamba",
+        "region": "Cusco",
+        "recinto": "Campo Ferial del Sambaray"
+      },
+      "fecha_inicio": "2021-10-28",
+      "fecha_fin": "2021-10-31",
+      "estado": "realizada",
+      "metricas": {
+        "visitantes": {
+          "valor": 10000,
+          "criterio": "se espera la visita de 10.000 personas, además de 1.000 visitantes especializados (previsión)",
+          "estado": "parcial"
+        },
+        "expositores": {
+          "valor": null,
+          "criterio": null,
+          "estado": "no_verificado"
+        },
+        "monto_negocios_pen": {
+          "valor": null,
+          "criterio": null,
+          "estado": "no_verificado"
+        }
+      },
+      "otras_cifras": [
+        {
+          "descripcion": "Stands previstos",
+          "valor": 200,
+          "moneda": null,
+          "criterio": "La feria contará con 200 stands de productores de café",
+          "estado": "parcial",
+          "fuente_url": "https://agraria.pe/noticias/manana-se-inicia-la-quinta-edicion-de-ficafe-2021-en-cusco-25870"
+        },
+        {
+          "descripcion": "Organizaciones de caficultores previstas",
+          "valor": 250,
+          "moneda": null,
+          "criterio": "Participarán 250 organizaciones de caficultores",
+          "estado": "parcial",
+          "fuente_url": "https://agraria.pe/noticias/manana-se-inicia-la-quinta-edicion-de-ficafe-2021-en-cusco-25870"
+        },
+        {
+          "descripcion": "Precio por quintal del lote ganador de Taza de Excelencia",
+          "valor": 5460,
+          "moneda": "USD",
+          "criterio": "US$ 5,460 por quintal (682 lb / 309 kg; total más de 35,800 dólares). Precio promedio de los 24 cafés: US$ 18.48/lb (equivale a US$ 54.60/lb; confirmado por ACE)",
+          "estado": "verificado",
+          "fuente_url": "https://andina.pe/agencia/noticia-taza-excelencia-peru-2021-cafe-cusco-logra-mas-35800-subasta-internacional-873587.aspx"
+        }
+      ],
+      "ganadores": {
+        "taza_excelencia": [
+          {
+            "puesto": 1,
+            "nombre": "Dwight Aguilar Masías",
+            "region": "Cusco",
+            "detalle": "Finca Nueva Alianza. Gesha. Lote de 682.77 lb, US$ 35,800.50 en subasta.",
+            "puntaje": 90.2,
+            "fuente_url": "https://allianceforcoffeeexcellence.org/peru-2021/"
+          },
+          {
+            "puesto": 2,
+            "nombre": "Hugo Mariño Laura",
+            "region": "Cusco",
+            "detalle": "Santa Mónica. Gesha orgánico. US$ 22,753.11 en subasta.",
+            "puntaje": 90.08,
+            "fuente_url": "https://allianceforcoffeeexcellence.org/peru-2021/"
+          },
+          {
+            "puesto": 3,
+            "nombre": "José Elmer Tineo Mendoza",
+            "region": "Cajamarca",
+            "detalle": "La Palta. Catuaí, Caturra y Bourbón. US$ 15,545.65 en subasta.",
+            "puntaje": 90,
+            "fuente_url": "https://allianceforcoffeeexcellence.org/peru-2021/"
+          }
+        ],
+        "barismo": [],
+        "catacion": []
+      },
+      "subasta": {
+        "lote_top_puntaje": 90.2,
+        "precio_usd_lb": 54.6,
+        "estado": "verificado",
+        "total_usd": 330684.35,
+        "promedio_usd_lb": 18.48,
+        "lotes": 24,
+        "fecha": "2021-12-14",
+        "nota": "Lote ganador dividido: A a US$ 54.60/lb y B a US$ 50.40/lb. El 'US$ 5,460 por quintal' de Andina equivale a US$ 54.60/lb (quintal de 100 lb). ACE imprime 'December 14th' sin año; la nota de Andina del 15/12/2021 confirma la fecha."
+      },
+      "fuentes": [
+        {
+          "url": "https://andina.pe/ingles/noticia-cusco-organiza-feria-cafes-especiales-donde-se-luciran-las-mejores-variedades-peru-851448.aspx",
+          "medio": "Andina",
+          "fecha_publicacion": "2021-07-01",
+          "respalda": [
+            "edicion",
+            "sede",
+            "fecha_inicio",
+            "fecha_fin"
+          ]
+        },
+        {
+          "url": "https://agraria.pe/noticias/cusco-ficafe-2021-se-realizara-a-fines-de-octubre-en-quillab-25310",
+          "medio": "Agraria.pe",
+          "fecha_publicacion": "2021-09-01",
+          "respalda": [
+            "nombre_oficial",
+            "conflictos"
+          ]
+        },
+        {
+          "url": "https://agraria.pe/noticias/manana-se-inicia-la-quinta-edicion-de-ficafe-2021-en-cusco-25870",
+          "medio": "Agraria.pe",
+          "fecha_publicacion": "2021-10-27",
+          "respalda": [
+            "sede.recinto",
+            "fecha_inicio",
+            "fecha_fin",
+            "metricas.visitantes",
+            "otras_cifras"
+          ]
+        },
+        {
+          "url": "https://andina.pe/agencia/noticia-taza-excelencia-peru-2021-cafe-cusco-logra-mas-35800-subasta-internacional-873587.aspx",
+          "medio": "Andina",
+          "fecha_publicacion": "2021-12-15",
+          "respalda": [
+            "ganadores.taza_excelencia",
+            "otras_cifras"
+          ]
+        },
+        {
+          "url": "https://allianceforcoffeeexcellence.org/peru-2021/",
+          "medio": "Alliance for Coffee Excellence (resultados oficiales Taza de Excelencia Perú)",
+          "fecha_publicacion": null,
+          "respalda": [
+            "ganadores.taza_excelencia",
+            "subasta"
+          ]
+        }
+      ],
+      "conflictos": [
+        {
+          "campo": "sede.recinto",
+          "valores": [
+            {
+              "valor": "Terminal Terrestre Pavayoc-Quillabamba",
+              "fuente_url": "https://agraria.pe/noticias/cusco-ficafe-2021-se-realizara-a-fines-de-octubre-en-quillab-25310",
+              "medio": "Agraria.pe (01/09/2021)",
+              "texto": "tendrá como sede principal el Terminal Terrestre Pavayoc-Quillabamba"
+            },
+            {
+              "valor": "Campo Ferial del Sambaray",
+              "fuente_url": "https://agraria.pe/noticias/manana-se-inicia-la-quinta-edicion-de-ficafe-2021-en-cusco-25870",
+              "medio": "Agraria.pe (27/10/2021)",
+              "texto": "El evento se realizará en el Campo Ferial del Sambaray"
+            }
+          ],
+          "nota": "Se usa Sambaray por ser la nota más cercana a la fecha del evento (un día antes). Probablemente hubo cambio de recinto."
+        }
+      ],
+      "notas": "Primera edición presencial tras la pausa por la pandemia. Incluyó la V Taza de Excelencia y subasta internacional, el II Congreso Nacional Cafetalero, campeonato de barismo y latte art, concursos de catación y ruedas de negocios."
+    },
+    {
+      "edicion": 4,
+      "anio": 2019,
+      "nombre_oficial": "IV Feria Internacional de Cafés Especiales del Perú (Ficafé Perú 2019)",
+      "sede": {
+        "ciudad": "Jaén",
+        "region": "Cajamarca",
+        "recinto": "Campo Ferial Señor de Huamantanga"
+      },
+      "fecha_inicio": "2019-10-24",
+      "fecha_fin": "2019-10-27",
+      "estado": "realizada",
+      "metricas": {
+        "visitantes": {
+          "valor": 15000,
+          "criterio": "reportó una asistencia de 15 mil visitantes, 50% más de lo esperado",
+          "estado": "verificado"
+        },
+        "expositores": {
+          "valor": 200,
+          "criterio": "los 200 caficultores expositores (ventas directas durante los cuatro días de la feria)",
+          "estado": "verificado"
+        },
+        "monto_negocios_pen": {
+          "valor": 24000000,
+          "criterio": "generar negocios por más de S/ 24 millones, superando la meta prevista en un 20%",
+          "estado": "verificado"
+        }
+      },
+      "otras_cifras": [
+        {
+          "descripcion": "Rueda de negocios internacional (PromPerú)",
+          "valor": 12850000,
+          "moneda": "PEN",
+          "criterio": "se concretaron negocios a corto y mediano plazo por la suma de S/ 12.850.000",
+          "estado": "verificado",
+          "fuente_url": "https://agraria.pe/noticias/ficafe-2019-rompe-record-al-generar-negocios-por-mas-de-s-24-20122"
+        },
+        {
+          "descripcion": "Rueda de negocios nacional (Cámara de Comercio de Lima)",
+          "valor": 4100000,
+          "moneda": "PEN",
+          "criterio": "generó negocios por S/ 4.100.000, duplicando lo previsto",
+          "estado": "verificado",
+          "fuente_url": "https://agraria.pe/noticias/ficafe-2019-rompe-record-al-generar-negocios-por-mas-de-s-24-20122"
+        },
+        {
+          "descripcion": "Ventas directas de expositores",
+          "valor": 1500000,
+          "moneda": "PEN",
+          "criterio": "las ventas directas, durante los cuatro días de la feria, a cargo de los 200 caficultores expositores sumaron un total de S/ 1.5 millones",
+          "estado": "verificado",
+          "fuente_url": "https://agraria.pe/noticias/ficafe-2019-rompe-record-al-generar-negocios-por-mas-de-s-24-20122"
+        },
+        {
+          "descripcion": "Movimiento comercial en la ciudad de Jaén",
+          "valor": 2000000,
+          "moneda": "PEN",
+          "criterio": "el movimiento comercial de S/ 2 millones que generó el evento en la ciudad Jaén",
+          "estado": "verificado",
+          "fuente_url": "https://agraria.pe/noticias/ficafe-2019-rompe-record-al-generar-negocios-por-mas-de-s-24-20122"
+        },
+        {
+          "descripcion": "Stands",
+          "valor": 200,
+          "moneda": null,
+          "criterio": "más de 200 stands (anuncio previo)",
+          "estado": "parcial",
+          "fuente_url": "https://agraria.pe/noticias/ficafe-peru-2019-se-realizara-del-24-al-27-de-octubre-en-caj-19735"
+        }
+      ],
+      "ganadores": {
+        "taza_excelencia": [
+          {
+            "puesto": 1,
+            "nombre": "Grimanes Morales Lizana",
+            "region": "Cajamarca",
+            "detalle": "Finca La Lucuma. Variedad Costa Rica 95.",
+            "puntaje": 92.28,
+            "fuente_url": "https://allianceforcoffeeexcellence.org/peru-2019/"
+          },
+          {
+            "puesto": 2,
+            "nombre": "Lucio Luque Vásquez",
+            "region": "Cusco",
+            "detalle": "Nuevo Progreso. Mezcla de Geisha y Bourbon. Sus dos lotes sumaron US$ 23,743.80.",
+            "puntaje": 91.44,
+            "fuente_url": "https://allianceforcoffeeexcellence.org/peru-2019/"
+          },
+          {
+            "puesto": 3,
+            "nombre": "Junior Guido Flores Elera",
+            "region": "Cajamarca",
+            "detalle": "Agua Dulce. Catuaí.",
+            "puntaje": 91.4,
+            "fuente_url": "https://allianceforcoffeeexcellence.org/peru-2019/"
+          }
+        ],
+        "barismo": [],
+        "catacion": []
+      },
+      "subasta": {
+        "lote_top_puntaje": 92.28,
+        "precio_usd_lb": 20,
+        "estado": "verificado",
+        "total_usd": 216396.2,
+        "promedio_usd_lb": 10.92,
+        "lotes": 21,
+        "fecha": "2019-12-05",
+        "nota": "Lote ganador dividido: A a US$ 20.00/lb y B a US$ 19.80/lb."
+      },
+      "fuentes": [
+        {
+          "url": "https://agraria.pe/noticias/ficafe-peru-2019-se-realizara-del-24-al-27-de-octubre-en-caj-19735",
+          "medio": "Agraria.pe",
+          "fecha_publicacion": "2019-09-03",
+          "respalda": [
+            "edicion",
+            "sede",
+            "fecha_inicio",
+            "fecha_fin",
+            "otras_cifras"
+          ]
+        },
+        {
+          "url": "https://agraria.pe/noticias/ficafe-2019-rompe-record-al-generar-negocios-por-mas-de-s-24-20122",
+          "medio": "Agraria.pe",
+          "fecha_publicacion": "2019-10-30",
+          "respalda": [
+            "metricas.visitantes",
+            "metricas.expositores",
+            "metricas.monto_negocios_pen",
+            "otras_cifras"
+          ]
+        },
+        {
+          "url": "https://allianceforcoffeeexcellence.org/peru-2019/",
+          "medio": "Alliance for Coffee Excellence (resultados oficiales Taza de Excelencia Perú)",
+          "fecha_publicacion": null,
+          "respalda": [
+            "ganadores.taza_excelencia",
+            "subasta"
+          ]
+        }
+      ],
+      "conflictos": [],
+      "notas": "Incluyó la III Competencia Taza de Excelencia, organizada con la Alliance for Coffee Excellence (ACE). La subasta electrónica fue el 5 de diciembre de 2019. Ganador de la Taza 2019 verificado con ACE: Grimanes Morales Lizana (La Lucuma, Cajamarca). Lucio Luque Vásquez, que una búsqueda previa señalaba como ganador, quedó segundo."
+    },
+    {
+      "edicion": 3,
+      "anio": 2018,
+      "nombre_oficial": "III Feria Internacional de Cafés Especiales (Ficafé) 2018",
+      "sede": {
+        "ciudad": "Chanchamayo",
+        "region": "Junín",
+        "recinto": "Cooperativa Agraria Cafetalera La Florida"
+      },
+      "fecha_inicio": "2018-09-28",
+      "fecha_fin": "2018-09-30",
+      "estado": "realizada",
+      "metricas": {
+        "visitantes": {
+          "valor": 10000,
+          "criterio": "Alrededor de 10,000 visitantes, entre nacionales y extranjeros, proyecta recibir (previsión)",
+          "estado": "parcial"
+        },
+        "expositores": {
+          "valor": null,
+          "criterio": null,
+          "estado": "no_verificado"
+        },
+        "monto_negocios_pen": {
+          "valor": null,
+          "criterio": null,
+          "estado": "no_verificado"
+        }
+      },
+      "otras_cifras": [
+        {
+          "descripcion": "Rueda de negocios con la Cámara de Comercio de Lima (solo la rueda, no el total de la feria)",
+          "valor": 5000000,
+          "moneda": "PEN",
+          "criterio": "realizaron negocios por más de S/ 5 millones con empresas nacionales e internacionales (310 reuniones, 22 compradores, más de 180 organizaciones)",
+          "estado": "verificado",
+          "fuente_url": "https://agraria.pe/noticias/pequenos-y-medianos-caficultores-realizaron-negocios-por-mas-17592"
+        },
+        {
+          "descripcion": "Organizaciones cafetaleras previstas",
+          "valor": 150,
+          "moneda": null,
+          "criterio": "150 organizaciones cafetaleras; más de 5 mil productores (previsión)",
+          "estado": "parcial",
+          "fuente_url": "https://agraria.pe/noticias/150-organizaciones-cafetaleras-buscaran-promover-17503"
+        }
+      ],
+      "ganadores": {
+        "taza_excelencia": [
+          {
+            "puesto": 1,
+            "nombre": "Dwight Aguilar Masías",
+            "region": "Cusco",
+            "detalle": "Finca Nueva Alianza. Geisha.",
+            "puntaje": 91.08,
+            "fuente_url": "https://allianceforcoffeeexcellence.org/peru-2018/"
+          },
+          {
+            "puesto": 2,
+            "nombre": "Damián Espinoza García",
+            "region": "Cajamarca",
+            "detalle": "La Palma. Caturra amarillo.",
+            "puntaje": 89.85,
+            "fuente_url": "https://allianceforcoffeeexcellence.org/peru-2018/"
+          },
+          {
+            "puesto": 3,
+            "nombre": "Franklin Chinguel Morales",
+            "region": "Cajamarca",
+            "detalle": "El Romerillo. Bourbon.",
+            "puntaje": 89.58,
+            "fuente_url": "https://allianceforcoffeeexcellence.org/peru-2018/"
+          }
+        ],
+        "barismo": [],
+        "catacion": []
+      },
+      "subasta": {
+        "lote_top_puntaje": 91.08,
+        "precio_usd_lb": 45.1,
+        "estado": "verificado",
+        "total_usd": 242189.16,
+        "promedio_usd_lb": 11.13,
+        "lotes": 23,
+        "fecha": null,
+        "nota": "Lote ganador dividido en A y B, ambos a US$ 45.10/lb. ACE no muestra la fecha. Es una subasta distinta de la de microlotes en Bean Auction citada en las notas de la feria. No se verificó que la competencia de ACE se haya realizado dentro de la feria de septiembre en Chanchamayo."
+      },
+      "fuentes": [
+        {
+          "url": "https://andina.pe/ingles/noticia-ficafe-2018-proyecta-recibir-10000-visitantes-chanchamayo-726036.aspx",
+          "medio": "Andina",
+          "fecha_publicacion": "2018-09-21",
+          "respalda": [
+            "edicion",
+            "sede",
+            "fecha_inicio",
+            "fecha_fin",
+            "metricas.visitantes"
+          ]
+        },
+        {
+          "url": "https://agraria.pe/noticias/150-organizaciones-cafetaleras-buscaran-promover-17503",
+          "medio": "Agraria.pe",
+          "fecha_publicacion": "2018-09-24",
+          "respalda": [
+            "sede",
+            "otras_cifras"
+          ]
+        },
+        {
+          "url": "https://agraria.pe/noticias/pequenos-y-medianos-caficultores-realizaron-negocios-por-mas-17592",
+          "medio": "Agraria.pe",
+          "fecha_publicacion": "2018-10-05",
+          "respalda": [
+            "otras_cifras"
+          ]
+        },
+        {
+          "url": "https://allianceforcoffeeexcellence.org/peru-2018/",
+          "medio": "Alliance for Coffee Excellence (resultados oficiales Taza de Excelencia Perú)",
+          "fecha_publicacion": null,
+          "respalda": [
+            "ganadores.taza_excelencia",
+            "subasta"
+          ]
+        }
+      ],
+      "conflictos": [],
+      "notas": "Incluyó una subasta internacional de microlotes en la plataforma Bean Auction (Inglaterra) con precio base de 190 dólares por quintal. Al cierre se anunció Jaén (Cajamarca) como sede 2019."
+    },
+    {
+      "edicion": 2,
+      "anio": 2017,
+      "nombre_oficial": "II Feria Internacional de Cafés Especiales del Perú - Ficafé Selva Central Villa Rica 2017",
+      "sede": {
+        "ciudad": "Villa Rica",
+        "region": "Pasco",
+        "recinto": null
+      },
+      "fecha_inicio": "2017-09-14",
+      "fecha_fin": "2017-09-16",
+      "estado": "realizada",
+      "metricas": {
+        "visitantes": {
+          "valor": null,
+          "criterio": null,
+          "estado": "no_verificado"
+        },
+        "expositores": {
+          "valor": null,
+          "criterio": null,
+          "estado": "no_verificado"
+        },
+        "monto_negocios_pen": {
+          "valor": null,
+          "criterio": null,
+          "estado": "no_verificado"
+        }
+      },
+      "otras_cifras": [
+        {
+          "descripcion": "Stands",
+          "valor": 230,
+          "moneda": null,
+          "criterio": "más de 5,000 metros cuadrados de exhibición para 230 stands de productores y empresas del sector",
+          "estado": "verificado",
+          "fuente_url": "https://andina.pe/ingles/noticia-ficafe-2017-promociono-al-cafe-especial-peruano-como-uno-los-mejores-del-mundo-683283.aspx"
+        }
+      ],
+      "ganadores": {
+        "taza_excelencia": [
+          {
+            "puesto": 1,
+            "nombre": "Juan Heredia Sánchez",
+            "region": "Cajamarca",
+            "detalle": "Finca La Flor 2017 (Jaén).",
+            "puntaje": 92.25,
+            "fuente_url": "https://allianceforcoffeeexcellence.org/peru-2017/"
+          },
+          {
+            "puesto": 2,
+            "nombre": "Efraín Carhuallocllo Salvador",
+            "region": "Cajamarca",
+            "detalle": "El Cerro 2017 (San Ignacio).",
+            "puntaje": 90.61,
+            "fuente_url": "https://allianceforcoffeeexcellence.org/peru-2017/"
+          },
+          {
+            "puesto": 3,
+            "nombre": "Fredy Bermeo Guevara",
+            "region": "Cajamarca",
+            "detalle": "San Pedro - El Shimir 2017 (San Ignacio).",
+            "puntaje": 90.48,
+            "fuente_url": "https://allianceforcoffeeexcellence.org/peru-2017/"
+          }
+        ],
+        "barismo": [],
+        "catacion": []
+      },
+      "subasta": {
+        "lote_top_puntaje": 92.25,
+        "precio_usd_lb": 100.09,
+        "estado": "verificado",
+        "total_usd": 319588.91,
+        "promedio_usd_lb": 21.13,
+        "lotes": 19,
+        "fecha": null,
+        "nota": "Lote ganador dividido: A a US$ 100.09/lb y B a US$ 100.10/lb. ACE no muestra la fecha de la subasta ni la variedad en 2017."
+      },
+      "fuentes": [
+        {
+          "url": "https://agraria.pe/noticias/declaran-de-interes-del-minagri-la-realizacion-de-la-ii-fica-13675",
+          "medio": "Agraria.pe",
+          "fecha_publicacion": "2017-04-21",
+          "respalda": [
+            "edicion",
+            "nombre_oficial",
+            "sede",
+            "fecha_inicio",
+            "fecha_fin"
+          ]
+        },
+        {
+          "url": "https://andina.pe/ingles/noticia-ficafe-2017-promociono-al-cafe-especial-peruano-como-uno-los-mejores-del-mundo-683283.aspx",
+          "medio": "Andina",
+          "fecha_publicacion": "2017-09-17",
+          "respalda": [
+            "sede",
+            "otras_cifras"
+          ]
+        },
+        {
+          "url": "https://allianceforcoffeeexcellence.org/peru-2017/",
+          "medio": "Alliance for Coffee Excellence (resultados oficiales Taza de Excelencia Perú)",
+          "fecha_publicacion": null,
+          "respalda": [
+            "ganadores.taza_excelencia",
+            "subasta"
+          ]
+        }
+      ],
+      "conflictos": [],
+      "notas": "Declarada de interés del Minagri (R.M. N° 0141-2017-Minagri). Andina menciona 'una numerosa cantidad de visitantes' sin cifra. En los días previos se seleccionaron 'los 19 mejores cafés del Perú' en La Taza de Excelencia, sin publicar nombres; los nombres y puntajes figuran después en ACE."
+    },
+    {
+      "edicion": 1,
+      "anio": 2016,
+      "nombre_oficial": "I Feria Internacional de Cafés Especiales del Perú - Satipo 2016",
+      "sede": {
+        "ciudad": "Satipo",
+        "region": "Junín",
+        "recinto": "Centro de Convenciones Satipo"
+      },
+      "fecha_inicio": "2016-06-16",
+      "fecha_fin": "2016-06-19",
+      "estado": "realizada",
+      "metricas": {
+        "visitantes": {
+          "valor": null,
+          "criterio": null,
+          "estado": "no_verificado"
+        },
+        "expositores": {
+          "valor": 250,
+          "criterio": "En FICAFE participarán 250 expositores (anuncio previo)",
+          "estado": "parcial"
+        },
+        "monto_negocios_pen": {
+          "valor": null,
+          "criterio": null,
+          "estado": "no_verificado"
+        }
+      },
+      "otras_cifras": [],
+      "ganadores": {
+        "taza_excelencia": [],
+        "barismo": [],
+        "catacion": []
+      },
+      "subasta": {
+        "lote_top_puntaje": null,
+        "precio_usd_lb": null,
+        "estado": "no_verificado"
+      },
+      "fuentes": [
+        {
+          "url": "https://agraria.pe/noticias/minagri-declara-de-interes-proxima-feria-10867",
+          "medio": "Agraria.pe",
+          "fecha_publicacion": "2016-04-21",
+          "respalda": [
+            "edicion",
+            "nombre_oficial",
+            "sede",
+            "fecha_inicio",
+            "fecha_fin",
+            "metricas.expositores"
+          ]
+        },
+        {
+          "url": "https://agraria.pe/noticias/ficafe-peru-2019-se-realizara-del-24-al-27-de-octubre-en-caj-19735",
+          "medio": "Agraria.pe",
+          "fecha_publicacion": "2019-09-03",
+          "respalda": [
+            "edicion",
+            "sede"
+          ]
+        }
+      ],
+      "conflictos": [],
+      "notas": "Impulsada por productores, organizaciones y gobiernos regionales y locales de la selva central. Invitados de seis países. Las fechas son las anunciadas en abril de 2016; no se encontró confirmación posterior de que se mantuvieran."
+    }
+  ]
+}

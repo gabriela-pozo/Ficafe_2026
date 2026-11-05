@@ -1,0 +1,793 @@
+<title>Archivo FICAFE</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wdth,wght@12..96,75..100,400;12..96,75..100,700;12..96,75..100,800&family=Source+Serif+4:ital,opsz,wght@0,8..60,400;0,8..60,600;1,8..60,400&display=swap" rel="stylesheet">
+<style>
+/* Concepto: archivo de campo. Papel verdoso, tinta índigo, cada cifra con su sello de verificación. */
+:root{
+  --bg:#F1F3EF; --bg2:#E7EBE5; --line:#C7CFC6; --line2:#D9DFD7;
+  --ink:#14201C; --ink2:#4B5955; --ink3:#5F6B66;
+  --acc:#27417E; --acc-s:#DCE2EF; --acc-m:#5B72A8; --on-acc:#F1F3EF;
+  --ocre:#8A5F0E; --live:#1F7A4D;
+  --display:"Bricolage Grotesque",system-ui,sans-serif;
+  --text:"Source Serif 4",Georgia,serif;
+  --max:1120px;
+}
+@media(prefers-color-scheme:dark){:root:not([data-theme="light"]){
+  --bg:#101714; --bg2:#18221E; --line:#33433C; --line2:#243029;
+  --ink:#E8EEEA; --ink2:#A9B6B0; --ink3:#8E9C95;
+  --acc:#8FA7E6; --acc-s:#1F2B4A; --acc-m:#6A82C4; --on-acc:#101714;
+  --ocre:#D9A441; --live:#5FD39A; color-scheme:dark}}
+:root[data-theme="dark"]{
+  --bg:#101714; --bg2:#18221E; --line:#33433C; --line2:#243029;
+  --ink:#E8EEEA; --ink2:#A9B6B0; --ink3:#8E9C95;
+  --acc:#8FA7E6; --acc-s:#1F2B4A; --acc-m:#6A82C4; --on-acc:#101714;
+  --ocre:#D9A441; --live:#5FD39A; color-scheme:dark}
+
+*{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:var(--text);font-size:17px;line-height:1.62;
+  font-variant-numeric:tabular-nums;padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px))}
+.env{max-width:var(--max);margin:0 auto}
+h1,h2,h3,button,input,.ui{font-family:var(--display)}
+a{color:var(--acc)}
+:focus-visible{outline:2px solid var(--acc);outline-offset:2px}
+
+/* Cabecera */
+.cab{padding-top:44px}
+.cab h1{font-variation-settings:"wdth" 78,"opsz" 96;font-weight:800;font-size:clamp(3rem,11vw,6.4rem);line-height:.86;letter-spacing:-.025em;margin:0 0 20px}
+.entrada{max-width:60ch;color:var(--ink2);margin:0 0 24px}
+
+/* Estado en vivo */
+.vivo{display:grid;gap:14px;grid-template-columns:1fr;border:1px solid var(--line);padding:18px 20px;margin:0 0 26px;background:var(--bg2)}
+@media(min-width:760px){.vivo{grid-template-columns:auto 1fr auto;align-items:center;gap:26px}}
+.badge{display:inline-flex;align-items:center;gap:8px;font-family:var(--display);font-weight:800;font-size:.8rem;letter-spacing:.06em;text-transform:uppercase;color:var(--live)}
+.badge i{width:9px;height:9px;border-radius:50%;background:var(--live);display:block}
+.badge.espera{color:var(--ink2)} .badge.espera i{background:var(--ink3)}
+.badge.fin{color:var(--ink2)} .badge.fin i{background:none;border:2px solid var(--ink3)}
+@media(prefers-reduced-motion:no-preference){.badge.on i{animation:lat 1.8s ease-in-out infinite}}
+@keyframes lat{50%{opacity:.35}}
+.vivo-t{font-family:var(--display);font-variation-settings:"wdth" 84;font-weight:700;font-size:1.35rem;line-height:1.15;margin:0}
+.vivo-s{margin:4px 0 0;color:var(--ink2);font-size:.92rem}
+.dias{display:flex;gap:4px}
+.dia{width:30px;height:38px;border:1px solid var(--line);display:flex;align-items:flex-end;justify-content:center;padding-bottom:3px;font-family:var(--display);font-weight:700;font-size:.78rem;color:var(--ink3)}
+.dia.pasado{background:var(--acc-s);color:var(--acc);border-color:var(--acc-m)}
+.dia.hoy{background:var(--acc);color:var(--on-acc);border-color:var(--acc)}
+
+/* Lentes */
+.lentes{display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:10px}
+.lente{display:flex;flex-direction:column;gap:6px;text-align:left;background:var(--bg);color:var(--ink);border:1px solid var(--line);border-radius:0;padding:14px 16px 15px;cursor:pointer;min-width:0}
+.lente b{font-variation-settings:"wdth" 84;font-size:1.05rem;font-weight:700}
+.lente span{font-family:var(--text);font-weight:400;font-size:.88rem;line-height:1.4;color:var(--ink2)}
+.lente:hover{border-color:var(--acc-m)}
+.lente[aria-pressed="true"]{background:var(--acc);border-color:var(--acc);color:var(--on-acc)}
+.lente[aria-pressed="true"] span{color:var(--on-acc)}
+.encuadre{border-left:2px solid var(--acc);padding:4px 0 4px 16px;margin:16px 0 0;max-width:62ch;color:var(--ink2);font-size:.98rem}
+.encuadre:empty{display:none}
+
+/* Propósito */
+.prop{display:grid;gap:30px;grid-template-columns:1fr;padding:26px 0 30px;border-top:1px solid var(--ink);margin:0 0 28px}
+@media(min-width:900px){.prop{grid-template-columns:minmax(0,1.25fr) minmax(0,1fr);gap:48px}}
+.eyebrow{font-family:var(--display);font-size:.78rem;font-weight:700;letter-spacing:.09em;text-transform:uppercase;color:var(--acc);margin:0 0 12px}
+.prop-lead{font-size:1.28rem;line-height:1.5;margin:0 0 14px;max-width:34em;text-wrap:pretty}
+.prop-no{margin:0;color:var(--ink2);font-size:.95rem;max-width:56ch}
+.prop-no b{color:var(--ink);font-family:var(--display)}
+.hechos{list-style:none;margin:22px 0 0;padding:0;display:grid;grid-template-columns:repeat(auto-fit,minmax(120px,1fr));gap:1px;background:var(--line);border:1px solid var(--line)}
+.hechos li{background:var(--bg);padding:12px 14px;min-width:0}
+.hechos b{display:block;font-family:var(--display);font-variation-settings:"wdth" 80;font-weight:800;font-size:1.7rem;line-height:1;color:var(--acc)}
+.hechos span{display:block;font-size:.8rem;color:var(--ink2);line-height:1.3;margin-top:5px}
+.sellos{display:grid;gap:14px;margin:0}
+.sellos dt{display:flex;align-items:center;gap:9px;font-family:var(--display);font-weight:700;font-size:.95rem}
+.sellos .glifo{width:13px;height:13px}
+.sellos dd{margin:3px 0 0 22px;color:var(--ink2);font-size:.88rem;line-height:1.45}
+.lentes-t{font-family:var(--display);font-variation-settings:"wdth" 84;font-weight:700;font-size:1.15rem;margin:34px 0 12px}
+
+/* Navegación */
+body::before{content:"";position:fixed;inset:0 0 auto;height:env(safe-area-inset-top,0px);background:var(--bg);z-index:30}
+.nav{position:sticky;top:env(safe-area-inset-top,0px);z-index:20;background:var(--bg);border-bottom:1px solid var(--line);margin-top:36px}
+.nav-in{display:flex;gap:2px;overflow-x:auto;scrollbar-width:none}
+.nav-in::-webkit-scrollbar{display:none}
+.nav a{font-family:var(--display);font-size:.84rem;font-weight:700;color:var(--ink2);text-decoration:none;padding:12px 12px;white-space:nowrap;border-bottom:2px solid transparent}
+.nav a:hover{color:var(--ink);border-bottom-color:var(--acc-m)}
+section.bloque{scroll-margin-top:48px}
+.ruta-zona{padding-top:30px}
+.cita{margin-top:10px}
+
+/* Ruta */
+.ruta-zona{padding-top:40px}
+.ruta-caja{border-top:1px solid var(--line);border-bottom:1px solid var(--line);overflow-x:auto}
+svg.ruta{display:block;width:100%;min-width:760px;height:auto}
+svg text{font-family:var(--display)}
+.ruta-pie{display:flex;flex-wrap:wrap;gap:8px 22px;padding-top:12px;font-size:.84rem;color:var(--ink2)}
+.clave{display:inline-flex;align-items:center;gap:7px}
+.clave i{width:26px;height:0;border-top:2px solid var(--acc);display:block}
+.clave i.corte{border-top-style:dashed;border-color:var(--ink3)}
+
+/* Secciones */
+.flujo{display:flex;flex-direction:column}
+section.bloque{padding-top:56px}
+.bloque h2{font-variation-settings:"wdth" 82,"opsz" 48;font-weight:700;font-size:clamp(1.5rem,4vw,2.1rem);margin:0 0 6px;letter-spacing:-.015em;text-wrap:balance}
+.bloque h3.sub-t{font-weight:700;font-size:1.05rem;margin:30px 0 12px}
+.bajada{color:var(--ink2);max-width:64ch;margin:0 0 24px;font-size:.98rem}
+.aviso{border-left:2px solid var(--ocre);padding:10px 0 10px 16px;color:var(--ink2);font-size:.95rem;max-width:66ch;margin:0 0 24px}
+
+/* Espina */
+.espina{display:grid;grid-auto-flow:column;grid-auto-columns:minmax(98px,1fr);overflow-x:auto;border:1px solid var(--line)}
+.ed{background:var(--bg);border:0;border-right:1px solid var(--line);padding:14px 10px 12px;cursor:pointer;text-align:left;display:flex;flex-direction:column;gap:9px;color:inherit;font:inherit;min-width:0}
+.ed:last-child{border-right:0}
+.ed[aria-pressed="true"]{background:var(--bg2);box-shadow:inset 0 -3px 0 var(--acc)}
+.ed-anio{font-family:var(--display);font-variation-settings:"wdth" 80;font-weight:700;font-size:1.3rem;line-height:1}
+.ed[aria-pressed="true"] .ed-anio{color:var(--acc)}
+.cubo{display:flex;gap:2px;height:26px;align-items:flex-end}
+.cubo b{flex:1;display:block;background:var(--acc-s)}
+.cubo b.on{background:var(--acc)}
+.ed-sede{font-size:.78rem;color:var(--ink2);line-height:1.3}
+.ed-pct{font-size:.74rem;color:var(--ink3);font-family:var(--display)}
+
+/* Ficha */
+.ficha{border:1px solid var(--line);border-top:0}
+.ficha-cab{padding:22px 20px;border-bottom:1px solid var(--line);display:flex;flex-wrap:wrap;gap:14px 24px;justify-content:space-between}
+.ficha-cab h3{font-variation-settings:"wdth" 82;font-weight:700;font-size:1.6rem;margin:0;line-height:1.1}
+.ficha-cab .sub{color:var(--ink2);font-size:.95rem;margin-top:5px;max-width:60ch}
+.rejilla{display:grid;grid-template-columns:1fr;gap:1px;background:var(--line)}
+@media(min-width:720px){.rejilla{grid-template-columns:repeat(3,1fr)}}
+.celda{background:var(--bg);padding:18px 20px;min-width:0}
+.celda-k{font-family:var(--display);font-size:.82rem;font-weight:700;color:var(--ink2);margin:0 0 9px}
+.celda-v{font-family:var(--display);font-variation-settings:"wdth" 80,"opsz" 48;font-weight:700;font-size:1.75rem;line-height:1.08;margin:0}
+.celda-v.vacia{color:var(--ink3);font-weight:400;font-size:1.05rem;font-family:var(--text);font-style:italic}
+.criterio{font-size:.84rem;color:var(--ink2);margin:9px 0 0;line-height:1.45}
+.ficha-bloque{border-top:1px solid var(--line);padding:18px 20px;background:var(--bg)}
+.lista-c{list-style:none;margin:0;padding:0;display:grid;gap:0}
+.lista-c li{display:grid;grid-template-columns:1fr;gap:2px;padding:12px 0;border-bottom:1px solid var(--line2)}
+.lista-c li:last-child{border-bottom:0}
+@media(min-width:720px){.lista-c li{grid-template-columns:minmax(0,1fr) 150px;gap:20px}}
+.lc-v{font-family:var(--display);font-weight:700;font-size:1.05rem;color:var(--acc)}
+.lc-d{font-size:.93rem}
+.lc-c{font-size:.84rem;color:var(--ink2);display:block}
+.mini{font-size:.82rem;color:var(--ink2)}
+.sub-datos{display:grid;gap:14px 24px;grid-template-columns:repeat(auto-fit,minmax(150px,1fr))}
+.nota-ed{font-size:.93rem;color:var(--ink2);max-width:72ch;margin:0}
+.fuentes-l{margin:0;padding-left:18px;display:grid;gap:6px;font-size:.9rem}
+.fuentes-l small{color:var(--ink3)}
+
+/* Sellos */
+.sello{display:inline-flex;align-items:center;gap:6px;font-family:var(--display);font-size:.74rem;color:var(--ink2);margin-bottom:9px}
+.glifo{width:11px;height:11px;flex:none;border:1px solid var(--ink2);display:inline-block}
+.glifo.verificado{background:var(--ink2)}
+.glifo.parcial{background:linear-gradient(135deg,var(--ink2) 0 50%,transparent 50%)}
+.glifo.en_conflicto{background:repeating-linear-gradient(45deg,var(--ocre) 0 3px,transparent 3px 6px);border-color:var(--ocre)}
+.glifo.no_verificado{background:none;border-style:dotted;border-color:var(--ink3)}
+.leyenda{display:flex;flex-wrap:wrap;gap:6px 18px;margin:0 0 18px}
+.leyenda .sello{margin:0}
+
+/* Ganadores */
+.filtros{display:flex;gap:10px;flex-wrap:wrap;margin:0 0 18px;align-items:center}
+.chip{font-size:.85rem;font-weight:700;background:none;color:var(--ink2);border:1px solid var(--line);padding:7px 13px;cursor:pointer;border-radius:0}
+.chip[aria-pressed="true"]{background:var(--acc-s);color:var(--acc);border-color:var(--acc-m)}
+.filtros input{flex:1;min-width:200px;font-family:var(--text);font-size:1rem;padding:10px 14px;border:1px solid var(--line);background:var(--bg);color:var(--ink);border-radius:0}
+.tabla-w{overflow-x:auto}
+table.g{width:100%;border-collapse:collapse;font-size:.95rem;min-width:520px}
+table.g th{font-family:var(--display);font-size:.8rem;font-weight:700;text-align:left;color:var(--ink2);padding:9px 12px 9px 0;border-bottom:1px solid var(--ink)}
+table.g td{padding:12px 12px 12px 0;border-bottom:1px solid var(--line2);vertical-align:top}
+table.g td.anio{font-family:var(--display);font-weight:700;color:var(--acc);white-space:nowrap}
+table.g td.pts{font-family:var(--display);font-weight:700;white-space:nowrap}
+.det{color:var(--ink2);font-size:.88rem;display:block}
+.pto{font-family:var(--display);font-weight:700;font-size:.8rem;color:var(--ink2);white-space:nowrap}
+.escala svg{display:block;width:100%;height:auto;max-width:760px}
+
+/* Cifras */
+.par{display:grid;gap:34px;grid-template-columns:1fr}
+@media(min-width:900px){.par{grid-template-columns:1fr 1fr;gap:44px}}
+.barra-f{display:grid;grid-template-columns:48px minmax(0,1fr);gap:4px 14px;padding:11px 0;border-bottom:1px solid var(--line2);align-items:center}
+.barra-f .y{font-family:var(--display);font-weight:700;color:var(--ink)}
+.barra-f .v{font-family:var(--display);font-variation-settings:"wdth" 80;font-weight:800;font-size:1.15rem;color:var(--acc);display:flex;flex-wrap:wrap;gap:4px 10px;align-items:baseline}
+.pista{height:9px;background:var(--acc-s);margin-top:6px}
+.pista i{display:block;height:100%;background:var(--acc)}
+.pista.parcial i{background:repeating-linear-gradient(135deg,var(--ocre) 0 4px,transparent 4px 8px);border:1px solid var(--ocre)}
+.barra-f .n{grid-column:2;font-size:.82rem;color:var(--ink2);margin:0}
+.etq{font-family:var(--display);font-size:.72rem;font-weight:700;letter-spacing:.04em;text-transform:uppercase;color:var(--ocre)}
+
+/* Conflictos */
+.conf{border:1px solid var(--line);margin:0 0 14px;padding:16px 18px}
+.conf h4{font-family:var(--display);font-size:1rem;margin:0 0 3px}
+.conf .quien{color:var(--ink2);font-size:.85rem;margin:0 0 12px}
+.vals{display:grid;gap:8px;grid-template-columns:1fr}
+@media(min-width:720px){.vals{grid-template-columns:repeat(2,1fr)}}
+.val{border-left:2px solid var(--ocre);padding:2px 0 2px 12px;font-size:.92rem}
+.val b{font-family:var(--display);display:block}
+.val span{color:var(--ink2);font-size:.82rem}
+.conf p.nota{margin:12px 0 0;font-size:.88rem;color:var(--ink2);max-width:72ch}
+
+/* Glosario, sector */
+dl.glos{margin:0;display:grid;gap:18px;max-width:72ch}
+dl.glos dt{font-family:var(--display);font-weight:700;font-size:1rem;margin-bottom:3px}
+dl.glos dd{margin:0;color:var(--ink2);font-size:.96rem}
+.zonas{display:grid;gap:14px;margin:0 0 10px;max-width:74ch}
+.zona{display:grid;grid-template-columns:64px minmax(0,1fr);gap:14px;align-items:baseline}
+.zona b{font-family:var(--display);font-variation-settings:"wdth" 80;font-weight:800;font-size:1.45rem;color:var(--acc)}
+.zona-pista{height:7px;background:var(--acc-s);margin:7px 0 5px}
+.zona-pista i{display:block;height:100%;background:var(--acc-m)}
+.zona span{font-size:.92rem;color:var(--ink2)}
+.sector{display:grid;gap:1px;background:var(--line);border:1px solid var(--line)}
+@media(min-width:760px){.sector{grid-template-columns:repeat(2,1fr)}}
+.sec{background:var(--bg);padding:17px 19px;min-width:0}
+.sec-k{font-family:var(--display);font-size:.82rem;font-weight:700;color:var(--ink2);margin:0 0 8px}
+.sec-v{margin:0;font-size:1.02rem}
+.sec-v.multi{display:grid;gap:5px}
+.sec-v.multi span{padding-left:14px;border-left:2px solid var(--ocre)}
+.sec-nota{font-size:.85rem;color:var(--ink2);margin:9px 0 0}
+.vars{border-top:1px solid var(--ink)}
+.var{display:grid;grid-template-columns:1fr;gap:4px;padding:16px 0;border-bottom:1px solid var(--line2)}
+@media(min-width:760px){.var{grid-template-columns:150px 150px minmax(0,1fr);gap:22px;align-items:start}}
+.var-n{font-family:var(--display);font-variation-settings:"wdth" 82;font-weight:700;font-size:1.2rem}
+.var-pct{font-family:var(--display);font-weight:700;font-size:.9rem;color:var(--acc)}
+.var-pct.sin{color:var(--ink3);font-weight:400;font-style:italic;font-family:var(--text)}
+.var-barra{height:8px;background:var(--acc-s);margin-top:5px}
+.var-barra i{display:block;height:100%;background:var(--acc)}
+.var-d{color:var(--ink2);font-size:.95rem}
+
+/* Método */
+.matriz-w{overflow-x:auto;margin:0 0 26px}
+table.mx{border-collapse:collapse;font-size:.82rem;min-width:620px;width:100%}
+table.mx th{font-family:var(--display);font-weight:700;color:var(--ink2);padding:6px 4px;text-align:center}
+table.mx th:first-child,table.mx td:first-child{text-align:left;padding-right:12px;white-space:nowrap}
+table.mx td{padding:7px 4px;text-align:center;border-top:1px solid var(--line2)}
+table.mx td .glifo{width:14px;height:14px}
+.huecos{list-style:none;margin:0 0 26px;padding:0;display:grid;gap:9px;max-width:74ch}
+.huecos li{border:1px dashed var(--line);padding:12px 15px;color:var(--ink2);font-size:.93rem}
+.huecos li b{color:var(--ink);font-family:var(--display)}
+.btns{display:flex;flex-wrap:wrap;gap:10px}
+.btn{font-weight:700;font-size:.92rem;background:var(--acc);color:var(--on-acc);border:0;border-radius:0;padding:12px 20px;cursor:pointer}
+.btn.sec2{background:none;color:var(--acc);border:1px solid var(--acc)}
+.metodo p{max-width:70ch;color:var(--ink2);font-size:.96rem}
+.descarga-estado{margin:12px 0 0;font-size:.88rem;color:var(--ink2);min-height:1.4em}
+
+/* Lecturas */
+.lecturas{display:grid;gap:1px;background:var(--line);border:1px solid var(--line);grid-template-columns:1fr}
+@media(min-width:900px){.lecturas{grid-template-columns:1fr 1fr}}
+.lec{background:var(--bg);padding:22px 22px 20px;display:flex;flex-direction:column;gap:12px;min-width:0}
+.lec h3{font-variation-settings:"wdth" 84;font-weight:700;font-size:1.2rem;line-height:1.15;margin:0;text-wrap:balance}
+.lec .dice{margin:0;font-size:.98rem}
+.lec .limite{margin:0;font-size:.84rem;color:var(--ink2);border-top:1px dashed var(--line);padding-top:10px}
+.lec .mini{margin:0}
+.para{display:flex;flex-wrap:wrap;gap:6px;align-items:center}
+.para span{font-family:var(--display);font-size:.72rem;font-weight:700;letter-spacing:.04em;text-transform:uppercase;color:var(--ink2);border:1px solid var(--line);padding:2px 8px}
+.para span.tu{background:var(--acc);border-color:var(--acc);color:var(--on-acc)}
+.hb{display:grid;grid-template-columns:minmax(78px,96px) minmax(0,1fr) auto;gap:8px 10px;align-items:center;font-size:.88rem}
+.hb .nm{font-family:var(--display);font-weight:700}
+.hb .nm.cu{color:var(--acc)}
+.hb .tr{height:12px;background:var(--acc-s);position:relative}
+.hb .tr i{position:absolute;left:0;top:0;bottom:0;background:var(--acc-m)}
+.hb .tr b{position:absolute;left:0;top:0;bottom:0;background:var(--acc)}
+.hb .nv{font-family:var(--display);font-weight:700;font-size:.8rem;white-space:nowrap}
+.kn{display:inline-block;width:10px;height:10px;margin-right:6px;vertical-align:-1px}
+.prima{display:grid;grid-template-columns:44px minmax(0,1fr) 52px;gap:8px 10px;align-items:center;font-size:.84rem}
+.prima .y{font-family:var(--display);font-weight:700}
+.prima .bb{display:grid;gap:3px}
+.prima .bb i{display:block;height:8px;background:var(--acc)}
+.prima .bb u{display:block;height:8px;background:var(--acc-m);text-decoration:none}
+.prima .x{font-family:var(--display);font-weight:800;color:var(--acc);text-align:right}
+.waf{display:grid;grid-template-columns:44px 1fr;gap:6px 10px;align-items:center}
+.waf .y{font-family:var(--display);font-weight:700;font-size:.88rem}
+.waf .c{display:flex;gap:3px;flex-wrap:wrap}
+.waf .c b{width:20px;height:20px;border:1px solid var(--acc-m);display:block;flex:none}
+.waf .c b.g{background:var(--acc);border-color:var(--acc)}
+.comp{width:100%;border-collapse:collapse;font-size:.88rem}
+.comp td{padding:6px 8px 6px 0;border-bottom:1px solid var(--line2);vertical-align:top}
+.comp td:last-child{text-align:right;white-space:nowrap;font-family:var(--display);font-weight:700}
+.anios{display:flex;flex-wrap:wrap;gap:3px;margin-top:3px}
+.anios span{font-family:var(--display);font-size:.7rem;font-weight:700;border:1px solid var(--acc-m);color:var(--acc);padding:0 5px}
+footer{margin-top:64px;border-top:1px solid var(--line);padding-block:26px 70px;color:var(--ink3);font-size:.85rem}
+footer p{margin:0 0 6px;max-width:72ch}
+</style>
+
+<header class="cab env">
+  <h1>Archivo<br>FICAFE</h1>
+  <p class="entrada">Registro histórico de la Feria Internacional de Cafés Especiales del Perú, de 2016 a 2026. Cada cifra lleva su fuente enlazada. Lo que no pudo verificarse se muestra vacío, nunca estimado.</p>
+
+  <section class="prop" aria-labelledby="prop-t">
+    <div>
+      <h2 class="eyebrow" id="prop-t">Para qué sirve este tablero</h2>
+      <p class="prop-lead">Reúne, con su fuente, lo que se sabe de las diez ediciones de FICAFE. Sirve para decidir con evidencia a quién le conviene la feria, qué cifra se puede citar y qué todavía nadie ha medido.</p>
+      <p class="prop-no"><b>Lo que no hace:</b> no mide el retorno de la feria ni compara los montos entre años. Cada medio reporta un criterio distinto, y las previsiones se muestran como previsiones.</p>
+      <ul class="hechos" id="hechos"></ul>
+    </div>
+    <div>
+      <h2 class="eyebrow">Cómo leer las cifras</h2>
+      <dl class="sellos" id="sellos"></dl>
+    </div>
+  </section>
+
+  <div class="vivo" id="vivo" aria-live="polite"></div>
+
+  <h2 class="lentes-t">¿Qué quieres saber? Elige tu punto de vista</h2>
+  <div class="lentes" role="group" aria-label="Elige tu punto de vista">
+    <button class="lente" data-l="productor" aria-pressed="false"><b>Soy productor</b><span>¿Me conviene llevar mi café? ¿Qué puntaje y qué precio se han alcanzado?</span></button>
+    <button class="lente" data-l="comprador" aria-pressed="false"><b>Soy comprador</b><span>¿De qué regiones y variedades salen los mejores lotes y quién los compra?</span></button>
+    <button class="lente" data-l="prensa" aria-pressed="false"><b>Soy prensa</b><span>¿Qué cifra puedo citar y con qué advertencia?</span></button>
+    <button class="lente" data-l="investigacion" aria-pressed="false"><b>Investigo el sector</b><span>¿Qué se sabe, qué falta y dónde se contradicen las fuentes?</span></button>
+  </div>
+  <p class="encuadre" id="encuadre"></p>
+</header>
+
+<div class="env"><nav class="nav" aria-label="Secciones"><div class="nav-in" id="nav"></div></nav></div>
+
+<section class="ruta-zona env">
+  <div class="ruta-caja"><svg class="ruta" id="ruta" viewBox="0 0 1000 330" role="img" aria-label="Ruta de las diez sedes de FICAFE, ordenadas de norte a sur"></svg></div>
+  <div class="ruta-pie">
+    <span class="clave"><i></i> edición realizada</span>
+    <span class="clave"><i class="corte"></i> 2020: sin edición</span>
+    <span>El eje vertical sitúa cada sede de norte a sur según su latitud.</span>
+  </div>
+</section>
+
+<div class="flujo env" id="flujo">
+
+  <section class="bloque" id="b-lecturas" style="order:0">
+    <h2>Lecturas del archivo</h2>
+    <p class="bajada">Indicadores calculados con los datos de esta página, cada uno con su límite. Orientan una decisión, no la reemplazan. Al elegir tu punto de vista arriba, se marcan las que te sirven.</p>
+    <div class="lecturas" id="lecturas"></div>
+  </section>
+
+  <section class="bloque" id="b-ediciones">
+    <h2>Ediciones</h2>
+    <p class="bajada">Cada columna es una edición. Los ocho bloques indican cuántos campos tienen algún dato, completo o parcial. Elige una para abrir su ficha.</p>
+    <div class="leyenda" id="leyenda"></div>
+    <div class="espina" id="espina" role="group" aria-label="Ediciones"></div>
+    <article class="ficha" id="ficha" aria-live="polite"></article>
+  </section>
+
+  <section class="bloque" id="b-ganadores">
+    <h2>Ganadores</h2>
+    <p class="bajada">Caficultores, baristas y catadores premiados. Filtra por categoría o busca por nombre, región o año.</p>
+    <h3 class="sub-t" style="margin-top:0">Lote ganador de la Taza de Excelencia, año por año</h3>
+    <div class="escala" id="escala"></div>
+    <div class="filtros" id="chips" role="group" aria-label="Categoría"></div>
+    <div class="filtros"><input id="q" type="search" placeholder="Buscar nombre, región o año" aria-label="Buscar ganadores"></div>
+    <div class="tabla-w">
+      <table class="g">
+        <thead><tr><th>Año</th><th>Categoría</th><th>Puesto</th><th>Persona</th><th>Puntaje</th></tr></thead>
+        <tbody id="tg"></tbody>
+      </table>
+    </div>
+    <p class="mini" id="gcuenta" style="margin-top:12px"></p>
+  </section>
+
+  <section class="bloque" id="b-montos">
+    <h2>Cifras reportadas</h2>
+    <p class="aviso">Los medios reportan criterios distintos: balances declarados por autoridades, expectativas previas, ruedas de negocios, intenciones de compra. Las barras rayadas son previsiones o datos parciales. Lee la nota de cada fila antes de citar o comparar.</p>
+    <div class="par">
+      <div><h3 class="sub-t" style="margin-top:0">Visitantes</h3><div id="visitantes"></div></div>
+      <div><h3 class="sub-t" style="margin-top:0">Monto de negocios, en soles</h3><div id="montos"></div></div>
+    </div>
+  </section>
+
+  <section class="bloque" id="b-conflictos">
+    <h2>Donde las fuentes no coinciden</h2>
+    <p class="bajada">Cuando dos fuentes dan valores distintos se muestran ambas. El archivo elige una por criterio explícito y deja el campo marcado.</p>
+    <div id="conflictos"></div>
+  </section>
+
+  <section class="bloque" id="b-glosario">
+    <h2>Qué se compite</h2>
+    <p class="bajada">Las competencias que organiza la feria y qué significa cada una.</p>
+    <dl class="glos">
+      <div><dt>Taza de Excelencia</dt><dd>Concurso de calidad del grano. Un jurado cata a ciegas y asigna un puntaje sobre 100. Sobre 80 puntos el café es especial; sobre 90, excepcional. Los lotes ganadores van a subasta internacional.</dd></div>
+      <div><dt>Campeonato Nacional de Barismo</dt><dd>Compite la preparación, no el grano. El ganador representa al Perú en el campeonato mundial de World Coffee Events.</dd></div>
+      <div><dt>Campeonato Nacional de Catación</dt><dd>Compite la capacidad de identificar atributos del café a ciegas, con aciertos y tiempo como criterio.</dd></div>
+      <div><dt>Rueda de negocios</dt><dd>Reuniones agendadas entre organizaciones de productores y compradores. De ahí salen la mayoría de los montos que se reportan al cerrar cada feria, y por eso son compromisos o intenciones más que ventas cerradas.</dd></div>
+    </dl>
+  </section>
+
+  <section class="bloque" id="b-origen">
+    <h2>El café que llega a la feria</h2>
+    <p class="bajada">Contexto del sector, no de FICAFE. Estas cifras aún no pasaron por la verificación del archivo y varias se contradicen entre fuentes oficiales.</p>
+    <h3 class="sub-t" style="margin-top:0">Dónde se produce</h3>
+    <div class="zonas" id="zonas"></div>
+    <h3 class="sub-t">Cifras del sector</h3>
+    <div class="sector" id="sector"></div>
+    <h3 class="sub-t">Variedades</h3>
+    <p class="bajada">Todo el café peruano es Coffea arabica. Se reportan más de cien variedades, pero dos concentran la mayor parte de la superficie.</p>
+    <div class="vars" id="vars"></div>
+  </section>
+
+  <section class="bloque metodo" id="b-metodo">
+    <h2>Método y vacíos</h2>
+    <p class="bajada">Qué sabemos, cómo lo sabemos y qué sigue faltando.</p>
+    <h3 class="sub-t" style="margin-top:0">Cobertura por edición</h3>
+    <div class="matriz-w"><table class="mx" id="matriz"></table></div>
+    <h3 class="sub-t">Pendientes principales</h3>
+    <ul class="huecos" id="huecos"></ul>
+    <p>Regla única del archivo: ningún número aparece sin fuente pública enlazada. Cuando no hay fuente, el campo queda vacío. Los datos están bajo licencia CC BY 4.0.</p>
+    <div class="btns">
+      <button class="btn" id="dCsv">Descargar CSV</button>
+      <button class="btn sec2" id="dJson">Descargar JSON completo</button>
+    </div>
+    <p class="descarga-estado" id="descargaEstado" role="status"></p>
+  </section>
+</div>
+
+<footer>
+  <div class="env">
+    <p id="pie"></p>
+    <p>Datos tomados de notas de prensa públicas y de los resultados oficiales de Alliance for Coffee Excellence, sujetos a corrección.</p>
+    <p class="cita" id="cita"></p>
+  </div>
+</footer>
+
+<script>
+const DATA = __DATA__;
+const LOTES = __LOTES__;
+const ED = DATA.ediciones.slice().sort((a,b)=>a.anio-b.anio);
+const ETIQ={verificado:"Verificado",parcial:"Parcial o previsión",en_conflicto:"Fuentes en conflicto",no_verificado:"Sin dato"};
+const ROM=["","I","II","III","IV","V","VI","VII","VIII","IX","X"];
+const MESES=["enero","febrero","marzo","abril","mayo","junio","julio","agosto","septiembre","octubre","noviembre","diciembre"];
+const esc=s=>String(s??"").replace(/[&<>"]/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]));
+const $=id=>document.getElementById(id);
+const nf=v=>v.toLocaleString("es-PE");
+const sello=s=>`<span class="sello"><span class="glifo ${s}" aria-hidden="true"></span>${ETIQ[s]||s}</span>`;
+function dinero(v,m){
+  const big=v>=1e6, n=big?(v/1e6).toLocaleString("es-PE",{maximumFractionDigits:1})+" M":nf(v);
+  return m==="USD"?"US$ "+n:m==="PEN"?"S/ "+n:n;}
+function fecha(iso){const [y,m,d]=iso.split("-").map(Number);return `${d} de ${MESES[m-1]}`;}
+function rango(e){
+  if(!e.fecha_inicio)return null;
+  const [y,m1,d1]=e.fecha_inicio.split("-").map(Number),[,m2,d2]=e.fecha_fin.split("-").map(Number);
+  return m1===m2?`${d1} al ${d2} de ${MESES[m1-1]} de ${y}`:`${d1} de ${MESES[m1-1]} al ${d2} de ${MESES[m2-1]} de ${y}`;}
+const conflictoEn=(e,txt)=>(e.conflictos||[]).some(c=>c.campo.toLowerCase().includes(txt));
+
+/* Estado de cada campo, para la espina y la matriz */
+const CAMPOS=[
+ ["Sede",e=>e.sede.ciudad?"verificado":"no_verificado"],
+ ["Recinto",e=>e.sede.recinto?(conflictoEn(e,"recinto")?"en_conflicto":"verificado"):"no_verificado"],
+ ["Fechas",e=>e.fecha_inicio?(conflictoEn(e,"fecha")?"en_conflicto":"verificado"):"no_verificado"],
+ ["Visitantes",e=>e.metricas.visitantes.estado],
+ ["Expositores",e=>e.metricas.expositores.estado],
+ ["Monto",e=>e.metricas.monto_negocios_pen.estado],
+ ["Ganadores",e=>{const n=["taza_excelencia","barismo","catacion"].filter(k=>e.ganadores[k].length).length;return n===3?"verificado":n?"parcial":"no_verificado";}],
+ ["Subasta",e=>e.subasta.estado]
+];
+const cubre=e=>CAMPOS.filter(([,f])=>f(e)!=="no_verificado").length;
+
+/* ---------- Estado en vivo ---------- */
+(function vivo(){
+  const e=ED[ED.length-1];
+  const hoy=new Date(); const iso=hoy.getFullYear()+"-"+String(hoy.getMonth()+1).padStart(2,"0")+"-"+String(hoy.getDate()).padStart(2,"0");
+  const t=s=>new Date(s+"T00:00:00").getTime();
+  const total=Math.round((t(e.fecha_fin)-t(e.fecha_inicio))/864e5)+1;
+  let cls,badge,tit,sub,dias="";
+  const conflicto=conflictoEn(e,"fecha")?" Otra fuente (PROMPERÚ) da del 1 al 4 de noviembre.":"";
+  if(iso<e.fecha_inicio){
+    const f=Math.ceil((t(e.fecha_inicio)-t(iso))/864e5);
+    cls="espera";badge="Próxima";tit=`${e.nombre_oficial}: faltan ${f} ${f===1?"día":"días"}`;
+    sub=`${e.sede.ciudad}, ${rango(e)}.${conflicto}`;
+  }else if(iso<=e.fecha_fin){
+    const n=Math.round((t(iso)-t(e.fecha_inicio))/864e5)+1;
+    cls="on";badge="En curso";tit=`${e.nombre_oficial}: día ${n} de ${total}`;
+    sub=`${rango(e)}. Las cifras finales aún no se publican, por eso la ficha de ${e.anio} sigue vacía.${conflicto}`;
+    for(let i=1;i<=total;i++)dias+=`<span class="dia ${i<n?"pasado":i===n?"hoy":""}" title="Día ${i}">${i}</span>`;
+  }else{
+    cls="fin";badge="Finalizada";tit=`${e.nombre_oficial} ya se realizó`;
+    sub=`${rango(e)}. Faltan los balances oficiales.`;
+  }
+  $("vivo").innerHTML=`<span class="badge ${cls}"><i></i>${badge}</span>
+    <div><p class="vivo-t">${esc(tit)}</p><p class="vivo-s">${esc(sub)}</p></div>
+    ${dias?`<div class="dias" aria-label="Días de la feria">${dias}</div>`:""}`;
+})();
+
+/* ---------- Ruta ---------- */
+(function ruta(){
+  const LAT={"Satipo":11.25,"Villa Rica":10.73,"Chanchamayo":11.05,"Jaén":5.7,"Quillabamba":12.86,"Ayacucho":13.16,"Puno":15.84,"Tingo María":9.3,"Chachapoyas":6.23,"Cusco":13.52};
+  const lo=5,hi=16, y0=70,y1=236;
+  const yy=c=>y0+(LAT[c]-lo)/(hi-lo)*(y1-y0);
+  const slots=[]; ED.forEach((e,i)=>{ if(i&&e.anio-ED[i-1].anio>1) slots.push({gap:e.anio-1}); slots.push({e}); });
+  const m=70,paso=(1000-2*m)/(slots.length-1);
+  slots.forEach((s,i)=>{s.x=m+i*paso; if(s.e) s.y=yy(s.e.sede.ciudad);});
+  let g="";
+  for(let i=0;i<4;i++){const y=50+i*58;g+=`<path d="M0 ${y} C 180 ${y-14}, 330 ${y+16}, 520 ${y-4} S 860 ${y+14}, 1000 ${y-8}" fill="none" stroke="var(--line2)"/>`;}
+  g+=`<text x="8" y="64" font-size="12" font-weight="700" fill="var(--ink3)">norte</text><text x="8" y="252" font-size="12" font-weight="700" fill="var(--ink3)">sur</text>`;
+  const real=slots.filter(s=>s.e);
+  for(let i=0;i<slots.length-1;i++){
+    const a=slots[i],b=slots[i+1];
+    if(a.gap||b.gap){
+      const p=a.gap?slots[i-1]:a, q=a.gap?b:slots[i+2];
+      const gx=(a.gap?a:b).x; if(a.gap){g+=`<line x1="${p.x}" y1="${p.y}" x2="${q.x}" y2="${q.y}" stroke="var(--ink3)" stroke-width="2" stroke-dasharray="5 6"/>`;}
+    } else g+=`<line x1="${a.x}" y1="${a.y}" x2="${b.x}" y2="${b.y}" stroke="var(--acc)" stroke-width="2"/>`;
+  }
+  slots.forEach(s=>{
+    if(s.gap){g+=`<text x="${s.x}" y="296" text-anchor="middle" font-size="16" font-weight="700" fill="var(--ink3)">${s.gap}</text><text x="${s.x}" y="313" text-anchor="middle" font-size="11" fill="var(--ink3)">sin edición</text>`;return;}
+    const e=s.e;
+    g+=`<circle cx="${s.x}" cy="${s.y}" r="6" fill="var(--acc)"/>
+      <text x="${s.x}" y="${s.y-14}" text-anchor="middle" font-size="17" font-weight="700" fill="var(--ink)">${e.anio}</text>
+      <text x="${s.x}" y="${s.y+24}" text-anchor="middle" font-size="12.5" fill="var(--ink2)">${esc(e.sede.ciudad)}</text>
+      <text x="${s.x}" y="${s.y+39}" text-anchor="middle" font-size="11" fill="var(--ink3)">${esc(e.sede.region)}</text>`;
+  });
+  $("ruta").innerHTML=g;
+})();
+
+/* ---------- Espina y ficha ---------- */
+let activa=ED.length-1;
+$("leyenda").innerHTML=["verificado","parcial","en_conflicto","no_verificado"].map(sello).join("");
+function pintarEspina(){
+  $("espina").innerHTML=ED.map((e,i)=>{
+    const n=cubre(e);let c="";
+    for(let k=0;k<CAMPOS.length;k++)c+=`<b class="${k<n?"on":""}" style="height:${30+k*9}%"></b>`;
+    return `<button class="ed" data-i="${i}" aria-pressed="${i===activa}" aria-label="Edición ${e.anio}, ${n} de ${CAMPOS.length} campos con dato">
+      <span class="ed-anio">${e.anio}</span><span class="cubo" aria-hidden="true">${c}</span>
+      <span class="ed-pct">${n} de ${CAMPOS.length}</span><span class="ed-sede">${esc(e.sede.ciudad)}</span></button>`;}).join("");
+}
+function celda(k,d,f){const hay=d.valor!==null;
+  return `<div class="celda"><p class="celda-k">${k}</p>${sello(d.estado)}
+    <p class="celda-v ${hay?"":"vacia"}">${hay?f(d.valor):"sin dato"}</p>${d.criterio?`<p class="criterio">${esc(d.criterio)}</p>`:""}</div>`;}
+function pintarFicha(){
+  const e=ED[activa],m=e.metricas;
+  const lugar=`${e.sede.ciudad}, ${e.sede.region}${e.sede.recinto?". "+e.sede.recinto:""}`;
+  const gan=["taza_excelencia","barismo","catacion"].map(k=>[{taza_excelencia:"Taza de Excelencia",barismo:"Barismo",catacion:"Catación"}[k],e.ganadores[k]]);
+  const hayG=gan.some(([,l])=>l.length);
+  const oc=e.otras_cifras.length?`<div class="ficha-bloque"><p class="celda-k">Otras cifras</p><ul class="lista-c">${e.otras_cifras.map(c=>`
+    <li><div><span class="lc-d">${esc(c.descripcion)}</span><span class="lc-c">${esc(c.criterio)}</span></div>
+    <div><span class="lc-v">${dinero(c.valor,c.moneda)}</span><br>${sello(c.estado)} ${c.fuente_url?`<a class="mini" href="${esc(c.fuente_url)}" target="_blank" rel="noopener">fuente</a>`:""}</div></li>`).join("")}</ul></div>`:"";
+  const gh=hayG?`<div class="ficha-bloque"><p class="celda-k">Ganadores</p><ul class="lista-c">${gan.filter(([,l])=>l.length).map(([n,l])=>`
+    <li><div><span class="lc-d"><b>${n}</b></span>${l.map(g=>`<span class="lc-c">${g.puesto}.º ${esc(g.nombre)}${g.region?", "+esc(g.region):""}${g.puntaje?" · "+g.puntaje+" pts":""}</span>`).join("")}</div><div></div></li>`).join("")}</ul></div>`:"";
+  const S=e.subasta, usd=(v,dec=2)=>"US$ "+v.toLocaleString("es-PE",{minimumFractionDigits:dec,maximumFractionDigits:dec});
+  const dato=(k,v)=>`<div><span class="mini">${k}</span><br><span class="lc-v">${v}</span></div>`;
+  const su=(S.precio_usd_lb||S.lote_top_puntaje)?`<div class="ficha-bloque"><p class="celda-k">Subasta internacional de la Taza de Excelencia</p>${sello(S.estado)}
+    <div class="sub-datos">${S.precio_usd_lb?dato("Lote ganador, por libra",usd(S.precio_usd_lb)):""}${S.lote_top_puntaje?dato("Puntaje del lote ganador",S.lote_top_puntaje.toLocaleString("es-PE",{minimumFractionDigits:2})):""}${S.total_usd?dato("Total de la subasta",usd(S.total_usd,0)):""}${S.promedio_usd_lb?dato("Promedio por libra",usd(S.promedio_usd_lb)):""}${S.lotes?dato("Puestos premiados",S.lotes):""}${S.fecha?dato("Fecha",fecha(S.fecha)+" de "+S.fecha.slice(0,4)):""}</div>
+    ${S.nota?`<p class="nota-ed" style="margin-top:12px">${esc(S.nota)}</p>`:""}</div>`:"";
+  $("ficha").innerHTML=`
+    <div class="ficha-cab">
+      <div><h3>${e.anio} · edición ${ROM[e.edicion]}</h3><div class="sub">${esc(lugar)}</div></div>
+      <div>${sello(CAMPOS[2][1](e))}<div class="sub">${rango(e)||"Fechas sin documentar"}</div></div>
+    </div>
+    <div class="rejilla">${celda("Visitantes",m.visitantes,nf)}${celda("Expositores u organizaciones",m.expositores,nf)}${celda("Monto reportado",m.monto_negocios_pen,v=>dinero(v,"PEN"))}</div>
+    ${oc}${gh}${su}
+    ${e.notas?`<div class="ficha-bloque"><p class="celda-k">Notas</p><p class="nota-ed">${esc(e.notas)}</p></div>`:""}
+    <div class="ficha-bloque"><p class="celda-k">Fuentes</p>
+      <ul class="fuentes-l">${e.fuentes.map(f=>`<li><a href="${esc(f.url)}" target="_blank" rel="noopener">${esc(f.medio)}</a> <small>${f.fecha_publicacion?fecha(f.fecha_publicacion)+" de "+f.fecha_publicacion.slice(0,4):"sin fecha de publicación"}</small></li>`).join("")}</ul></div>`;
+}
+$("espina").addEventListener("click",ev=>{const b=ev.target.closest(".ed");if(!b)return;activa=+b.dataset.i;pintarEspina();pintarFicha();});
+
+/* ---------- Ganadores ---------- */
+const CATS={taza_excelencia:"Taza de Excelencia",barismo:"Barismo",catacion:"Catación"};
+const TODOS=ED.flatMap(e=>Object.keys(CATS).flatMap(k=>e.ganadores[k].map(g=>({...g,cat:CATS[k],k,anio:e.anio})))).sort((a,b)=>b.anio-a.anio||a.k.localeCompare(b.k)||a.puesto-b.puesto);
+let catSel="todas";
+function pintarChips(){
+  const opts=[["todas","Todas"],...Object.entries(CATS)];
+  $("chips").innerHTML=opts.map(([k,n])=>`<button class="chip" data-k="${k}" aria-pressed="${k===catSel}">${n}</button>`).join("");
+}
+function pintarG(){
+  const f=$("q").value.trim().toLowerCase();
+  const r=TODOS.filter(g=>(catSel==="todas"||g.k===catSel)&&(!f||[g.anio,g.cat,g.nombre,g.region,g.detalle].join(" ").toLowerCase().includes(f)));
+  $("tg").innerHTML=r.length?r.map(g=>`<tr><td class="anio">${g.anio}</td><td>${g.cat}</td><td>${g.puesto}.º</td>
+    <td>${esc(g.nombre)}${g.region?` <span class="mini">· ${esc(g.region)}</span>`:""}${g.detalle?`<span class="det">${esc(g.detalle)}</span>`:""}</td>
+    <td class="pts">${g.puntaje?g.puntaje.toFixed(2)+" pts":"—"}</td></tr>`).join("")
+    :`<tr><td colspan="5" style="color:var(--ink3);font-style:italic;padding:18px 0">Sin resultados para ese filtro.</td></tr>`;
+  $("gcuenta").textContent=`${r.length} de ${TODOS.length} ganadores documentados. Sin ganadores en ${ED.filter(e=>!e.ganadores.taza_excelencia.length&&!e.ganadores.barismo.length&&!e.ganadores.catacion.length).map(e=>e.anio).join(", ")}; barismo y catación solo en 2022 a 2024.`;
+}
+$("chips").addEventListener("click",ev=>{const b=ev.target.closest(".chip");if(!b)return;catSel=b.dataset.k;pintarChips();pintarG();});
+$("q").addEventListener("input",pintarG);
+
+/* Lote ganador de la Taza, una fila por año */
+(function escala(){
+  const f=ED.map(e=>({y:e.anio,w:e.ganadores.taza_excelencia.find(x=>x.puesto===1),s:e.subasta})).filter(r=>r.w&&r.w.puntaje);
+  const min=90,max=92.5,W=760,L=64,R=210,rh=30,top=34,H=top+f.length*rh+34,x=p=>L+(p-min)/(max-min)*(W-L-R);
+  let s=`<svg viewBox="0 0 ${W} ${H}" role="img" aria-label="Puntaje del primer lugar de la Taza de Excelencia por año: ${f.map(r=>r.y+", "+r.w.puntaje).join("; ")}">`;
+  for(let v=90;v<=92.501;v+=.5){s+=`<line x1="${x(v)}" y1="${top-8}" x2="${x(v)}" y2="${H-26}" stroke="var(--line2)"/><text x="${x(v)}" y="${H-8}" text-anchor="middle" font-size="12" fill="var(--ink2)">${v.toFixed(1)}</text>`;}
+  s+=`<text x="${x(90)}" y="14" font-size="11.5" font-weight="700" fill="var(--acc)">90 puntos: café excepcional</text>`;
+  s+=`<text x="${W-R+22}" y="14" font-size="11.5" font-weight="700" fill="var(--ink2)">Precio del lote ganador</text>`;
+  f.forEach((r,i)=>{const cy=top+i*rh+rh/2;
+    s+=`<text x="0" y="${cy+4}" font-size="14" font-weight="700" fill="var(--ink)">${r.y}</text>
+      <line x1="${L}" y1="${cy}" x2="${x(r.w.puntaje)}" y2="${cy}" stroke="var(--acc-s)" stroke-width="2"/>
+      <circle cx="${x(r.w.puntaje)}" cy="${cy}" r="6" fill="var(--acc)" stroke="var(--bg)" stroke-width="2"/>
+      <text x="${x(r.w.puntaje)+12}" y="${cy+4}" font-size="12.5" font-weight="700" fill="var(--ink)">${r.w.puntaje.toFixed(2)}</text>
+      <text x="${W-R+22}" y="${cy+4}" font-size="12.5" fill="var(--ink2)">${r.s.precio_usd_lb?"US$ "+r.s.precio_usd_lb.toFixed(2)+" por libra":"sin dato"}</text>`;});
+  s+=`</svg><p class="mini">Fuente: Alliance for Coffee Excellence. Falta 2020, año en que ACE registra una competencia pero no hay edición de la feria (ver pendientes). El eje empieza en 90 para separar los puntos. Dos puntos son comparables solo en puntaje: el precio depende del año y de la subasta.</p>`;
+  $("escala").innerHTML=s;
+})();
+
+/* ---------- Cifras ---------- */
+(function cifras(){
+  const fila=(e,d,f,tope)=>`<div class="barra-f"><span class="y">${e.anio}</span>
+    <div><span class="v">${f(d.valor)}${d.estado==="parcial"?'<span class="etq">previsión o parcial</span>':""}</span>
+    <div class="pista ${d.estado==="parcial"?"parcial":""}"><i style="width:${Math.max(2,Math.round(d.valor/tope*100))}%"></i></div></div>
+    <p class="n">${esc(d.criterio)}</p></div>`;
+  [["visitantes","visitantes",nf],["monto_negocios_pen","montos",v=>dinero(v,"PEN")]].forEach(([k,id,f])=>{
+    const con=ED.filter(e=>e.metricas[k].valor!==null);
+    const tope=Math.max(...con.map(e=>e.metricas[k].valor));
+    $(id).innerHTML=con.map(e=>fila(e,e.metricas[k],f,tope)).join("")+
+      `<p class="mini" style="margin-top:12px">Sin dato: ${ED.filter(e=>e.metricas[k].valor===null).map(e=>e.anio).join(", ")}.</p>`;
+  });
+})();
+
+/* ---------- Lecturas ---------- */
+(function lecturas(){
+  const L=LOTES.lotes||[];
+  const pct=(a,b)=>Math.round(a/b*100);
+  const num=(v,d=1)=>v.toLocaleString("es-PE",{minimumFractionDigits:d,maximumFractionDigits:d});
+  const tazas=ED.filter(e=>e.ganadores.taza_excelencia.length);
+  const anios=tazas.map(e=>e.anio);
+  const LEC=[];
+
+  /* 1. Regiones */
+  const reg={};
+  tazas.forEach(e=>e.ganadores.taza_excelencia.filter(w=>w.puesto<=3).forEach(w=>{
+    const r=reg[w.region]||(reg[w.region]={p:0,o:0});r.p++; if(w.puesto===1)r.o++;}));
+  const rl=Object.entries(reg).sort((a,b)=>b[1].o-a[1].o||b[1].p-a[1].p);
+  const maxp=Math.max(...rl.map(([,v])=>v.p));
+  const cusP=tazas.filter(e=>e.ganadores.taza_excelencia.some(w=>w.puesto<=3&&w.region==="Cusco")).length;
+  const caj=reg.Cajamarca,cus=reg.Cusco;
+  LEC.push({id:"regiones",para:["productor","comprador","prensa"],
+    t:"Cajamarca gana, Cusco casi siempre figura",
+    dice:`En las ${tazas.length} Tazas con podio documentado (${anios.join(", ")}), Cajamarca tiene ${caj.o} primeros lugares y Cusco ${cus.o}. Cusco puso al menos un café en el podio en ${cusP} de ${tazas.length} ediciones, y es la sede de 2026.`,
+    graf:`<div class="hb">${rl.map(([n,v])=>`<span class="nm ${n==="Cusco"?"cu":""}">${n}</span><span class="tr"><i style="width:${pct(v.p,maxp)}%"></i><b style="width:${pct(v.o,maxp)}%"></b></span><span class="nv">${v.o} de 1.º · ${v.p} podios</span>`).join("")}</div>
+      <p class="mini"><span class="kn" style="background:var(--acc)"></span>primeros lugares <span class="kn" style="background:var(--acc-m);margin-left:10px"></span>puestos de podio (1.º a 3.º)</p>`,
+    lim:"Son 8 ediciones. Con tan pocos datos una región puede liderar por pocos productores que repiten."});
+
+  /* 2. Prima del lote ganador */
+  const pr=ED.filter(e=>e.subasta.precio_usd_lb&&e.subasta.promedio_usd_lb).map(e=>({y:e.anio,w:e.subasta.precio_usd_lb,a:e.subasta.promedio_usd_lb}));
+  if(pr.length){
+    const mx=Math.max(...pr.map(r=>r.w));
+    const rec=pr.filter(r=>r.y>=2021),prom=rec.reduce((s,r)=>s+r.w/r.a,0)/rec.length;
+    const r19=pr.find(r=>r.y===2019);
+    LEC.push({id:"prima",para:["productor","comprador"],
+      t:"El lote ganador se paga varias veces el promedio",
+      dice:`De 2021 a 2025 el lote ganador se pagó en promedio ${num(prom)} veces el promedio de la subasta${r19?`; en 2019 fue ${num(r19.w/r19.a)} veces`:""}. El promedio de la subasta se movió entre US$ ${num(Math.min(...pr.map(r=>r.a)))} y ${num(Math.max(...pr.map(r=>r.a)))} por libra.`,
+      graf:`<div class="prima">${pr.map(r=>`<span class="y">${r.y}</span><span class="bb"><i style="width:${pct(r.w,mx)}%"></i><u style="width:${pct(r.a,mx)}%"></u></span><span class="x">${num(r.w/r.a)}×</span>`).join("")}</div>
+        <p class="mini"><span class="kn" style="background:var(--acc)"></span>lote ganador, US$ por libra <span class="kn" style="background:var(--acc-m);margin-left:10px"></span>promedio de la subasta</p>`,
+      lim:"Los promedios de 2024 y 2025 son cálculos propios (total sobre libras) porque ACE no los imprime, y el de 2022 difiere del que ACE publica. El precio de un lote récord depende de pocos compradores que compiten por un solo lote."});
+  }
+
+  /* 3. Variedades en el top 10 */
+  const vy=[...new Set(L.filter(x=>x.variedad).map(x=>x.anio))].sort();
+  if(vy.length){
+    const esG=v=>/geisha|gesha|gesisha/i.test(v||"");
+    const filas=vy.map(y=>{
+      const m=new Map();L.filter(x=>x.anio===y&&parseInt(x.puesto)<=10).forEach(x=>{const k=parseInt(x.puesto);if(!m.has(k))m.set(k,x);});
+      const celdas=[...m.entries()].sort((a,b)=>a[0]-b[0]).map(([,x])=>x);
+      return {y,celdas,g:celdas.filter(x=>esG(x.variedad)).length,n:celdas.length};});
+    const ult=filas.filter(f=>f.y>=2021);
+    const g21=ult.reduce((s,f)=>s+f.g,0),n21=ult.reduce((s,f)=>s+f.n,0);
+    LEC.push({id:"variedades",para:["productor","comprador"],
+      t:"La variedad Geisha domina los diez primeros puestos",
+      dice:`De 2021 a 2025, ${g21} de los ${n21} cafés entre los diez primeros incluyen Geisha, sola o en mezcla. En ${filas[0].y} eran ${filas[0].g} de ${filas[0].n}.`,
+      graf:`<div class="waf">${filas.map(f=>`<span class="y">${f.y}</span><span class="c" role="img" aria-label="${f.g} de ${f.n} con Geisha">${f.celdas.map(x=>`<b class="${esG(x.variedad)?"g":""}" title="${x.puesto}.º ${esc(x.variedad)}"></b>`).join("")}</span>`).join("")}</div>
+        <p class="mini"><span class="kn" style="background:var(--acc)"></span>incluye Geisha <span class="kn" style="border:1px solid var(--acc-m);margin-left:10px"></span>otra variedad. Cada casilla es un puesto, del 1.º al 10.º.</p>`,
+      lim:"ACE no imprime variedad en 2017. Algunas fichas listan varias variedades y cuenta cualquiera que incluya Geisha. Ganar en taza no significa rendir más por hectárea."});
+  }
+
+  /* 4. Compradores recurrentes */
+  if(L.length){
+    const ALIAS=[[/wataru/i,"Wataru & Co."],[/kyokuto/i,"Kyokuto Fadie"],[/kaldi|camel coffee/i,"Kaldi Coffee Farm"],[/sarutahiko/i,"Sarutahiko Coffee"],[/nozy/i,"Nozy Coffee"],[/falcon/i,"Falcon Coffees"],[/campos/i,"Campos Coffee"],[/prodigal/i,"Prodigal Coffee"],[/terarosa/i,"Terarosa"],[/brew92/i,"Brew92"],[/wolfing|深浅白/i,"Wolfing / Shenqianbai"],[/pebble/i,"Pebble Coffee"],[/vela ethan|維啦怡森/i,"Vela Ethan"],[/m\.?i\.?\s?coffee/i,"M.I. Coffee"],[/kaffebrenneriet/i,"Kaffebrenneriet"],[/coffee county/i,"Coffee County"],[/caravela/i,"Caravela Coffee"],[/dabov/i,"Dabov Specialty"],[/blossom valley|宸嶧/i,"Blossom Valley"],[/momos/i,"Momos Coffee"],[/orsir/i,"Orsir Coffee"],[/coffee libre/i,"Coffee Libre"],[/snow beans/i,"Snow Beans"],[/honu/i,"Honu"],[/aroma group/i,"Aroma Group"],[/nagahama/i,"Nagahama Coffee"],[/maruyama/i,"Maruyama Coffee"],[/intelligentsia/i,"Intelligentsia"],[/onyx/i,"Onyx Coffee Lab"]];
+    const norm=n=>{for(const [r,a] of ALIAS)if(r.test(n))return a;return n.trim();};
+    const B={};
+    L.forEach(x=>{new Set((x.compradores||[]).map(norm)).forEach(n=>{const b=B[n]||(B[n]={y:new Set(),l:0});b.y.add(x.anio);b.l++;});});
+    const lista=Object.entries(B).map(([n,b])=>({n,y:[...b.y].sort(),l:b.l})).sort((a,b)=>b.y.length-a.y.length||b.l-a.l).slice(0,10);
+    const rec=Object.values(B).filter(b=>b.y.size>=4).length;
+    const tot=Object.keys(B).length;
+    LEC.push({id:"compradores",para:["productor","comprador","investigacion"],
+      t:"Pocos compradores vuelven año tras año",
+      dice:`ACE registra ${tot} nombres de comprador distintos entre 2017 y 2025, y ${rec} aparecen en cuatro o más ediciones. Los diez más constantes, con los años en que compraron:`,
+      graf:`<table class="comp"><tbody>${lista.map(b=>`<tr><td>${esc(b.n)}<div class="anios">${b.y.map(y=>`<span>${y}</span>`).join("")}</div></td><td>${b.l} lotes</td></tr>`).join("")}</tbody></table>`,
+      lim:"Los nombres se agruparon a mano (por ejemplo, 'Wataru for X' cuenta como Wataru) y un comprador puede aparecer con otra razón social. ACE imprime el país del comprador solo en 2022 y 2023, por eso no se resume aquí."});
+  }
+  $("lecturas").innerHTML=LEC.map(l=>`<article class="lec" id="lec-${l.id}" data-para="${l.para.join(" ")}">
+    <div class="para" aria-label="Útil para">${l.para.map(p=>`<span data-a="${p}">${{productor:"Productor",comprador:"Comprador",prensa:"Prensa",investigacion:"Investigación"}[p]}</span>`).join("")}</div>
+    <h3>${l.t}</h3><p class="dice">${l.dice}</p>${l.graf}<p class="limite"><b>Límite.</b> ${l.lim}</p></article>`).join("");
+})();
+
+/* ---------- Conflictos ---------- */
+(function conflictos(){
+  const l=ED.flatMap(e=>(e.conflictos||[]).map(c=>({...c,anio:e.anio})));
+  $("conflictos").innerHTML=l.map(c=>`<div class="conf"><h4>${esc(c.campo)}</h4><p class="quien">Edición ${c.anio}</p>
+    <div class="vals">${c.valores.map(v=>`<div class="val"><b>${esc(v.valor)}</b><span>${esc(v.medio)} · <a href="${esc(v.fuente_url)}" target="_blank" rel="noopener">fuente</a></span></div>`).join("")}</div>
+    <p class="nota">${esc(c.nota)}</p></div>`).join("");
+})();
+
+/* ---------- Contexto del sector (sin verificar contra el dataset) ---------- */
+const ZONAS=[
+ {z:"Norte",pct:43,r:"Cajamarca, Amazonas, San Martín. La composición exacta está inferida de las regiones líderes, no declarada."},
+ {z:"Centro",pct:34,r:"Junín, Pasco, Huánuco, Ucayali, Huancavelica."},
+ {z:"Sur",pct:23,r:"Cusco y Puno principalmente."}];
+const SECTOR=[
+ {k:"Familias o productores",est:"en_conflicto",v:["223 mil familias productoras (Midagri, agosto 2024)","289 mil pequeños productores (Midagri, 2024)"],nota:"Dos declaraciones del mismo ministerio en el mismo año. Probablemente miden unidades distintas, pero ninguna fuente lo aclara."},
+ {k:"Superficie cultivada",est:"en_conflicto",v:["427 mil hectáreas (Midagri, 2024)","230 mil hectáreas (Andina)"],nota:"La diferencia es casi del doble. Puede venir del año o de si se cuenta superficie instalada o en producción."},
+ {k:"Alcance territorial",est:"en_conflicto",v:["16 regiones (Midagri)","10 departamentos, 47 provincias, 210 distritos (Andina)"],nota:"La cifra de 16 regiones es más reciente; la otra puede ser un corte anterior."},
+ {k:"Altitud de cultivo",est:"verificado",v:["De 600 a 1.800 metros sobre el nivel del mar."],nota:null},
+ {k:"Tamaño de finca",est:"verificado",v:["El 85% de los productores tiene entre 0,5 y 5 hectáreas."],nota:null},
+ {k:"Exportación 2023",est:"verificado",v:["205 mil toneladas por US$ 827,3 millones."],nota:null}];
+const VARIEDADES=[
+ {n:"Typica",pct:70,d:"La más antigua y extendida del país, introducida en el siglo XVIII. Taza limpia y dulce, aunque poco distintiva. Su cultivo cae por su vulnerabilidad a las plagas."},
+ {n:"Caturra",pct:20,d:"Mutación natural del Bourbon. Alto rendimiento y mejor resistencia a enfermedades, con dulzor natural y acidez marcada."},
+ {n:"Otras",pct:10,d:"El 10% restante reúne a todas las demás. El Perú reporta más de cien variedades."},
+ {n:"Bourbon",pct:null,d:"Cuerpo medio, con notas de fruta tropical, nuez y caramelo. En Cusco se cultiva un híbrido de Typica y Bourbon que se comercializa como Urubamba."},
+ {n:"Catimor",pct:null,d:"Híbrido de Timor y Caturra. Se siembra por su resistencia a la roya y su rendimiento, no por su calidad en taza."},
+ {n:"Pache",pct:null,d:"Mutación compacta de la Typica. Dulce, de acidez baja y sensación cremosa."},
+ {n:"Geisha",pct:null,d:"La de mayor precio entre los especiales. Domina los podios recientes de la Taza de Excelencia, con volumen pequeño en el país."}];
+$("zonas").innerHTML=ZONAS.map(z=>`<div class="zona"><b>${z.pct}%</b><div><strong class="ui" style="font-size:.95rem">${z.z}</strong><div class="zona-pista"><i style="width:${z.pct}%"></i></div><span>${z.r}</span></div></div>`).join("");
+$("sector").innerHTML=SECTOR.map(s=>`<div class="sec"><p class="sec-k">${s.k}</p>${sello(s.est)}<div class="sec-v ${s.v.length>1?"multi":""}">${s.v.map(x=>`<span>${x}</span>`).join("")}</div>${s.nota?`<p class="sec-nota">${s.nota}</p>`:""}</div>`).join("");
+$("vars").innerHTML=VARIEDADES.map(v=>`<div class="var"><div class="var-n">${v.n}</div><div>${v.pct!==null?`<span class="var-pct">${v.pct}% de la superficie</span><div class="var-barra"><i style="width:${v.pct}%"></i></div>`:`<span class="var-pct sin">superficie sin cuantificar</span>`}</div><div class="var-d">${v.d}</div></div>`).join("");
+
+/* ---------- Método: matriz y huecos ---------- */
+(function metodo(){
+  $("matriz").innerHTML=`<thead><tr><th scope="col">Campo</th>${ED.map(e=>`<th scope="col">${e.anio}</th>`).join("")}</tr></thead><tbody>`+
+    CAMPOS.map(([n,f])=>`<tr><td>${n}</td>${ED.map(e=>{const s=f(e);return `<td><span class="glifo ${s}" role="img" aria-label="${ETIQ[s]}" title="${e.anio} · ${n}: ${ETIQ[s]}"></span></td>`;}).join("")}</tr>`).join("")+"</tbody>";
+  const h=[
+   ["2026","Recinto en Cusco no publicado, fechas oficiales por confirmar (2-6 frente a 1-4 de noviembre) y todas las cifras finales."],
+   ["2025","Sin balance posterior a la feria: visitantes y monto son expectativas de agosto. Faltan ganadores de barismo y catación."],
+   ["2023","Sin monto total de la feria (solo cifras por rueda, en dos monedas), visitantes finales y ganador de barismo."],
+   ["2022","El valor de la subasta que reporta Andina (3,2 millones) no coincide con el total de ACE (US$ 303.504,90) y quedó en conflicto."],
+   ["2016-2019","Visitantes finales, montos de la feria y ganadores de barismo y catación casi sin documentar. De 2017 a 2019 ya están los ganadores y puntajes de la Taza."],
+   ["2020","No hubo edición de la feria. ACE registra una Taza de Excelencia Perú 2020 (puntaje máximo 90, US$ 51,10 por libra según un resumen de búsqueda) que aún no se revisó."],
+   ["Fuentes por revisar","Junta Nacional del Café y balances de los gobiernos regionales sede."]];
+  $("huecos").innerHTML=h.map(([a,b])=>`<li><b>${a}.</b> ${b}</li>`).join("");
+  $("pie").textContent=`Versión ${DATA.meta.version} del conjunto de datos, actualizado el ${fecha(DATA.meta.actualizado)} de ${DATA.meta.actualizado.slice(0,4)}. ${ED.length} ediciones registradas, de ${ED[0].anio} a ${ED[ED.length-1].anio}.`;
+})();
+
+/* ---------- Descargas ---------- */
+function construirCSV(){
+  const q=v=>`"${String(v??"").replace(/"/g,'""')}"`;
+  const f=[["anio","edicion","estado","ciudad","region","recinto","fecha_inicio","fecha_fin",
+    "visitantes","estado_visitantes","criterio_visitantes","expositores","estado_expositores","criterio_expositores",
+    "monto_pen","estado_monto","criterio_monto","fuentes"]];
+  ED.forEach(e=>{const m=e.metricas;
+    f.push([e.anio,e.edicion,e.estado,e.sede.ciudad,e.sede.region,e.sede.recinto,e.fecha_inicio,e.fecha_fin,
+      m.visitantes.valor,m.visitantes.estado,m.visitantes.criterio,m.expositores.valor,m.expositores.estado,m.expositores.criterio,
+      m.monto_negocios_pen.valor,m.monto_negocios_pen.estado,m.monto_negocios_pen.criterio,e.fuentes.map(x=>x.url).join(" | ")]);});
+  return "﻿"+f.map(r=>r.map(q).join(",")).join("\n");
+}
+async function descargar(nombre,texto,tipo){
+  const est=$("descargaEstado");est.textContent="";
+  if(window.claude&&typeof window.claude.use==="function"){
+    let d=null;try{d=await window.claude.use("downloads");}catch(_){}
+    if(!d){est.textContent="Esta vista no permite descargas.";return;}
+    try{await d.save({filename:nombre,data:texto});est.textContent="Archivo guardado.";}
+    catch(_){est.textContent="No se guardó el archivo. Puedes volver a intentarlo.";}
+    return;
+  }
+  const a=document.createElement("a");a.href=URL.createObjectURL(new Blob([texto],{type:tipo}));a.download=nombre;a.click();URL.revokeObjectURL(a.href);
+  est.textContent="Archivo generado.";
+}
+$("dCsv").addEventListener("click",()=>descargar("ficafe-historico.csv",construirCSV(),"text/csv;charset=utf-8"));
+$("dJson").addEventListener("click",()=>descargar("ficafe-ediciones.json",JSON.stringify(DATA,null,2),"application/json"));
+
+/* ---------- Lentes ---------- */
+const LENTES={
+  productor:{txt:"Para decidir si vale la pena llevar tu café: qué se negoció en ediciones pasadas, quién ganó y qué puntaje hace falta para destacar.",orden:["b-lecturas","b-ediciones","b-ganadores","b-montos","b-origen","b-conflictos","b-glosario","b-metodo"]},
+  comprador:{txt:"Para localizar origen y calidad: quién fue premiado y con qué puntaje, qué variedades se cultivan y en qué zonas.",orden:["b-lecturas","b-ganadores","b-origen","b-ediciones","b-glosario","b-montos","b-conflictos","b-metodo"]},
+  prensa:{txt:"Cifras citables con fuente enlazada, y una advertencia sobre cuáles no son comparables y cuáles se contradicen.",orden:["b-lecturas","b-montos","b-conflictos","b-origen","b-ganadores","b-metodo","b-ediciones","b-glosario"]},
+  investigacion:{txt:"Metodología, vacíos, conflictos entre fuentes y descarga del conjunto de datos con su nivel de confianza por campo.",orden:["b-metodo","b-lecturas","b-conflictos","b-origen","b-montos","b-ediciones","b-ganadores","b-glosario"]}};
+document.querySelectorAll(".lente").forEach(b=>b.addEventListener("click",()=>{
+  const ya=b.getAttribute("aria-pressed")==="true";
+  document.querySelectorAll(".lente").forEach(o=>o.setAttribute("aria-pressed","false"));
+  const marcar=a=>document.querySelectorAll(".lec").forEach(c=>{const es=!a||c.dataset.para.split(" ").includes(a);c.style.order=a?(es?0:1):"";c.querySelectorAll(".para span").forEach(s=>s.classList.toggle("tu",!!a&&s.dataset.a===a));});
+  if(ya){$("encuadre").textContent="";document.querySelectorAll(".bloque").forEach(s=>s.style.order="");$("b-lecturas").style.order=0;marcar(null);pintarNav(ORDEN0);return;}
+  b.setAttribute("aria-pressed","true");
+  const L=LENTES[b.dataset.l];$("encuadre").textContent=L.txt;marcar(b.dataset.l);
+  L.orden.forEach((id,i)=>{$(id).style.order=i;});pintarNav(L.orden);
+  $(L.orden[0]).scrollIntoView({behavior:"smooth",block:"start"});
+}));
+
+/* Propósito: hechos y sellos calculados desde los datos */
+(function proposito(){
+  const lotes=(LOTES.lotes||[]).length;
+  const tazas=ED.filter(e=>e.ganadores.taza_excelencia.length).length;
+  const con=ED.reduce((s,e)=>s+cubre(e),0), tot=ED.length*CAMPOS.length;
+  const H=[[ED.length,"ediciones, de "+ED[0].anio+" a "+ED[ED.length-1].anio],[tazas,"con podio de la Taza de Excelencia"],[lotes,"lotes de subasta con su comprador"],[Math.round(con/tot*100)+"%","de los campos tienen algún dato"]];
+  $("hechos").innerHTML=H.map(([n,l])=>`<li><b>${n}</b><span>${l}</span></li>`).join("");
+  const G=DATA.meta.glosario_estados||{};
+  $("sellos").innerHTML=["verificado","parcial","en_conflicto","no_verificado"].map(k=>`<div><dt><span class="glifo ${k}" aria-hidden="true"></span>${ETIQ[k]}</dt><dd>${esc(G[k]||"")}</dd></div>`).join("");
+  $("cita").textContent="Cómo citar: Archivo FICAFE, versión "+DATA.meta.version+" de los datos ("+fecha(DATA.meta.actualizado)+" de "+DATA.meta.actualizado.slice(0,4)+"), licencia "+DATA.meta.licencia+".";
+})();
+
+/* Navegación entre secciones, en el orden que muestre la página */
+const NOMBRES={"b-lecturas":"Lecturas","b-ediciones":"Ediciones","b-ganadores":"Ganadores","b-montos":"Cifras","b-conflictos":"Conflictos","b-glosario":"Glosario","b-origen":"Sector","b-metodo":"Método"};
+const ORDEN0=[...document.querySelectorAll(".bloque")].map(s=>s.id);
+function pintarNav(orden){
+  $("nav").innerHTML=orden.filter(id=>NOMBRES[id]).map(id=>`<a href="#${id}" data-id="${id}">${NOMBRES[id]}</a>`).join("");
+}
+$("nav").addEventListener("click",ev=>{const a=ev.target.closest("a");if(!a)return;ev.preventDefault();const s=$(a.dataset.id);if(s)s.scrollIntoView({behavior:"smooth",block:"start"});});
+pintarNav(ORDEN0);
+
+pintarEspina();pintarFicha();pintarChips();pintarG();
+</script>

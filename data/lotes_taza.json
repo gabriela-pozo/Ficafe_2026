@@ -1,0 +1,3981 @@
+{
+ "fuente": "Alliance for Coffee Excellence",
+ "leido": "2026-11-04",
+ "lotes": [
+  {
+   "anio": 2017,
+   "puesto": "1A",
+   "finca": "La Flor 2017",
+   "productor": "Juan Heredia Sanchez",
+   "region": "Cajamarca",
+   "variedad": null,
+   "puntaje": 92.25,
+   "peso_lb": null,
+   "precio_usd_lb": 100.09,
+   "total_usd": 37512.73,
+   "compradores": [
+    "Maruyama Coffee",
+    "Campos Coffee",
+    "TOA Coffee",
+    "Sarutahiko Coffee"
+   ],
+   "pais_comprador": null,
+   "fuente_url": "https://allianceforcoffeeexcellence.org/peru-2017/",
+   "organico": true
+  },
+  {
+   "anio": 2017,
+   "puesto": "1B",
+   "finca": "La Flor 2017",
+   "productor": "Juan Heredia Sanchez",
+   "region": "Cajamarca",
+   "variedad": null,
+   "puntaje": 92.25,
+   "peso_lb": null,
+   "precio_usd_lb": 100.1,
+   "total_usd": 33102.07,
+   "compradores": [
+    "Time’s Club",
+    "Coffee Libre",
+    "Tashiro Coffee",
+    "Cafe Verde (Peru)"
+   ],
+   "pais_comprador": null,
+   "fuente_url": "https://allianceforcoffeeexcellence.org/peru-2017/",
+   "organico": true
+  },
+  {
+   "anio": 2017,
+   "puesto": "2A",
+   "finca": "El Cerro 2017",
+   "productor": "Efrain Carhuallocllo Salvador",
+   "region": "Cajamarca",
+   "variedad": null,
+   "puntaje": 90.61,
+   "peso_lb": null,
+   "precio_usd_lb": 51.4,
+   "total_usd": 19264.21,
+   "compradores": [
+    "MadCap",
+    "George Howell Coffee",
+    "Intelligentsia",
+    "Single O",
+    "Terarosa",
+    "Maruyama"
+   ],
+   "pais_comprador": null,
+   "fuente_url": "https://allianceforcoffeeexcellence.org/peru-2017/",
+   "organico": true
+  },
+  {
+   "anio": 2017,
+   "puesto": "2B",
+   "finca": "El Cerro 2017",
+   "productor": "Efrain Carhuallocllo Salvador",
+   "region": "Cajamarca",
+   "variedad": null,
+   "puntaje": 90.61,
+   "peso_lb": null,
+   "precio_usd_lb": 50.3,
+   "total_usd": 16633.71,
+   "compradores": [
+    "Kyokuto Fadie Corporation"
+   ],
+   "pais_comprador": null,
+   "fuente_url": "https://allianceforcoffeeexcellence.org/peru-2017/",
+   "organico": true
+  },
+  {
+   "anio": 2017,
+   "puesto": "3A",
+   "finca": "San Pedro – El Shimir 2017 -…",
+   "productor": "Fredy Bermeo Guevara",
+   "region": "Cajamarca",
+   "variedad": null,
+   "puntaje": 90.48,
+   "peso_lb": null,
+   "precio_usd_lb": 35.2,
+   "total_usd": 13968.42,
+   "compradores": [
+    "MATSUMOTO COFFEE"
+   ],
+   "pais_comprador": null,
+   "fuente_url": "https://allianceforcoffeeexcellence.org/peru-2017/"
+  },
+  {
+   "anio": 2017,
+   "puesto": "3B",
+   "finca": "San Pedro – El Shimir 2017 -…",
+   "productor": "Fredy Bermeo Guevara",
+   "region": "Cajamarca",
+   "variedad": null,
+   "puntaje": 90.48,
+   "peso_lb": null,
+   "precio_usd_lb": 35.2,
+   "total_usd": 12416.45,
+   "compradores": [
+    "Caffe’ Pascucci Torrefazione S.P.A."
+   ],
+   "pais_comprador": null,
+   "fuente_url": "https://allianceforcoffeeexcellence.org/peru-2017/"
+  },
+  {
+   "anio": 2017,
+   "puesto": "4A",
+   "finca": "San Antonio 2017",
+   "productor": "Marco Antonio Montes Damiano",
+   "region": "Junin",
+   "variedad": null,
+   "puntaje": 90.41,
+   "peso_lb": null,
+   "precio_usd_lb": 18.7,
+   "total_usd": 7297.11,
+   "compradores": [
+    "MOMOS COFFEE"
+   ],
+   "pais_comprador": null,
+   "fuente_url": "https://allianceforcoffeeexcellence.org/peru-2017/"
+  },
+  {
+   "anio": 2017,
+   "puesto": "4B",
+   "finca": "San Antonio 2017",
+   "productor": "Marco Antonio Montes Damiano",
+   "region": "Junin",
+   "variedad": null,
+   "puntaje": 90.41,
+   "peso_lb": null,
+   "precio_usd_lb": 19.09,
+   "total_usd": 6312.87,
+   "compradores": [
+    "Orsir Coffee Co., Ltd."
+   ],
+   "pais_comprador": null,
+   "fuente_url": "https://allianceforcoffeeexcellence.org/peru-2017/"
+  },
+  {
+   "anio": 2017,
+   "puesto": "5A",
+   "finca": "Las Orquideas 2017",
+   "productor": "Tito Huamán Salon",
+   "region": "Amazonas",
+   "variedad": null,
+   "puntaje": 90.11,
+   "peso_lb": null,
+   "precio_usd_lb": 18.2,
+   "total_usd": 7342.79,
+   "compradores": [
+    "UCC Ueshima Coffee Co., Ltd."
+   ],
+   "pais_comprador": null,
+   "fuente_url": "https://allianceforcoffeeexcellence.org/peru-2017/",
+   "organico": true
+  },
+  {
+   "anio": 2017,
+   "puesto": "5B",
+   "finca": "Las Orquideas 2017",
+   "productor": "Tito Huamán Salon",
+   "region": "Amazonas",
+   "variedad": null,
+   "puntaje": 90.11,
+   "peso_lb": null,
+   "precio_usd_lb": 18.13,
+   "total_usd": 7194.53,
+   "compradores": [
+    "Ascension Coffee Roasters"
+   ],
+   "pais_comprador": null,
+   "fuente_url": "https://allianceforcoffeeexcellence.org/peru-2017/",
+   "organico": true
+  },
+  {
+   "anio": 2017,
+   "puesto": "6",
+   "finca": "Finca Ecológica Agua Colorada…",
+   "productor": "Filadelpo Córdova Mejia",
+   "region": "Cajamarca",
+   "variedad": null,
+   "puntaje": 89.77,
+   "peso_lb": null,
+   "precio_usd_lb": 49.6,
+   "total_usd": 37178.67,
+   "compradores": [
+    "Café Imports",
+    "Namusairo Coffee",
+    "Roast House Coffee",
+    "Passenger Coffee."
+   ],
+   "pais_comprador": null,
+   "fuente_url": "https://allianceforcoffeeexcellence.org/peru-2017/"
+  },
+  {
+   "anio": 2017,
+   "puesto": "7",
+   "finca": "Mandor 2017",
+   "productor": "Gerardo Quispe Carrasco",
+   "region": "Cusco",
+   "variedad": null,
+   "puntaje": 89.27,
+   "peso_lb": null,
+   "precio_usd_lb": 17.3,
+   "total_usd": 9687.48,
+   "compradores": [
+    "Campos Coffee"
+   ],
+   "pais_comprador": null,
+   "fuente_url": "https://allianceforcoffeeexcellence.org/peru-2017/",
+   "organico": true
+  },
+  {
+   "anio": 2017,
+   "puesto": "8",
+   "finca": "Oropesa 2017",
+   "productor": "Cruz Rodriguez Ortiz",
+   "region": "Junin",
+   "variedad": null,
+   "puntaje": 88.7,
+   "peso_lb": null,
+   "precio_usd_lb": 12.1,
+   "total_usd": 9683.39,
+   "compradores": [
+    "Coffee Supreme"
+   ],
+   "pais_comprador": null,
+   "fuente_url": "https://allianceforcoffeeexcellence.org/peru-2017/"
+  },
+  {
+   "anio": 2017,
+   "puesto": "9",
+   "finca": "Kukipata 2017",
+   "productor": "Cristobal Palomino Castro",
+   "region": "Cusco",
+   "variedad": null,
+   "puntaje": 88.68,
+   "peso_lb": null,
+   "precio_usd_lb": 10.89,
+   "total_usd": 7130.55,
+   "compradores": [
+    "Terarosa (Haksan Co.Ltd)"
+   ],
+   "pais_comprador": null,
+   "fuente_url": "https://allianceforcoffeeexcellence.org/peru-2017/",
+   "organico": true
+  },
+  {
+   "anio": 2017,
+   "puesto": "10",
+   "finca": "Palmachayucc 2017",
+   "productor": "Américo Palomino Alanya",
+   "region": "Cusco",
+   "variedad": null,
+   "puntaje": 88.52,
+   "peso_lb": null,
+   "precio_usd_lb": 14.01,
+   "total_usd": 10038.31,
+   "compradores": [
+    "Caravela Coffee"
+   ],
+   "pais_comprador": null,
+   "fuente_url": "https://allianceforcoffeeexcellence.org/peru-2017/",
+   "organico": true
+  },
+  {
+   "anio": 2017,
+   "puesto": "11",
+   "finca": "El Roble 2017",
+   "productor": "Mario Jesús Rufasto Zulueta",
+   "region": "Cajamarca",
+   "variedad": null,
+   "puntaje": 87.43,
+   "peso_lb": null,
+   "precio_usd_lb": 10.4,
+   "total_usd": 7566.31,
+   "compradores": [
+    "Tashiro Coffee Co., Ltd"
+   ],
+   "pais_comprador": null,
+   "fuente_url": "https://allianceforcoffeeexcellence.org/peru-2017/"
+  },
+  {
+   "anio": 2017,
+   "puesto": "12",
+   "finca": "Vista Hermosa 2017",
+   "productor": "Alfonso Tejada Iberico",
+   "region": "Amazonas",
+   "variedad": null,
+   "puntaje": 87.3,
+   "peso_lb": null,
+   "precio_usd_lb": 13.1,
+   "total_usd": 7220.2,
+   "compradores": [
+    "Kyokuto Fadie Corporation"
+   ],
+   "pais_comprador": null,
+   "fuente_url": "https://allianceforcoffeeexcellence.org/peru-2017/"
+  },
+  {
+   "anio": 2017,
+   "puesto": "13",
+   "finca": "Don Juan 2017",
+   "productor": "Juan Manuel Diaz Muñoz",
+   "region": "Cajamarca",
+   "variedad": null,
+   "puntaje": 87.27,
+   "peso_lb": null,
+   "precio_usd_lb": 9,
+   "total_usd": 7539.84,
+   "compradores": [
+    "Wataru & Co., Ltd."
+   ],
+   "pais_comprador": null,
+   "fuente_url": "https://allianceforcoffeeexcellence.org/peru-2017/"
+  },
+  {
+   "anio": 2017,
+   "puesto": "14",
+   "finca": "La Palma 2017",
+   "productor": "Charles Marlon Arbildo Parra",
+   "region": "Cajamarca",
+   "variedad": null,
+   "puntaje": 87.18,
+   "peso_lb": null,
+   "precio_usd_lb": 16.3,
+   "total_usd": 11499.32,
+   "compradores": [
+    "Kyokuto Fadie Corporation"
+   ],
+   "pais_comprador": null,
+   "fuente_url": "https://allianceforcoffeeexcellence.org/peru-2017/",
+   "organico": true
+  },
+  {
+   "anio": 2017,
+   "puesto": "15",
+   "finca": "Las Pircas 2017",
+   "productor": "Nerio Collantes Herrera",
+   "region": "San Martin",
+   "variedad": null,
+   "puntaje": 87.09,
+   "peso_lb": null,
+   "precio_usd_lb": 9.3,
+   "total_usd": 6684,
+   "compradores": [
+    "Wataru & Co., Ltd."
+   ],
+   "pais_comprador": null,
+   "fuente_url": "https://allianceforcoffeeexcellence.org/peru-2017/"
+  },
+  {
+   "anio": 2017,
+   "puesto": "16",
+   "finca": "El Shimir 2017",
+   "productor": "Marvin Charles Ramos Chinc",
+   "region": "Cajamarca",
+   "variedad": null,
+   "puntaje": 86.55,
+   "peso_lb": null,
+   "precio_usd_lb": 10.1,
+   "total_usd": 7125.35,
+   "compradores": [
+    "UCC Coffee UK"
+   ],
+   "pais_comprador": null,
+   "fuente_url": "https://allianceforcoffeeexcellence.org/peru-2017/"
+  },
+  {
+   "anio": 2017,
+   "puesto": "17",
+   "finca": "Santa Sofia 2017",
+   "productor": "Eluterio Bolaños Torrecillas",
+   "region": "Junin",
+   "variedad": null,
+   "puntaje": 86.34,
+   "peso_lb": null,
+   "precio_usd_lb": 12.3,
+   "total_usd": 11009.48,
+   "compradores": [
+    "WATARU FOR St.berry Coffee",
+    "Marumi Coffee",
+    "COFFEE FACTORY",
+    "AMAMERIA ESPRESSO",
+    "Philocoffea"
+   ],
+   "pais_comprador": null,
+   "fuente_url": "https://allianceforcoffeeexcellence.org/peru-2017/"
+  },
+  {
+   "anio": 2017,
+   "puesto": "18",
+   "finca": "Monte Rey 2017",
+   "productor": "Felix Cachay Cueva",
+   "region": "Junin",
+   "variedad": null,
+   "puntaje": 86.16,
+   "peso_lb": null,
+   "precio_usd_lb": 9,
+   "total_usd": 17559.9,
+   "compradores": [
+    "UCC Coffee UK"
+   ],
+   "pais_comprador": null,
+   "fuente_url": "https://allianceforcoffeeexcellence.org/peru-2017/"
+  },
+  {
+   "anio": 2017,
+   "puesto": "19",
+   "finca": "Finca Rojas 2017",
+   "productor": "Saúl Rojas Malpartida",
+   "region": "Junin",
+   "variedad": null,
+   "puntaje": 86,
+   "peso_lb": null,
+   "precio_usd_lb": 9.9,
+   "total_usd": 8621.22,
+   "compradores": [
+    "Wataru & Co., Ltd."
+   ],
+   "pais_comprador": null,
+   "fuente_url": "https://allianceforcoffeeexcellence.org/peru-2017/"
+  },
+  {
+   "anio": 2018,
+   "puesto": "1A",
+   "finca": "Nueva Alianza",
+   "productor": "Dwigth Aguilar Masias",
+   "region": "Cusco",
+   "variedad": "Geisha",
+   "puntaje": 91.08,
+   "peso_lb": null,
+   "precio_usd_lb": 45.1,
+   "total_usd": 19388.49,
+   "compradores": [
+    "Maruyama Coffee",
+    "Sarutahiko Coffee",
+    "Thoth Coffee",
+    "GoodBoyBob Coffee (USA)"
+   ],
+   "pais_comprador": null,
+   "fuente_url": "https://allianceforcoffeeexcellence.org/peru-2018/"
+  },
+  {
+   "anio": 2018,
+   "puesto": "1B",
+   "finca": "Nueva Alianza",
+   "productor": "Dwigth Aguilar Masias",
+   "region": "Cusco",
+   "variedad": "Geisha",
+   "puntaje": 91.08,
+   "peso_lb": null,
+   "precio_usd_lb": 45.1,
+   "total_usd": 17897.03,
+   "compradores": [
+    "Taf Coffee"
+   ],
+   "pais_comprador": null,
+   "fuente_url": "https://allianceforcoffeeexcellence.org/peru-2018/"
+  },
+  {
+   "anio": 2018,
+   "puesto": "2",
+   "finca": "La Palma",
+   "productor": "Damián Espinoza García",
+   "region": "Cajamarca",
+   "variedad": "Caturra Amarrillo",
+   "puntaje": 89.85,
+   "peso_lb": null,
+   "precio_usd_lb": 20.3,
+   "total_usd": 17552.4,
+   "compradores": [
+    "Kyokuto Fadie Corporation"
+   ],
+   "pais_comprador": null,
+   "fuente_url": "https://allianceforcoffeeexcellence.org/peru-2018/"
+  },
+  {
+   "anio": 2018,
+   "puesto": "3",
+   "finca": "El Romerillo",
+   "productor": "Franklin Chinguel Morales",
+   "region": "Cajamarca",
+   "variedad": "Bourbon",
+   "puntaje": 89.58,
+   "peso_lb": null,
+   "precio_usd_lb": 21.1,
+   "total_usd": 18420.93,
+   "compradores": [
+    "Campos Coffee"
+   ],
+   "pais_comprador": null,
+   "fuente_url": "https://allianceforcoffeeexcellence.org/peru-2018/"
+  },
+  {
+   "anio": 2018,
+   "puesto": "4",
+   "finca": "Candelaria",
+   "productor": "Florencia Mamani Calcina",
+   "region": "Puno",
+   "variedad": "Bourbon and Caturra Roja",
+   "puntaje": 89.43,
+   "peso_lb": null,
+   "precio_usd_lb": 21.1,
+   "total_usd": 18374.51,
+   "compradores": [
+    "COFFEE COUNTY",
+    "NOZY COFFEE CO., Ltd",
+    "Taniguchi Coffee",
+    "NAGAHAMA COFFEE .Inc.",
+    "Huracan Coffee"
+   ],
+   "pais_comprador": null,
+   "fuente_url": "https://allianceforcoffeeexcellence.org/peru-2018/"
+  },
+  {
+   "anio": 2018,
+   "puesto": "5",
+   "finca": "Santa Sofia",
+   "productor": "Eleuterio Bolaños Torrecillas",
+   "region": "Junin",
+   "variedad": "Caturra and Bourbon",
+   "puntaje": 89.28,
+   "peso_lb": null,
+   "precio_usd_lb": 9.5,
+   "total_usd": 7539.77,
+   "compradores": [
+    "Dutch Barista Coffee Company",
+    "Single O"
+   ],
+   "pais_comprador": null,
+   "fuente_url": "https://allianceforcoffeeexcellence.org/peru-2018/"
+  },
+  {
+   "anio": 2018,
+   "puesto": "6",
+   "finca": "Rayo el Sol",
+   "productor": "Roxana Rangel Granda",
+   "region": "Cajamarca",
+   "variedad": "Mundo Novo",
+   "puntaje": 89.2,
+   "peso_lb": null,
+   "precio_usd_lb": 9.3,
+   "total_usd": 7114.5,
+   "compradores": [
+    "MOMOS COFFEE",
+    "BLACKUP COFFEE",
+    "IN EARTH COFFEE",
+    "MAVIS COFFEE",
+    "VUENUS COFFEE"
+   ],
+   "pais_comprador": null,
+   "fuente_url": "https://allianceforcoffeeexcellence.org/peru-2018/"
+  },
+  {
+   "anio": 2018,
+   "puesto": "7",
+   "finca": "La Naranja",
+   "productor": "Elvis Reinerio Tineo Rafael",
+   "region": "Cajamarca",
+   "variedad": "Caturra and Bourbon",
+   "puntaje": 88.65,
+   "peso_lb": null,
+   "precio_usd_lb": 9.6,
+   "total_usd": 7026.62,
+   "compradores": [
+    "hirocoffee"
+   ],
+   "pais_comprador": null,
+   "fuente_url": "https://allianceforcoffeeexcellence.org/peru-2018/"
+  },
+  {
+   "anio": 2018,
+   "puesto": "8",
+   "finca": "La Reserva",
+   "productor": "Jesús Pilar Mijahuanca Rodriguez",
+   "region": "Cajamarca",
+   "variedad": "Caturra and Costa Rica",
+   "puntaje": 88.45,
+   "peso_lb": null,
+   "precio_usd_lb": 7.31,
+   "total_usd": 9186.04,
+   "compradores": [
+    "Brew92 Cafe & Roastery"
+   ],
+   "pais_comprador": null,
+   "fuente_url": "https://allianceforcoffeeexcellence.org/peru-2018/"
+  },
+  {
+   "anio": 2018,
+   "puesto": "9",
+   "finca": "Nueva Tierra de Canan",
+   "productor": "Frank Gurvich García Pariona",
+   "region": "Junin",
+   "variedad": "Geisha, Pache, and Bourbon",
+   "puntaje": 88.23,
+   "peso_lb": null,
+   "precio_usd_lb": 20.1,
+   "total_usd": 14725.26,
+   "compradores": [
+    "ONE LOVE coffee"
+   ],
+   "pais_comprador": null,
+   "fuente_url": "https://allianceforcoffeeexcellence.org/peru-2018/"
+  },
+  {
+   "anio": 2018,
+   "puesto": "10",
+   "finca": "El Shimir",
+   "productor": "Fredy Bermeo Guevara",
+   "region": "Cajamarca",
+   "variedad": "Caturra and Bourbon",
+   "puntaje": 88.2,
+   "peso_lb": null,
+   "precio_usd_lb": 8,
+   "total_usd": 7467.52,
+   "compradores": [
+    "Caravela Coffee"
+   ],
+   "pais_comprador": null,
+   "fuente_url": "https://allianceforcoffeeexcellence.org/peru-2018/"
+  },
+  {
+   "anio": 2018,
+   "puesto": "11",
+   "finca": "Joyas De Alied",
+   "productor": "Delia Capquique Quispe",
+   "region": "Puno",
+   "variedad": "Bourbon",
+   "puntaje": 87.62,
+   "peso_lb": null,
+   "precio_usd_lb": 8.7,
+   "total_usd": 6548.14,
+   "compradores": [
+    "Kyokuto Fadie Corporation"
+   ],
+   "pais_comprador": null,
+   "fuente_url": "https://allianceforcoffeeexcellence.org/peru-2018/"
+  },
+  {
+   "anio": 2018,
+   "puesto": "12",
+   "finca": "Tres Cumbres",
+   "productor": "Alejandro Diaz Goicochea",
+   "region": "Junin",
+   "variedad": "Caturra and Typica",
+   "puntaje": 87.48,
+   "peso_lb": null,
+   "precio_usd_lb": 7.1,
+   "total_usd": 7122.01,
+   "compradores": [
+    "Honu Kato Coffee Inc."
+   ],
+   "pais_comprador": null,
+   "fuente_url": "https://allianceforcoffeeexcellence.org/peru-2018/"
+  },
+  {
+   "anio": 2018,
+   "puesto": "13",
+   "finca": "Picorana",
+   "productor": "José Christian Laván Guerrero",
+   "region": "Cajamarca",
+   "variedad": "Caturra, Geisha",
+   "puntaje": 87.4,
+   "peso_lb": null,
+   "precio_usd_lb": 9.5,
+   "total_usd": 8084.41,
+   "compradores": [
+    "Kyokuto Fadie Corporation"
+   ],
+   "pais_comprador": null,
+   "fuente_url": "https://allianceforcoffeeexcellence.org/peru-2018/"
+  },
+  {
+   "anio": 2018,
+   "puesto": "14",
+   "finca": "Cubos",
+   "productor": "Mel Francisco Cubos Espinoza",
+   "region": "Huancuo",
+   "variedad": "Caturra",
+   "puntaje": 87.38,
+   "peso_lb": null,
+   "precio_usd_lb": 7.08,
+   "total_usd": 6846.01,
+   "compradores": [
+    "Dutch Barista Coffee Company",
+    "Single O"
+   ],
+   "pais_comprador": null,
+   "fuente_url": "https://allianceforcoffeeexcellence.org/peru-2018/"
+  },
+  {
+   "anio": 2018,
+   "puesto": "15",
+   "finca": "El Cerro",
+   "productor": "Efraín Carhuallocllo Salvado",
+   "region": "Cajamarca",
+   "variedad": "Caturra Amarilla",
+   "puntaje": 87.36,
+   "peso_lb": null,
+   "precio_usd_lb": 8,
+   "total_usd": 9294.72,
+   "compradores": [
+    "Wataru & Co., Ltd. – Osaka"
+   ],
+   "pais_comprador": null,
+   "fuente_url": "https://allianceforcoffeeexcellence.org/peru-2018/"
+  },
+  {
+   "anio": 2018,
+   "puesto": "16",
+   "finca": "Rayos del Sol",
+   "productor": "Percy Pintado Huamán",
+   "region": "Cajamarca",
+   "variedad": "Caturra, Bourbon",
+   "puntaje": 87.24,
+   "peso_lb": null,
+   "precio_usd_lb": 6.9,
+   "total_usd": 13188.73,
+   "compradores": [
+    "Wataru & Co., Ltd."
+   ],
+   "pais_comprador": null,
+   "fuente_url": "https://allianceforcoffeeexcellence.org/peru-2018/"
+  },
+  {
+   "anio": 2018,
+   "puesto": "17",
+   "finca": "La Palestina",
+   "productor": "José Praxedes Alarcón Coronel",
+   "region": "Cajamarca",
+   "variedad": "Caturra, Bourbon",
+   "puntaje": 87.05,
+   "peso_lb": null,
+   "precio_usd_lb": 6.99,
+   "total_usd": 6749.75,
+   "compradores": [
+    "Nippon Coffee Trading"
+   ],
+   "pais_comprador": null,
+   "fuente_url": "https://allianceforcoffeeexcellence.org/peru-2018/"
+  },
+  {
+   "anio": 2018,
+   "puesto": "18",
+   "finca": "La Montaña",
+   "productor": "Vincler Velin Román Huamán",
+   "region": "Cajamarca",
+   "variedad": "Caturra",
+   "puntaje": 86.88,
+   "peso_lb": null,
+   "precio_usd_lb": 7.08,
+   "total_usd": 5509.87,
+   "compradores": [
+    "Wataru & Co., Ltd. – Osaka"
+   ],
+   "pais_comprador": null,
+   "fuente_url": "https://allianceforcoffeeexcellence.org/peru-2018/"
+  },
+  {
+   "anio": 2018,
+   "puesto": "19",
+   "finca": "Santa Norhy",
+   "productor": "Vicentina Phocco Palero",
+   "region": "Puno",
+   "variedad": "Bourbon, Caturra, and Typica",
+   "puntaje": 86.76,
+   "peso_lb": null,
+   "precio_usd_lb": 7.1,
+   "total_usd": 6339.38,
+   "compradores": [
+    "Wataru & Co., Ltd. – Nagoya"
+   ],
+   "pais_comprador": null,
+   "fuente_url": "https://allianceforcoffeeexcellence.org/peru-2018/"
+  },
+  {
+   "anio": 2018,
+   "puesto": "20",
+   "finca": "El Morito",
+   "productor": "David Flores Chilcon",
+   "region": "Cajamarca",
+   "variedad": "Caturra",
+   "puntaje": 86.67,
+   "peso_lb": null,
+   "precio_usd_lb": 7.3,
+   "total_usd": 5858.1,
+   "compradores": [
+    "Kaffebrenneriet As"
+   ],
+   "pais_comprador": null,
+   "fuente_url": "https://allianceforcoffeeexcellence.org/peru-2018/"
+  },
+  {
+   "anio": 2018,
+   "puesto": "21",
+   "finca": "La Lima",
+   "productor": "Jose Felipe Carhuachinchay Jimenez",
+   "region": "Cajamarca",
+   "variedad": "Caturra and Bourbon",
+   "puntaje": 86.31,
+   "peso_lb": null,
+   "precio_usd_lb": 7.18,
+   "total_usd": 6442.47,
+   "compradores": [
+    "ONE LOVE coffee"
+   ],
+   "pais_comprador": null,
+   "fuente_url": "https://allianceforcoffeeexcellence.org/peru-2018/"
+  },
+  {
+   "anio": 2018,
+   "puesto": "22",
+   "finca": "El Huailulo",
+   "productor": "Evelio Mego Díaz",
+   "region": "Cajamarca",
+   "variedad": "Caturra, Catimor",
+   "puntaje": 86.14,
+   "peso_lb": null,
+   "precio_usd_lb": 6.95,
+   "total_usd": 6021.62,
+   "compradores": [
+    "TOA COFFEE Co., Ltd."
+   ],
+   "pais_comprador": null,
+   "fuente_url": "https://allianceforcoffeeexcellence.org/peru-2018/"
+  },
+  {
+   "anio": 2018,
+   "puesto": "23",
+   "finca": "San Pedro",
+   "productor": "Luis Fernando Quispe Lopez",
+   "region": "Pasco",
+   "variedad": "Geisha",
+   "puntaje": 86.07,
+   "peso_lb": null,
+   "precio_usd_lb": 7.5,
+   "total_usd": 9490.88,
+   "compradores": [
+    "GSC International Co., Ltd."
+   ],
+   "pais_comprador": null,
+   "fuente_url": "https://allianceforcoffeeexcellence.org/peru-2018/"
+  },
+  {
+   "anio": 2019,
+   "puesto": "1a",
+   "finca": "La Lucuma",
+   "productor": "Grimanes Morales Lizana",
+   "region": "Cajamarca",
+   "variedad": "Costa Rica 95",
+   "puntaje": 92.28,
+   "peso_lb": 396.83,
+   "precio_usd_lb": 20,
+   "total_usd": 7936.6,
+   "compradores": [
+    "Maruyama Coffee",
+    "Uchida Coffee",
+    "Harrods",
+    "Goodboybob Coffee"
+   ],
+   "pais_comprador": null,
+   "fuente_url": "https://allianceforcoffeeexcellence.org/peru-2019/"
+  },
+  {
+   "anio": 2019,
+   "puesto": "1b",
+   "finca": "La Lucuma",
+   "productor": "Grimanes Morales Lizana",
+   "region": "Cajamarca",
+   "variedad": "Costa Rica 95",
+   "puntaje": 92.28,
+   "peso_lb": 423.29,
+   "precio_usd_lb": 19.8,
+   "total_usd": 8381.14,
+   "compradores": [
+    "Dabov Specialty Coffee",
+    "Coffee Me Up (Korea)",
+    "Cupper’s High Coffee Company",
+    "Cuppingpost"
+   ],
+   "pais_comprador": null,
+   "fuente_url": "https://allianceforcoffeeexcellence.org/peru-2019/"
+  },
+  {
+   "anio": 2019,
+   "puesto": "2a",
+   "finca": "Nuevo Progreso",
+   "productor": "Lucio Luque Vasquez",
+   "region": "Cusco",
+   "variedad": "Gesha Bourbon Blend",
+   "puntaje": 91.44,
+   "peso_lb": 396.83,
+   "precio_usd_lb": 30,
+   "total_usd": 11904.9,
+   "compradores": [
+    "Oas Roaster",
+    "Blossom Valley Intl",
+    "Vanilla Specialty Coffee"
+   ],
+   "pais_comprador": null,
+   "fuente_url": "https://allianceforcoffeeexcellence.org/peru-2019/"
+  },
+  {
+   "anio": 2019,
+   "puesto": "2b",
+   "finca": "Nuevo Progreso",
+   "productor": "Lucio Luque Vasquez",
+   "region": "Cusco",
+   "variedad": "Gesha Bourbon Blend",
+   "puntaje": 91.44,
+   "peso_lb": 394.63,
+   "precio_usd_lb": 30,
+   "total_usd": 11838.9,
+   "compradores": [
+    "1597 specialty",
+    "Coffee Montage",
+    "NAMUSAIRO COFFEE",
+    "Cuppingpost",
+    "Coffee Me Up",
+    "Cupper’s High Coffee Company"
+   ],
+   "pais_comprador": null,
+   "fuente_url": "https://allianceforcoffeeexcellence.org/peru-2019/"
+  },
+  {
+   "anio": 2019,
+   "puesto": "3a",
+   "finca": "Agua Dulce",
+   "productor": "Junior Guido Flores Elera",
+   "region": "Cajamarca",
+   "variedad": "Catuai",
+   "puntaje": 91.4,
+   "peso_lb": 462.97,
+   "precio_usd_lb": 12.6,
+   "total_usd": 5833.42,
+   "compradores": [
+    "Ascension Coffee Roasters"
+   ],
+   "pais_comprador": null,
+   "fuente_url": "https://allianceforcoffeeexcellence.org/peru-2019/"
+  },
+  {
+   "anio": 2019,
+   "puesto": "3b",
+   "finca": "Agua Dulce",
+   "productor": "Junior Guido Flores Elera",
+   "region": "Cajamarca",
+   "variedad": "Catuai",
+   "puntaje": 91.4,
+   "peso_lb": 449.74,
+   "precio_usd_lb": 12.5,
+   "total_usd": 5621.75,
+   "compradores": [
+    "RYANS COFFEE ROASTERS",
+    "ST.BERRY COFFEE",
+    "27 COFFEE ROASTERS",
+    "Hisashi Yamamoto Coffee(Unir)",
+    "MARUMI COFFEE"
+   ],
+   "pais_comprador": null,
+   "fuente_url": "https://allianceforcoffeeexcellence.org/peru-2019/"
+  },
+  {
+   "anio": 2019,
+   "puesto": "4",
+   "finca": "Romerillo",
+   "productor": "Franklin Chingel Morales",
+   "region": "Cajamarca",
+   "variedad": "Bourbon",
+   "puntaje": 90.88,
+   "peso_lb": 723.34,
+   "precio_usd_lb": 16,
+   "total_usd": 11573.44,
+   "compradores": [
+    "Kyokuto Fadie Corporation"
+   ],
+   "pais_comprador": null,
+   "fuente_url": "https://allianceforcoffeeexcellence.org/peru-2019/"
+  },
+  {
+   "anio": 2019,
+   "puesto": "5",
+   "finca": "Perla Mayo",
+   "productor": "Luz Nelli Alarcon Estela",
+   "region": "Cajamarca",
+   "variedad": "Caturra Rojo, Typica, Caturra Amarillo, Bourbon",
+   "puntaje": 90.47,
+   "peso_lb": 1168.45,
+   "precio_usd_lb": 8.9,
+   "total_usd": 10399.21,
+   "compradores": [
+    "Wataru & Co., Ltd."
+   ],
+   "pais_comprador": null,
+   "fuente_url": "https://allianceforcoffeeexcellence.org/peru-2019/"
+  },
+  {
+   "anio": 2019,
+   "puesto": "6",
+   "finca": "Santa Sofia",
+   "productor": "Eleuterio Bolaños Torresillas",
+   "region": "Junin",
+   "variedad": "Caturra, Bourbon",
+   "puntaje": 90.29,
+   "peso_lb": 884.05,
+   "precio_usd_lb": 8.7,
+   "total_usd": 7691.24,
+   "compradores": [
+    "Mare Terra Green Coffee"
+   ],
+   "pais_comprador": null,
+   "fuente_url": "https://allianceforcoffeeexcellence.org/peru-2019/"
+  },
+  {
+   "anio": 2019,
+   "puesto": "7",
+   "finca": "Monte Rey",
+   "productor": "Felix Cachay Cueva",
+   "region": "Junin",
+   "variedad": "Caturra",
+   "puntaje": 89.69,
+   "peso_lb": 1110.03,
+   "precio_usd_lb": 8.6,
+   "total_usd": 9546.26,
+   "compradores": [
+    "Wataru & Co., Ltd."
+   ],
+   "pais_comprador": null,
+   "fuente_url": "https://allianceforcoffeeexcellence.org/peru-2019/"
+  },
+  {
+   "anio": 2019,
+   "puesto": "8",
+   "finca": "Morales",
+   "productor": "Roiber Elit Becerra Fernandez",
+   "region": "Amazonas",
+   "variedad": "Caturra",
+   "puntaje": 89.32,
+   "peso_lb": 814.61,
+   "precio_usd_lb": 8.4,
+   "total_usd": 6842.72,
+   "compradores": [
+    "Wataru & Co., Ltd."
+   ],
+   "pais_comprador": null,
+   "fuente_url": "https://allianceforcoffeeexcellence.org/peru-2019/"
+  },
+  {
+   "anio": 2019,
+   "puesto": "9",
+   "finca": "Nueva Alianza",
+   "productor": "Dwight Aguilar Masias",
+   "region": "Cusco",
+   "variedad": "Gesha",
+   "puntaje": 89.18,
+   "peso_lb": 839.08,
+   "precio_usd_lb": 16.88,
+   "total_usd": 14163.67,
+   "compradores": [
+    "TAF Coffee"
+   ],
+   "pais_comprador": null,
+   "fuente_url": "https://allianceforcoffeeexcellence.org/peru-2019/"
+  },
+  {
+   "anio": 2019,
+   "puesto": "10",
+   "finca": "Esmeralda",
+   "productor": "Fabian Ortiz Coaquira",
+   "region": "Junin",
+   "variedad": "Caturra, Gesha, Bourbon, Catimor",
+   "puntaje": 88.96,
+   "peso_lb": 1216.95,
+   "precio_usd_lb": 8.6,
+   "total_usd": 10465.77,
+   "compradores": [
+    "GSC International Co., Ltd."
+   ],
+   "pais_comprador": null,
+   "fuente_url": "https://allianceforcoffeeexcellence.org/peru-2019/"
+  },
+  {
+   "anio": 2019,
+   "puesto": "11",
+   "finca": "La Palestina",
+   "productor": "Zobeida Alarcon Coronel",
+   "region": "Cajamarca",
+   "variedad": "Bourbon, Caturra, Catimor",
+   "puntaje": 88.75,
+   "peso_lb": 1135.38,
+   "precio_usd_lb": 8.21,
+   "total_usd": 9321.47,
+   "compradores": [
+    "DALIAN INSIDE OUT TRADING CO., LTD"
+   ],
+   "pais_comprador": null,
+   "fuente_url": "https://allianceforcoffeeexcellence.org/peru-2019/"
+  },
+  {
+   "anio": 2019,
+   "puesto": "12",
+   "finca": "El Lechero",
+   "productor": "Idelio Ulises Nayra Armijor",
+   "region": "Cajamarca",
+   "variedad": "Caturra, Catuai, Bourbon,",
+   "puntaje": 88.75,
+   "peso_lb": 1027.35,
+   "precio_usd_lb": 8.4,
+   "total_usd": 8629.74,
+   "compradores": [
+    "Kyokuto Fadie Corporation"
+   ],
+   "pais_comprador": null,
+   "fuente_url": "https://allianceforcoffeeexcellence.org/peru-2019/"
+  },
+  {
+   "anio": 2019,
+   "puesto": "13",
+   "finca": "El Cedro",
+   "productor": "Nilson Silva Diaz",
+   "region": "Amazonas",
+   "variedad": "Gesha, Typica",
+   "puntaje": 88.64,
+   "peso_lb": 648.16,
+   "precio_usd_lb": 11.4,
+   "total_usd": 7389.02,
+   "compradores": [
+    "Camel Step Roasters"
+   ],
+   "pais_comprador": null,
+   "fuente_url": "https://allianceforcoffeeexcellence.org/peru-2019/"
+  },
+  {
+   "anio": 2019,
+   "puesto": "14",
+   "finca": "Las Orquideas",
+   "productor": "Amancio Zuñiga Aquino",
+   "region": "Huanuco",
+   "variedad": "Hibrido Bourbon",
+   "puntaje": 88.64,
+   "peso_lb": 727.52,
+   "precio_usd_lb": 11.8,
+   "total_usd": 8584.74,
+   "compradores": [
+    "SUPREMO COFFEE"
+   ],
+   "pais_comprador": null,
+   "fuente_url": "https://allianceforcoffeeexcellence.org/peru-2019/"
+  },
+  {
+   "anio": 2019,
+   "puesto": "15",
+   "finca": "La Perla",
+   "productor": "Rafael Arevalo Apolinar",
+   "region": "Cajamarca",
+   "variedad": "Caturra",
+   "puntaje": 88.63,
+   "peso_lb": 1176.39,
+   "precio_usd_lb": 11,
+   "total_usd": 12940.29,
+   "compradores": [
+    "Kyokuto Fadie Corporation",
+    "Intelligentsia"
+   ],
+   "pais_comprador": null,
+   "fuente_url": "https://allianceforcoffeeexcellence.org/peru-2019/"
+  },
+  {
+   "anio": 2019,
+   "puesto": "16",
+   "finca": "Oropeza",
+   "productor": "Cruz Rodriguez Ortiz",
+   "region": "Junin",
+   "variedad": "Caturra, Bourbon, Typica",
+   "puntaje": 88.18,
+   "peso_lb": 909.41,
+   "precio_usd_lb": 8.7,
+   "total_usd": 7911.87,
+   "compradores": [
+    "Brew92 Cafe & Roastery"
+   ],
+   "pais_comprador": null,
+   "fuente_url": "https://allianceforcoffeeexcellence.org/peru-2019/"
+  },
+  {
+   "anio": 2019,
+   "puesto": "17",
+   "finca": "Picorana",
+   "productor": "Jose Cristian Lavan Guerreo",
+   "region": "Cajamarca",
+   "variedad": "Caturra, Gesha",
+   "puntaje": 88.14,
+   "peso_lb": 998.25,
+   "precio_usd_lb": 8.3,
+   "total_usd": 8285.48,
+   "compradores": [
+    "Groundwork Coffee",
+    "The Moustache Coffee Club",
+    "Noble Coffee",
+    "Intelligentsia Coffee",
+    "Amrita Certified Pure"
+   ],
+   "pais_comprador": null,
+   "fuente_url": "https://allianceforcoffeeexcellence.org/peru-2019/"
+  },
+  {
+   "anio": 2019,
+   "puesto": "18",
+   "finca": "El Progreso",
+   "productor": "Agustin Cassa Ccoyo",
+   "region": "Cusco",
+   "variedad": "Bourbon, Caturra, Catimor",
+   "puntaje": 87.72,
+   "peso_lb": 766.33,
+   "precio_usd_lb": 8.2,
+   "total_usd": 6283.91,
+   "compradores": [
+    "ROAST Coffee"
+   ],
+   "pais_comprador": null,
+   "fuente_url": "https://allianceforcoffeeexcellence.org/peru-2019/"
+  },
+  {
+   "anio": 2019,
+   "puesto": "19",
+   "finca": "La Fila",
+   "productor": "Evaristo Castro Tantalean",
+   "region": "Cajamarca",
+   "variedad": "Caturra, Costa Rica",
+   "puntaje": 87.58,
+   "peso_lb": 1404.12,
+   "precio_usd_lb": 8,
+   "total_usd": 11232.96,
+   "compradores": [
+    "Nagahama Coffee Inc."
+   ],
+   "pais_comprador": null,
+   "fuente_url": "https://allianceforcoffeeexcellence.org/peru-2019/"
+  },
+  {
+   "anio": 2019,
+   "puesto": "20",
+   "finca": "Altos Cedruyoc",
+   "productor": "Juan Jose Huillca Singuña",
+   "region": "Cusco",
+   "variedad": "Bourbon, Mondonovo",
+   "puntaje": 87.36,
+   "peso_lb": 750.01,
+   "precio_usd_lb": 7.81,
+   "total_usd": 5857.58,
+   "compradores": [
+    "Wataru & Co., Ltd."
+   ],
+   "pais_comprador": null,
+   "fuente_url": "https://allianceforcoffeeexcellence.org/peru-2019/"
+  },
+  {
+   "anio": 2019,
+   "puesto": "21",
+   "finca": "Parcela Cenfrocafe- Huabal",
+   "productor": "Jose Martin Vega Segovia",
+   "region": "Cajamarca",
+   "variedad": "H1",
+   "puntaje": 87.33,
+   "peso_lb": 988.55,
+   "precio_usd_lb": 7.85,
+   "total_usd": 7760.12,
+   "compradores": [
+    "Wataru & Co., Ltd."
+   ],
+   "pais_comprador": null,
+   "fuente_url": "https://allianceforcoffeeexcellence.org/peru-2019/"
+  },
+  {
+   "anio": 2021,
+   "puesto": "1a",
+   "finca": "Nueva Alianza",
+   "productor": "Dwight Aguilar Masías",
+   "region": "Cusco",
+   "variedad": "Gesha",
+   "puntaje": 90.2,
+   "peso_lb": 330.69,
+   "precio_usd_lb": 54.6,
+   "total_usd": 18055.67,
+   "compradores": [
+    "Orsir Coffee(Taiwan)"
+   ],
+   "pais_comprador": null,
+   "fuente_url": "https://allianceforcoffeeexcellence.org/peru-2021/"
+  },
+  {
+   "anio": 2021,
+   "puesto": "1b",
+   "finca": "Nueva Alianza",
+   "productor": "Dwight Aguilar Masías",
+   "region": "Cusco",
+   "variedad": "Gesha",
+   "puntaje": 90.2,
+   "peso_lb": 352.08,
+   "precio_usd_lb": 50.4,
+   "total_usd": 17744.83,
+   "compradores": [
+    "KALDI COFFEE FARM"
+   ],
+   "pais_comprador": null,
+   "fuente_url": "https://allianceforcoffeeexcellence.org/peru-2021/"
+  },
+  {
+   "anio": 2021,
+   "puesto": "2a",
+   "finca": "Santa Mónica",
+   "productor": "Hugo Mariño Laura",
+   "region": "Cusco",
+   "variedad": "Gesha (Organic)",
+   "puntaje": 90.08,
+   "peso_lb": 330.69,
+   "precio_usd_lb": 34.3,
+   "total_usd": 11342.67,
+   "compradores": [
+    "SUPREMO COFFEE"
+   ],
+   "pais_comprador": null,
+   "fuente_url": "https://allianceforcoffeeexcellence.org/peru-2021/",
+   "organico": true
+  },
+  {
+   "anio": 2021,
+   "puesto": "2b",
+   "finca": "Santa Mónica",
+   "productor": "Hugo Mariño Laura",
+   "region": "Cusco",
+   "variedad": "Gesha(Organic)",
+   "puntaje": 90.08,
+   "peso_lb": 340.61,
+   "precio_usd_lb": 33.5,
+   "total_usd": 11410.44,
+   "compradores": [
+    "KAKALOVE CAFE"
+   ],
+   "pais_comprador": null,
+   "fuente_url": "https://allianceforcoffeeexcellence.org/peru-2021/",
+   "organico": true
+  },
+  {
+   "anio": 2021,
+   "puesto": "3a",
+   "finca": "La Palta",
+   "productor": "José Elmer Tineo Mendoza",
+   "region": "Cajamarca",
+   "variedad": "Catuaí, Caturra, Bourbón",
+   "puntaje": 90,
+   "peso_lb": 264.55,
+   "precio_usd_lb": 27.6,
+   "total_usd": 7301.58,
+   "compradores": [
+    "Falcon Coffees"
+   ],
+   "pais_comprador": null,
+   "fuente_url": "https://allianceforcoffeeexcellence.org/peru-2021/"
+  },
+  {
+   "anio": 2021,
+   "puesto": "3b",
+   "finca": "La Palta",
+   "productor": "José Elmer Tineo Mendoza",
+   "region": "Cajamarca",
+   "variedad": "Catuaí, Caturra, Bourbón",
+   "puntaje": 90,
+   "peso_lb": 297.62,
+   "precio_usd_lb": 27.7,
+   "total_usd": 8244.07,
+   "compradores": [
+    "Cometeer",
+    "Onyx Coffee Lab"
+   ],
+   "pais_comprador": null,
+   "fuente_url": "https://allianceforcoffeeexcellence.org/peru-2021/"
+  },
+  {
+   "anio": 2021,
+   "puesto": "4",
+   "finca": "Chiriloma",
+   "productor": "Nory Quispe Santos",
+   "region": "Cusco",
+   "variedad": "Gesha",
+   "puntaje": 89.38,
+   "peso_lb": 610.68,
+   "precio_usd_lb": 25.7,
+   "total_usd": 15694.48,
+   "compradores": [
+    "MOMOS COFFEE"
+   ],
+   "pais_comprador": null,
+   "fuente_url": "https://allianceforcoffeeexcellence.org/peru-2021/"
+  },
+  {
+   "anio": 2021,
+   "puesto": "5",
+   "finca": "Santa Teresa",
+   "productor": "Andrés Torres Goicochea",
+   "region": "Amazonas",
+   "variedad": "Gesha",
+   "puntaje": 89.09,
+   "peso_lb": 1640.96,
+   "precio_usd_lb": 14,
+   "total_usd": 22973.44,
+   "compradores": [
+    "DABOV Specialty Coffee"
+   ],
+   "pais_comprador": null,
+   "fuente_url": "https://allianceforcoffeeexcellence.org/peru-2021/"
+  },
+  {
+   "anio": 2021,
+   "puesto": "6",
+   "finca": "Carmen Alto",
+   "productor": "Marco Solórzano Vizarreta",
+   "region": "Cusco",
+   "variedad": "Gesha",
+   "puntaje": 89.06,
+   "peso_lb": 593.92,
+   "precio_usd_lb": 23.2,
+   "total_usd": 13778.94,
+   "compradores": [
+    "Solberg & Hansen As"
+   ],
+   "pais_comprador": null,
+   "fuente_url": "https://allianceforcoffeeexcellence.org/peru-2021/"
+  },
+  {
+   "anio": 2021,
+   "puesto": "7",
+   "finca": "Nuevo Progreso",
+   "productor": "Lucio Luque Vásquez",
+   "region": "Cusco",
+   "variedad": "Gesha (Organic)",
+   "puntaje": 88.97,
+   "peso_lb": 595.25,
+   "precio_usd_lb": 20,
+   "total_usd": 11905,
+   "compradores": [
+    "Kaffebrenneriet As"
+   ],
+   "pais_comprador": null,
+   "fuente_url": "https://allianceforcoffeeexcellence.org/peru-2021/",
+   "organico": true
+  },
+  {
+   "anio": 2021,
+   "puesto": "8",
+   "finca": "La Candelaria",
+   "productor": "Roberto Vilca Palli",
+   "region": "Puno",
+   "variedad": "Bourbón Rojo",
+   "puntaje": 88.38,
+   "peso_lb": 626.55,
+   "precio_usd_lb": 26,
+   "total_usd": 16290.3,
+   "compradores": [
+    "NOZY COFFEE"
+   ],
+   "pais_comprador": null,
+   "fuente_url": "https://allianceforcoffeeexcellence.org/peru-2021/"
+  },
+  {
+   "anio": 2021,
+   "puesto": "9",
+   "finca": "La Lucuma",
+   "productor": "Grimanes Morales Lizana",
+   "region": "Cajamarca",
+   "variedad": "Bourbón Rojo",
+   "puntaje": 88.27,
+   "peso_lb": 686.32,
+   "precio_usd_lb": 32.1,
+   "total_usd": 22030.87,
+   "compradores": [
+    "Terarosa (Haksan Co. Ltd)"
+   ],
+   "pais_comprador": null,
+   "fuente_url": "https://allianceforcoffeeexcellence.org/peru-2021/"
+  },
+  {
+   "anio": 2021,
+   "puesto": "10",
+   "finca": "El Cedro",
+   "productor": "Nilson Silva Díaz",
+   "region": "Amazonas",
+   "variedad": "Gesha",
+   "puntaje": 87.75,
+   "peso_lb": 809.07,
+   "precio_usd_lb": 20.2,
+   "total_usd": 16343.21,
+   "compradores": [
+    "KALDI COFFEE FARM"
+   ],
+   "pais_comprador": null,
+   "fuente_url": "https://allianceforcoffeeexcellence.org/peru-2021/"
+  },
+  {
+   "anio": 2021,
+   "puesto": "11",
+   "finca": "Kukipata Belen",
+   "productor": "Feliciano Huayllas Candia",
+   "region": "Cusco",
+   "variedad": "Gesha (Organic)",
+   "puntaje": 87.72,
+   "peso_lb": 559.31,
+   "precio_usd_lb": 15.3,
+   "total_usd": 8557.44,
+   "compradores": [
+    "SkyTop Coffee"
+   ],
+   "pais_comprador": null,
+   "fuente_url": "https://allianceforcoffeeexcellence.org/peru-2021/",
+   "organico": true
+  },
+  {
+   "anio": 2021,
+   "puesto": "12",
+   "finca": "El Bosque",
+   "productor": "Elmer Cruz Guerrero",
+   "region": "Cajamarca",
+   "variedad": "Caturra, Típica, Bourbón (Organic)",
+   "puntaje": 87.69,
+   "peso_lb": 615.64,
+   "precio_usd_lb": 11.3,
+   "total_usd": 6956.73,
+   "compradores": [
+    "Wataru & Co., Ltd."
+   ],
+   "pais_comprador": null,
+   "fuente_url": "https://allianceforcoffeeexcellence.org/peru-2021/",
+   "organico": true
+  },
+  {
+   "anio": 2021,
+   "puesto": "13",
+   "finca": "Las Naranjas",
+   "productor": "Mercedes Pérez Coronel",
+   "region": "Cajamarca",
+   "variedad": "Castillo Amarillo",
+   "puntaje": 87.64,
+   "peso_lb": 637.8,
+   "precio_usd_lb": 12,
+   "total_usd": 7653.6,
+   "compradores": [
+    "UCC Ueshima Coffee Co., Ltd."
+   ],
+   "pais_comprador": null,
+   "fuente_url": "https://allianceforcoffeeexcellence.org/peru-2021/"
+  },
+  {
+   "anio": 2021,
+   "puesto": "14",
+   "finca": "El Aliso Chorro Blanco",
+   "productor": "Benedicto Wilcamango Romero",
+   "region": "Cajamarca",
+   "variedad": "Caturra & Bourbón",
+   "puntaje": 87.63,
+   "peso_lb": 778.98,
+   "precio_usd_lb": 10.9,
+   "total_usd": 8490.88,
+   "compradores": [
+    "Kyokuto Fadie Corporation"
+   ],
+   "pais_comprador": null,
+   "fuente_url": "https://allianceforcoffeeexcellence.org/peru-2021/"
+  },
+  {
+   "anio": 2021,
+   "puesto": "15",
+   "finca": "Alto Cedruyoc",
+   "productor": "Ubaldina Jincho Aguirre",
+   "region": "Cusco",
+   "variedad": "Bourbón",
+   "puntaje": 87.63,
+   "peso_lb": 622.14,
+   "precio_usd_lb": 25.2,
+   "total_usd": 15677.93,
+   "compradores": [
+    "Wataru for Voila Coffee"
+   ],
+   "pais_comprador": null,
+   "fuente_url": "https://allianceforcoffeeexcellence.org/peru-2021/"
+  },
+  {
+   "anio": 2021,
+   "puesto": "16",
+   "finca": "Eco Mario",
+   "productor": "Juan Carlos Mejía Condory",
+   "region": "Cusco",
+   "variedad": "Bourbón",
+   "puntaje": 87.56,
+   "peso_lb": 645.07,
+   "precio_usd_lb": 10.1,
+   "total_usd": 6515.21,
+   "compradores": [
+    "Wataru & Co., Ltd."
+   ],
+   "pais_comprador": null,
+   "fuente_url": "https://allianceforcoffeeexcellence.org/peru-2021/"
+  },
+  {
+   "anio": 2021,
+   "puesto": "17",
+   "finca": "Los Pinos",
+   "productor": "Irma Espinoza García",
+   "region": "Cajamarca",
+   "variedad": "Bourbón",
+   "puntaje": 87.56,
+   "peso_lb": 691.66,
+   "precio_usd_lb": 19.3,
+   "total_usd": 13349.04,
+   "compradores": [
+    "Luigi Lavazza S.p.A."
+   ],
+   "pais_comprador": null,
+   "fuente_url": "https://allianceforcoffeeexcellence.org/peru-2021/"
+  },
+  {
+   "anio": 2021,
+   "puesto": "18",
+   "finca": "Sangre de Grado",
+   "productor": "Reguberto García Ordoñez",
+   "region": "Cajamarca",
+   "variedad": "Caturra & Pache",
+   "puntaje": 87.56,
+   "peso_lb": 922.63,
+   "precio_usd_lb": 12.7,
+   "total_usd": 11717.4,
+   "compradores": [
+    "Kyokuto Fadie Corporation"
+   ],
+   "pais_comprador": null,
+   "fuente_url": "https://allianceforcoffeeexcellence.org/peru-2021/"
+  },
+  {
+   "anio": 2021,
+   "puesto": "19",
+   "finca": "La Chirimolla",
+   "productor": "Henry Arica Guerrero",
+   "region": "Cajamarca",
+   "variedad": "Caturra, Bourbon, Catimor",
+   "puntaje": 87.53,
+   "peso_lb": 916.46,
+   "precio_usd_lb": 8.5,
+   "total_usd": 7789.91,
+   "compradores": [
+    "Wataru & Co., Ltd."
+   ],
+   "pais_comprador": null,
+   "fuente_url": "https://allianceforcoffeeexcellence.org/peru-2021/"
+  },
+  {
+   "anio": 2021,
+   "puesto": "20",
+   "finca": "Basulpata",
+   "productor": "Alejandro Quispe Ortiz",
+   "region": "Cusco",
+   "variedad": "Bourbón & Gesha",
+   "puntaje": 87.33,
+   "peso_lb": 591.94,
+   "precio_usd_lb": 14.1,
+   "total_usd": 8346.35,
+   "compradores": [
+    "Blossom Valley Intl",
+    "The Few Coffee & Goods"
+   ],
+   "pais_comprador": null,
+   "fuente_url": "https://allianceforcoffeeexcellence.org/peru-2021/"
+  },
+  {
+   "anio": 2021,
+   "puesto": "21",
+   "finca": "El Gringo",
+   "productor": "Lenin Torres Ticlia",
+   "region": "Amazonas",
+   "variedad": "Gesha",
+   "puntaje": 87.22,
+   "peso_lb": 1622.91,
+   "precio_usd_lb": 10.3,
+   "total_usd": 16715.97,
+   "compradores": [
+    "Wataru & Co., Ltd."
+   ],
+   "pais_comprador": null,
+   "fuente_url": "https://allianceforcoffeeexcellence.org/peru-2021/"
+  },
+  {
+   "anio": 2021,
+   "puesto": "22",
+   "finca": "Osopen",
+   "productor": "Gino Sadler Marín Ciriaco",
+   "region": "Pasco",
+   "variedad": "Gesha (Organic)",
+   "puntaje": 87.19,
+   "peso_lb": 611.78,
+   "precio_usd_lb": 12.1,
+   "total_usd": 7402.54,
+   "compradores": [
+    "Wataru & Co., Ltd."
+   ],
+   "pais_comprador": null,
+   "fuente_url": "https://allianceforcoffeeexcellence.org/peru-2021/",
+   "organico": true
+  },
+  {
+   "anio": 2021,
+   "puesto": "23",
+   "finca": "La Chirimoya",
+   "productor": "Orlando Pedraza Ramírez",
+   "region": "Cajamarca",
+   "variedad": "Catuaí & Caturra",
+   "puntaje": 87.19,
+   "peso_lb": 545.8,
+   "precio_usd_lb": 15.3,
+   "total_usd": 8350.74,
+   "compradores": [
+    "Falcon Coffees"
+   ],
+   "pais_comprador": null,
+   "fuente_url": "https://allianceforcoffeeexcellence.org/peru-2021/"
+  },
+  {
+   "anio": 2021,
+   "puesto": "24",
+   "finca": "La Naranja",
+   "productor": "Saúl Menor Taica",
+   "region": "Cajamarca",
+   "variedad": "Caturra",
+   "puntaje": 87.09,
+   "peso_lb": 652.28,
+   "precio_usd_lb": 15.4,
+   "total_usd": 10045.11,
+   "compradores": [
+    "Falcon Coffees"
+   ],
+   "pais_comprador": null,
+   "fuente_url": "https://allianceforcoffeeexcellence.org/peru-2021/"
+  },
+  {
+   "anio": 2022,
+   "puesto": "1a",
+   "finca": "LA BOLA",
+   "productor": "BLANCA FLOR CORDOVA JIMENEZ",
+   "region": "CAJAMARCA",
+   "variedad": "GEISHA",
+   "puntaje": 90.39,
+   "peso_lb": 363.76,
+   "precio_usd_lb": 75,
+   "total_usd": 27282,
+   "compradores": [
+    "AROMA GROUP",
+    "1:2 Coffee Company",
+    "Drippin Coffee Roasters",
+    "Drippin Coffee Roasters",
+    "Vela Ethan International Co., Ltd."
+   ],
+   "pais_comprador": "Thailand",
+   "fuente_url": "https://allianceforcoffeeexcellence.org/peru-2022/"
+  },
+  {
+   "anio": 2022,
+   "puesto": "1b",
+   "finca": "LA BOLA",
+   "productor": "BLANCA FLOR CORDOVA JIMENEZ",
+   "region": "CAJAMARCA",
+   "variedad": "GEISHA",
+   "puntaje": 90.39,
+   "peso_lb": 264.55,
+   "precio_usd_lb": 78.5,
+   "total_usd": 20767.18,
+   "compradores": [
+    "Snow Beans Coffee"
+   ],
+   "pais_comprador": "Japan",
+   "fuente_url": "https://allianceforcoffeeexcellence.org/peru-2022/"
+  },
+  {
+   "anio": 2022,
+   "puesto": "2a",
+   "finca": "SAN SEBASTIAN",
+   "productor": "JULIO CESAR CHAVEZ NIEVE",
+   "region": "CUSCO",
+   "variedad": "GEISHA",
+   "puntaje": 90.25,
+   "peso_lb": 381.66,
+   "precio_usd_lb": 30.4,
+   "total_usd": 11602.46,
+   "compradores": [
+    "Orsir Coffee",
+    "TRN( Taiwan Roasters Network)"
+   ],
+   "pais_comprador": "Taiwan",
+   "fuente_url": "https://allianceforcoffeeexcellence.org/peru-2022/"
+  },
+  {
+   "anio": 2022,
+   "puesto": "2b",
+   "finca": "SAN SEBASTIAN",
+   "productor": "JULIO CESAR CHAVEZ NIEVE",
+   "region": "CUSCO",
+   "variedad": "GEISHA",
+   "puntaje": 90.25,
+   "peso_lb": 264.55,
+   "precio_usd_lb": 30.3,
+   "total_usd": 8015.56,
+   "compradores": [
+    "Coffee Libre"
+   ],
+   "pais_comprador": "South Korea",
+   "fuente_url": "https://allianceforcoffeeexcellence.org/peru-2022/"
+  },
+  {
+   "anio": 2022,
+   "puesto": "3a",
+   "finca": "EL CERRO",
+   "productor": "EFRAIN CARHUALLOCLLO SALVADOR",
+   "region": "CAJAMARCA",
+   "variedad": "GEISHA",
+   "puntaje": 90,
+   "peso_lb": 306.13,
+   "precio_usd_lb": 30.1,
+   "total_usd": 9214.51,
+   "compradores": [
+    "YN coffee"
+   ],
+   "pais_comprador": "USA",
+   "fuente_url": "https://allianceforcoffeeexcellence.org/peru-2022/"
+  },
+  {
+   "anio": 2022,
+   "puesto": "3b",
+   "finca": "EL CERRO",
+   "productor": "EFRAIN CARHUALLOCLLO SALVADOR",
+   "region": "CAJAMARCA",
+   "variedad": "GEISHA",
+   "puntaje": 90,
+   "peso_lb": 264.55,
+   "precio_usd_lb": 31.5,
+   "total_usd": 8333.33,
+   "compradores": [
+    "AROMA GROUP",
+    "1:2 Coffee Company",
+    "Drippin Coffee Roasters",
+    "Vela Ethan International Co., Ltd."
+   ],
+   "pais_comprador": "Thailand",
+   "fuente_url": "https://allianceforcoffeeexcellence.org/peru-2022/"
+  },
+  {
+   "anio": 2022,
+   "puesto": "4",
+   "finca": "CHIRILOMA",
+   "productor": "NORY QUISPE SANTOS",
+   "region": "CUSCO",
+   "variedad": "GEISHA",
+   "puntaje": 89.8,
+   "peso_lb": 595.25,
+   "precio_usd_lb": 15.9,
+   "total_usd": 9464.48,
+   "compradores": [
+    "NANJING ECO FARM TRADING CO., LTD.",
+    "Cut Hand Group (剁手咖啡群)",
+    "Kinglo Coffee（轻乐咖）",
+    "有容乃大Small Arms Big Heart",
+    "Title coffee",
+    "啟程拓殖 TerraformCoffee",
+    "KOMENCU Coffee(广州启程)"
+   ],
+   "pais_comprador": "China",
+   "fuente_url": "https://allianceforcoffeeexcellence.org/peru-2022/"
+  },
+  {
+   "anio": 2022,
+   "puesto": "5",
+   "finca": "FUNDO PUQUIOPATA",
+   "productor": "HORTENCIA VICTORIA BERROCAL MENDOZA",
+   "region": "HUANCAVELICA",
+   "variedad": "TIPICA",
+   "puntaje": 89.66,
+   "peso_lb": 584.82,
+   "precio_usd_lb": 13.7,
+   "total_usd": 8012.03,
+   "compradores": [
+    "terarosa"
+   ],
+   "pais_comprador": "South Korea",
+   "fuente_url": "https://allianceforcoffeeexcellence.org/peru-2022/"
+  },
+  {
+   "anio": 2022,
+   "puesto": "6",
+   "finca": "BELLO HORIZONTE",
+   "productor": "MAXIMO MUÑOZ MEZA",
+   "region": "JUNIN",
+   "variedad": "GEISHA",
+   "puntaje": 89.46,
+   "peso_lb": 637.25,
+   "precio_usd_lb": 20.2,
+   "total_usd": 12872.45,
+   "compradores": [
+    "Songdo Coffee(South Korea)",
+    "Studio Caffeine(Hong Kong)",
+    "WAVY COFFEE ROASTERS(Japan)",
+    "Big Black Box(Thailand)",
+    "Bean & Bean(USA)"
+   ],
+   "pais_comprador": "South Korea",
+   "fuente_url": "https://allianceforcoffeeexcellence.org/peru-2022/"
+  },
+  {
+   "anio": 2022,
+   "puesto": "7",
+   "finca": "ALTO MORERILLO",
+   "productor": "ELVIS EDWIN DAVILA HORNA",
+   "region": "CAJAMARCA",
+   "variedad": "BOURBON – GEISHA",
+   "puntaje": 89.3,
+   "peso_lb": 591.79,
+   "precio_usd_lb": 12,
+   "total_usd": 7101.48,
+   "compradores": [
+    "Wataru & Co., Ltd."
+   ],
+   "pais_comprador": "Japan",
+   "fuente_url": "https://allianceforcoffeeexcellence.org/peru-2022/"
+  },
+  {
+   "anio": 2022,
+   "puesto": "8",
+   "finca": "NUEVO PROGRESO",
+   "productor": "LUCIO LUQUE VASQUEZ",
+   "region": "CUSCO",
+   "variedad": "GEISHA",
+   "puntaje": 89.02,
+   "peso_lb": 631.78,
+   "precio_usd_lb": 20.2,
+   "total_usd": 12761.96,
+   "compradores": [
+    "Coffee Montage",
+    "coffeeTemple",
+    "rbhcoffee",
+    "FEBRUARY ROASTERS",
+    "502 Coffee Roasters",
+    "DeepBlueLake",
+    "COFFEE PLACE",
+    "HYANGMISA",
+    "No Doubt"
+   ],
+   "pais_comprador": "South Korea",
+   "fuente_url": "https://allianceforcoffeeexcellence.org/peru-2022/"
+  },
+  {
+   "anio": 2022,
+   "puesto": "9",
+   "finca": "SILLAPATA",
+   "productor": "CLEOFE ESPINOZA PALOMINO",
+   "region": "CUSCO",
+   "variedad": "GEISHA",
+   "puntaje": 88.89,
+   "peso_lb": 595.25,
+   "precio_usd_lb": 15.6,
+   "total_usd": 9285.9,
+   "compradores": [
+    "Linking Coffee"
+   ],
+   "pais_comprador": "Taiwan",
+   "fuente_url": "https://allianceforcoffeeexcellence.org/peru-2022/"
+  },
+  {
+   "anio": 2022,
+   "puesto": "10",
+   "finca": "PALTOS A",
+   "productor": "NAYDA FLORES RIOS",
+   "region": "CUSCO",
+   "variedad": "GEISHA",
+   "puntaje": 88.48,
+   "peso_lb": 556.34,
+   "precio_usd_lb": 15.1,
+   "total_usd": 8400.73,
+   "compradores": [
+    "Orsir Coffee",
+    "TRN( Taiwan Roasters Network)"
+   ],
+   "pais_comprador": "Taiwan",
+   "fuente_url": "https://allianceforcoffeeexcellence.org/peru-2022/"
+  },
+  {
+   "anio": 2022,
+   "puesto": "11",
+   "finca": "CEDRUYOC",
+   "productor": "UBALDINA JINCHU AGUIRRE",
+   "region": "CUSCO",
+   "variedad": "GEISHA",
+   "puntaje": 88.13,
+   "peso_lb": 595.25,
+   "precio_usd_lb": 15.1,
+   "total_usd": 8988.28,
+   "compradores": [
+    "M.I.Coffee Corporation"
+   ],
+   "pais_comprador": "South Korea",
+   "fuente_url": "https://allianceforcoffeeexcellence.org/peru-2022/"
+  },
+  {
+   "anio": 2022,
+   "puesto": "12",
+   "finca": "LA MARAGARITA COFFEE RESERVE",
+   "productor": "MARCO SOLORZANO VIZARRETA",
+   "region": "CUSCO",
+   "variedad": "GEISHA",
+   "puntaje": 88.08,
+   "peso_lb": 621.92,
+   "precio_usd_lb": 15,
+   "total_usd": 9328.8,
+   "compradores": [
+    "AROMA GROUP",
+    "1:2 Coffee Company",
+    "Drippin Coffee Roasters"
+   ],
+   "pais_comprador": "Thailand",
+   "fuente_url": "https://allianceforcoffeeexcellence.org/peru-2022/"
+  },
+  {
+   "anio": 2022,
+   "puesto": "13",
+   "finca": "SANTA MONICA",
+   "productor": "HUGO MARIÑO LAURA",
+   "region": "CUSCO",
+   "variedad": "GEISHA",
+   "puntaje": 88.08,
+   "peso_lb": 636.78,
+   "precio_usd_lb": 15,
+   "total_usd": 9551.7,
+   "compradores": [
+    "Urth Caffe"
+   ],
+   "pais_comprador": "USA",
+   "fuente_url": "https://allianceforcoffeeexcellence.org/peru-2022/"
+  },
+  {
+   "anio": 2022,
+   "puesto": "14",
+   "finca": "LA PALMA",
+   "productor": "ELI ESPINOZA SOBERON",
+   "region": "CAJAMARCA",
+   "variedad": "CATURRA – BOURBON",
+   "puntaje": 88,
+   "peso_lb": 706.6,
+   "precio_usd_lb": 11.9,
+   "total_usd": 8408.54,
+   "compradores": [
+    "Caffeinelab Coffee Roasters"
+   ],
+   "pais_comprador": "Saudi Arabia",
+   "fuente_url": "https://allianceforcoffeeexcellence.org/peru-2022/"
+  },
+  {
+   "anio": 2022,
+   "puesto": "15",
+   "finca": "LA PALMA",
+   "productor": "PABLO NEIRA MELEDREZ",
+   "region": "CAJAMARCA",
+   "variedad": "CATURRA BORBON GEISHA",
+   "puntaje": 88,
+   "peso_lb": 675.54,
+   "precio_usd_lb": 10.8,
+   "total_usd": 7295.83,
+   "compradores": [
+    "Wataru & Co., Ltd."
+   ],
+   "pais_comprador": "Japan",
+   "fuente_url": "https://allianceforcoffeeexcellence.org/peru-2022/"
+  },
+  {
+   "anio": 2022,
+   "puesto": "16",
+   "finca": "LA BERENJENA",
+   "productor": "NICANOR ZURITA MORETO",
+   "region": "CAJAMARCA",
+   "variedad": "CATURRA",
+   "puntaje": 87.77,
+   "peso_lb": 618.22,
+   "precio_usd_lb": 11.1,
+   "total_usd": 6862.13,
+   "compradores": [
+    "Wataru & Co., Ltd."
+   ],
+   "pais_comprador": "Japan",
+   "fuente_url": "https://allianceforcoffeeexcellence.org/peru-2022/"
+  },
+  {
+   "anio": 2022,
+   "puesto": "17",
+   "finca": "EXPERIMENTAL CANDELARIA",
+   "productor": "JHONATAN SAMIR BETANCUR COAQUIRA",
+   "region": "PUNO",
+   "variedad": "BOURBON – GEISHA",
+   "puntaje": 87.6,
+   "peso_lb": 595.25,
+   "precio_usd_lb": 11.9,
+   "total_usd": 7083.48,
+   "compradores": [
+    "NOZY COFFEE"
+   ],
+   "pais_comprador": "Japan",
+   "fuente_url": "https://allianceforcoffeeexcellence.org/peru-2022/"
+  },
+  {
+   "anio": 2022,
+   "puesto": "18",
+   "finca": "SANTA MONICA",
+   "productor": "RAUL MAMANI MAMANI",
+   "region": "PUNO",
+   "variedad": "GEISHA",
+   "puntaje": 87.5,
+   "peso_lb": 620.51,
+   "precio_usd_lb": 13.7,
+   "total_usd": 8500.99,
+   "compradores": [
+    "NOZY COFFEE"
+   ],
+   "pais_comprador": "Japan",
+   "fuente_url": "https://allianceforcoffeeexcellence.org/peru-2022/"
+  },
+  {
+   "anio": 2022,
+   "puesto": "19",
+   "finca": "LAS ETIOPES",
+   "productor": "SIMON CHARLES BROWN",
+   "region": "CAJAMARCA",
+   "variedad": "ETIOPE – GEISHA",
+   "puntaje": 87.5,
+   "peso_lb": 659.49,
+   "precio_usd_lb": 12.1,
+   "total_usd": 7979.83,
+   "compradores": [
+    "KAFFEBRENNERIET AS"
+   ],
+   "pais_comprador": "Norway",
+   "fuente_url": "https://allianceforcoffeeexcellence.org/peru-2022/"
+  },
+  {
+   "anio": 2022,
+   "puesto": "20",
+   "finca": "EL JAZMIN",
+   "productor": "ANDRES ABARCA GOMEZ",
+   "region": "CAJAMARCA",
+   "variedad": "CATURRA – BOURBON – TIPICA",
+   "puntaje": 87.5,
+   "peso_lb": 783.83,
+   "precio_usd_lb": 12,
+   "total_usd": 9405.96,
+   "compradores": [
+    "Urth Caffe"
+   ],
+   "pais_comprador": "USA",
+   "fuente_url": "https://allianceforcoffeeexcellence.org/peru-2022/"
+  },
+  {
+   "anio": 2022,
+   "puesto": "21",
+   "finca": "EL CEDRO",
+   "productor": "NILSON SILVA DIAZ",
+   "region": "AMAZONAS",
+   "variedad": "GEISHA",
+   "puntaje": 87.42,
+   "peso_lb": 575.82,
+   "precio_usd_lb": 15.1,
+   "total_usd": 8694.88,
+   "compradores": [
+    "Saerin co., Ltd(MGPG)"
+   ],
+   "pais_comprador": "South Korea",
+   "fuente_url": "https://allianceforcoffeeexcellence.org/peru-2022/"
+  },
+  {
+   "anio": 2022,
+   "puesto": "22",
+   "finca": "CAMINOS DEL INCA",
+   "productor": "EDWAR TORO GOICOCHEA",
+   "region": "CAJAMARCA",
+   "variedad": "GEISHA – BOURBON",
+   "puntaje": 87.42,
+   "peso_lb": 706.23,
+   "precio_usd_lb": 12.1,
+   "total_usd": 8545.38,
+   "compradores": [
+    "honu加藤珈琲店株式会社"
+   ],
+   "pais_comprador": "Japan",
+   "fuente_url": "https://allianceforcoffeeexcellence.org/peru-2022/"
+  },
+  {
+   "anio": 2022,
+   "puesto": "23",
+   "finca": "LA MARAGARITA COFFEE RESERVE",
+   "productor": "IVAN SALAS SOLORZANO",
+   "region": "CUSCO",
+   "variedad": "GEISHA AMARILLA GEISHA ROJO",
+   "puntaje": 87.42,
+   "peso_lb": 608.28,
+   "precio_usd_lb": 15.1,
+   "total_usd": 9185.03,
+   "compradores": [
+    "Wataru & Co., Ltd."
+   ],
+   "pais_comprador": "Japan",
+   "fuente_url": "https://allianceforcoffeeexcellence.org/peru-2022/"
+  },
+  {
+   "anio": 2022,
+   "puesto": "24",
+   "finca": "LA NARANJA",
+   "productor": "AMARO TOMAS CRUZ MEZA",
+   "region": "CAJAMARCA",
+   "variedad": "GEISHA",
+   "puntaje": 87.42,
+   "peso_lb": 411.49,
+   "precio_usd_lb": 15.1,
+   "total_usd": 6213.5,
+   "compradores": [
+    "Wataru for Voila Coffee"
+   ],
+   "pais_comprador": "Japan",
+   "fuente_url": "https://allianceforcoffeeexcellence.org/peru-2022/"
+  },
+  {
+   "anio": 2022,
+   "puesto": "25",
+   "finca": "SAN CARLOS",
+   "productor": "RUBEN ANTONIO SALAZAR ZAPANA",
+   "region": "PUNO",
+   "variedad": "GEISHA – BOURBON",
+   "puntaje": 87.38,
+   "peso_lb": 595.25,
+   "precio_usd_lb": 12.1,
+   "total_usd": 7202.53,
+   "compradores": [
+    "NOZY COFFEE"
+   ],
+   "pais_comprador": "Japan",
+   "fuente_url": "https://allianceforcoffeeexcellence.org/peru-2022/"
+  },
+  {
+   "anio": 2022,
+   "puesto": "26",
+   "finca": "NUEVA ZELANDIA",
+   "productor": "HERLIN EMER FLORIDO ENCARNACIÓN",
+   "region": "HUANUCO",
+   "variedad": "GEISHA",
+   "puntaje": 87.31,
+   "peso_lb": 619.5,
+   "precio_usd_lb": 12.4,
+   "total_usd": 7681.68,
+   "compradores": [
+    "Linking Coffee"
+   ],
+   "pais_comprador": "Taiwan",
+   "fuente_url": "https://allianceforcoffeeexcellence.org/peru-2022/"
+  },
+  {
+   "anio": 2022,
+   "puesto": "27",
+   "finca": "EL ZAPOTE",
+   "productor": "FREDESVINDA VASQUEZ ROMERO",
+   "region": "CAJAMARCA",
+   "variedad": "CATUAI – COSTA RICA – TIPICA",
+   "puntaje": 87.17,
+   "peso_lb": 529.11,
+   "precio_usd_lb": 12.1,
+   "total_usd": 6402.11,
+   "compradores": [
+    "Campos Coffee"
+   ],
+   "pais_comprador": "Australia",
+   "fuente_url": "https://allianceforcoffeeexcellence.org/peru-2022/"
+  },
+  {
+   "anio": 2022,
+   "puesto": "28",
+   "finca": "FINCA EL MORITO S.R.L",
+   "productor": "FAUSTINO FLORES BENEGAS",
+   "region": "CAJAMARCA",
+   "variedad": "BOURBON ROJO",
+   "puntaje": 87.12,
+   "peso_lb": 621.7,
+   "precio_usd_lb": 9,
+   "total_usd": 5595.21,
+   "compradores": [
+    "Wataru & Co., Ltd."
+   ],
+   "pais_comprador": "Japan",
+   "fuente_url": "https://allianceforcoffeeexcellence.org/peru-2022/"
+  },
+  {
+   "anio": 2022,
+   "puesto": "29",
+   "finca": "PROGRESO",
+   "productor": "AGUSTIN CCASA CCOYO",
+   "region": "CUSCO",
+   "variedad": "BOURBON",
+   "puntaje": 87.04,
+   "peso_lb": 616.94,
+   "precio_usd_lb": 12.1,
+   "total_usd": 7464.97,
+   "compradores": [
+    "Kyokuto Fadie Corporation"
+   ],
+   "pais_comprador": "Japan",
+   "fuente_url": "https://allianceforcoffeeexcellence.org/peru-2022/"
+  },
+  {
+   "anio": 2023,
+   "puesto": "1a",
+   "finca": "Alto Mirador",
+   "productor": "Yoniser Mego Silva",
+   "region": "Cajamarca",
+   "variedad": "Geisha",
+   "puntaje": 90.74,
+   "peso_lb": 330.69,
+   "precio_usd_lb": 80.2,
+   "total_usd": 26521.34,
+   "compradores": [
+    "KALDI COFFEE FARM (CAMEL COFFEE CO., LTD.)"
+   ],
+   "pais_comprador": "Japan",
+   "fuente_url": "https://allianceforcoffeeexcellence.org/peru-2023/"
+  },
+  {
+   "anio": 2023,
+   "puesto": "1b",
+   "finca": "Alto Mirador",
+   "productor": "Yoniser Mego Silva",
+   "region": "Cajamarca",
+   "variedad": "Geisha",
+   "puntaje": 90.74,
+   "peso_lb": 327.54,
+   "precio_usd_lb": 80.3,
+   "total_usd": 26301.46,
+   "compradores": [
+    "KALDI COFFEE FARM (CAMEL COFFEE CO., LTD.)"
+   ],
+   "pais_comprador": "Japan",
+   "fuente_url": "https://allianceforcoffeeexcellence.org/peru-2023/"
+  },
+  {
+   "anio": 2023,
+   "puesto": "2a",
+   "finca": "La Lucuma",
+   "productor": "Franco Huaches Montalvan",
+   "region": "Cajamarca",
+   "variedad": "Geisha",
+   "puntaje": 90.68,
+   "peso_lb": 396.83,
+   "precio_usd_lb": 44.8,
+   "total_usd": 17777.98,
+   "compradores": [
+    "Cultivar Coffees",
+    "Kawa Coffee"
+   ],
+   "pais_comprador": "The Netherlands",
+   "fuente_url": "https://allianceforcoffeeexcellence.org/peru-2023/"
+  },
+  {
+   "anio": 2023,
+   "puesto": "2b",
+   "finca": "La Lucuma",
+   "productor": "Franco Huaches Montalvan",
+   "region": "Cajamarca",
+   "variedad": "Geisha",
+   "puntaje": 90.68,
+   "peso_lb": 388.76,
+   "precio_usd_lb": 44.1,
+   "total_usd": 17144.32,
+   "compradores": [
+    "DECAMERON COFFEE"
+   ],
+   "pais_comprador": "China",
+   "fuente_url": "https://allianceforcoffeeexcellence.org/peru-2023/"
+  },
+  {
+   "anio": 2023,
+   "puesto": "3a",
+   "finca": "Chiriloma",
+   "productor": "Edwin Quea Pacco",
+   "region": "Cusco",
+   "variedad": "Geisha",
+   "puntaje": 90.32,
+   "peso_lb": 330.69,
+   "precio_usd_lb": 60.1,
+   "total_usd": 19874.47,
+   "compradores": [
+    "Kyokuto Fadie Corporation"
+   ],
+   "pais_comprador": "Japan",
+   "fuente_url": "https://allianceforcoffeeexcellence.org/peru-2023/"
+  },
+  {
+   "anio": 2023,
+   "puesto": "3b",
+   "finca": "Chiriloma",
+   "productor": "Edwin Quea Pacco",
+   "region": "Cusco",
+   "variedad": "Geisha",
+   "puntaje": 90.32,
+   "peso_lb": 286.6,
+   "precio_usd_lb": 62.55,
+   "total_usd": 17926.83,
+   "compradores": [
+    "Snow Beans Coffee",
+    "1:2 Coffee Company",
+    "Wavy Coffee"
+   ],
+   "pais_comprador": "Japan, Thailand",
+   "fuente_url": "https://allianceforcoffeeexcellence.org/peru-2023/"
+  },
+  {
+   "anio": 2023,
+   "puesto": "4",
+   "finca": "Pedregal",
+   "productor": "Abel Raymundo Arotaype Huayllas",
+   "region": "Cusco",
+   "variedad": "Geisha",
+   "puntaje": 90.15,
+   "peso_lb": 595.25,
+   "precio_usd_lb": 25.4,
+   "total_usd": 15119.35,
+   "compradores": [
+    "COFFEE COUNTY"
+   ],
+   "pais_comprador": "Japan",
+   "fuente_url": "https://allianceforcoffeeexcellence.org/peru-2023/"
+  },
+  {
+   "anio": 2023,
+   "puesto": "5",
+   "finca": "Randu",
+   "productor": "Royer Romaldo Curo Rojas",
+   "region": "Junin",
+   "variedad": "Geisha-Catimor-Caturra",
+   "puntaje": 89.62,
+   "peso_lb": 586.58,
+   "precio_usd_lb": 19,
+   "total_usd": 11145.02,
+   "compradores": [
+    "SARUTAHIKO COFFEE"
+   ],
+   "pais_comprador": "Japan",
+   "fuente_url": "https://allianceforcoffeeexcellence.org/peru-2023/"
+  },
+  {
+   "anio": 2023,
+   "puesto": "6",
+   "finca": "Llactapata",
+   "productor": "Gilber Huayllas Huaman",
+   "region": "Cusco",
+   "variedad": "Geisha",
+   "puntaje": 89.47,
+   "peso_lb": 635.37,
+   "precio_usd_lb": 23,
+   "total_usd": 14613.51,
+   "compradores": [
+    "SARUTAHIKO COFFEE"
+   ],
+   "pais_comprador": "Japan",
+   "fuente_url": "https://allianceforcoffeeexcellence.org/peru-2023/"
+  },
+  {
+   "anio": 2023,
+   "puesto": "7",
+   "finca": "El Pino",
+   "productor": "Edilberto Bermeo Guevara",
+   "region": "Cajamarca",
+   "variedad": "Geisha",
+   "puntaje": 89.41,
+   "peso_lb": 1124.36,
+   "precio_usd_lb": 18,
+   "total_usd": 20238.48,
+   "compradores": [
+    "Dabov Specialty Coffee",
+    "Coffee Me Up (Korea)",
+    "Coffee Therapy (Thailand)"
+   ],
+   "pais_comprador": "Bulgaria",
+   "fuente_url": "https://allianceforcoffeeexcellence.org/peru-2023/"
+  },
+  {
+   "anio": 2023,
+   "puesto": "8",
+   "finca": "Bello Horizonte",
+   "productor": "Brian Smith Muñoz Mayta",
+   "region": "Junin",
+   "variedad": "Geisha",
+   "puntaje": 89.29,
+   "peso_lb": 767.55,
+   "precio_usd_lb": 24,
+   "total_usd": 18421.2,
+   "compradores": [
+    "MUSEO Co., Ltd.",
+    "언더프레셔(핸디엄)",
+    "COFFEE HWA ROASTERS",
+    "Micro Roaster Union",
+    "월드베스트커피협회(WBCA)"
+   ],
+   "pais_comprador": "South Korea",
+   "fuente_url": "https://allianceforcoffeeexcellence.org/peru-2023/"
+  },
+  {
+   "anio": 2023,
+   "puesto": "9",
+   "finca": "Nueva Alianza",
+   "productor": "Dwight Aguilar Masias",
+   "region": "Cusco",
+   "variedad": "Geisha",
+   "puntaje": 89.24,
+   "peso_lb": 650.36,
+   "precio_usd_lb": 21.95,
+   "total_usd": 14275.4,
+   "compradores": [
+    "Onyx Coffee Lab"
+   ],
+   "pais_comprador": "United States of America",
+   "fuente_url": "https://allianceforcoffeeexcellence.org/peru-2023/"
+  },
+  {
+   "anio": 2023,
+   "puesto": "10",
+   "finca": "Finca Los Santos",
+   "productor": "Jose Santos Requejo Villanueva",
+   "region": "Amazonas",
+   "variedad": "Geisha",
+   "puntaje": 88.94,
+   "peso_lb": 657.87,
+   "precio_usd_lb": 15.1,
+   "total_usd": 9933.84,
+   "compradores": [
+    "治光师 Beam Timer"
+   ],
+   "pais_comprador": "China",
+   "fuente_url": "https://allianceforcoffeeexcellence.org/peru-2023/"
+  },
+  {
+   "anio": 2023,
+   "puesto": "11",
+   "finca": "Sol Naciente",
+   "productor": "Julio Cesar Arotaype Huayllas",
+   "region": "Cusco",
+   "variedad": "Geisha",
+   "puntaje": 88.59,
+   "peso_lb": 529.11,
+   "precio_usd_lb": 19.1,
+   "total_usd": 10106,
+   "compradores": [
+    "Pebble Coffee"
+   ],
+   "pais_comprador": "Taiwan",
+   "fuente_url": "https://allianceforcoffeeexcellence.org/peru-2023/"
+  },
+  {
+   "anio": 2023,
+   "puesto": "12",
+   "finca": "El Colibri",
+   "productor": "Jose Percy Alfaro Chetilan",
+   "region": "Amazonas",
+   "variedad": "Geisha",
+   "puntaje": 88.56,
+   "peso_lb": 661.39,
+   "precio_usd_lb": 14,
+   "total_usd": 9259.46,
+   "compradores": [
+    "Brew92"
+   ],
+   "pais_comprador": "Saudi Arabia",
+   "fuente_url": "https://allianceforcoffeeexcellence.org/peru-2023/"
+  },
+  {
+   "anio": 2023,
+   "puesto": "13",
+   "finca": "Alto San Jose",
+   "productor": "Anastacio Mamani Chambi",
+   "region": "Puno",
+   "variedad": "Geisha-Bourbon",
+   "puntaje": 88.53,
+   "peso_lb": 636,
+   "precio_usd_lb": 14.6,
+   "total_usd": 9285.6,
+   "compradores": [
+    "NOZY COFFEE"
+   ],
+   "pais_comprador": "Japan",
+   "fuente_url": "https://allianceforcoffeeexcellence.org/peru-2023/"
+  },
+  {
+   "anio": 2023,
+   "puesto": "14",
+   "finca": "Miscabamba",
+   "productor": "Armando Ramirez Sanchez",
+   "region": "Cusco",
+   "variedad": "Geisha",
+   "puntaje": 88.53,
+   "peso_lb": 577.32,
+   "precio_usd_lb": 16.7,
+   "total_usd": 9641.24,
+   "compradores": [
+    "SARUTAHIKO COFFEE"
+   ],
+   "pais_comprador": "Japan",
+   "fuente_url": "https://allianceforcoffeeexcellence.org/peru-2023/"
+  },
+  {
+   "anio": 2023,
+   "puesto": "15",
+   "finca": "Mate",
+   "productor": "Edward Robert Vigo Arcos",
+   "region": "Junin",
+   "variedad": "Tupi",
+   "puntaje": 88.47,
+   "peso_lb": 589.78,
+   "precio_usd_lb": 15.3,
+   "total_usd": 9023.63,
+   "compradores": [
+    "REHM SPECIALTY COFFEE IMPORTERS"
+   ],
+   "pais_comprador": "Germany",
+   "fuente_url": "https://allianceforcoffeeexcellence.org/peru-2023/"
+  },
+  {
+   "anio": 2023,
+   "puesto": "16",
+   "finca": "Finca Montalvan",
+   "productor": "Edson Daledy Montalvan Elera",
+   "region": "Cajamarca",
+   "variedad": "Geisha",
+   "puntaje": 88.29,
+   "peso_lb": 661.39,
+   "precio_usd_lb": 13.5,
+   "total_usd": 8928.77,
+   "compradores": [
+    "Wataru & Co., Ltd."
+   ],
+   "pais_comprador": "Japan",
+   "fuente_url": "https://allianceforcoffeeexcellence.org/peru-2023/"
+  },
+  {
+   "anio": 2023,
+   "puesto": "17",
+   "finca": "La Curva",
+   "productor": "Ivan Salas Solorzano",
+   "region": "Cusco",
+   "variedad": "Geisha",
+   "puntaje": 88.18,
+   "peso_lb": 617.82,
+   "precio_usd_lb": 15.6,
+   "total_usd": 9637.99,
+   "compradores": [
+    "Wataru & Co., Ltd."
+   ],
+   "pais_comprador": "Japan",
+   "fuente_url": "https://allianceforcoffeeexcellence.org/peru-2023/"
+  },
+  {
+   "anio": 2023,
+   "puesto": "18",
+   "finca": "Artemira",
+   "productor": "Ebert Alexander Huaman Villegas",
+   "region": "Cajamarca",
+   "variedad": "Geisha",
+   "puntaje": 88.15,
+   "peso_lb": 986.52,
+   "precio_usd_lb": 16.2,
+   "total_usd": 15981.62,
+   "compradores": [
+    "KALDI COFFEE FARM (CAMEL COFFEE CO., LTD.)"
+   ],
+   "pais_comprador": "Japan",
+   "fuente_url": "https://allianceforcoffeeexcellence.org/peru-2023/"
+  },
+  {
+   "anio": 2023,
+   "puesto": "19",
+   "finca": "Puquiopampa",
+   "productor": "Hortencia Victoria Berrocal Mendoza",
+   "region": "Huancavelica",
+   "variedad": "Caturra-Tipica",
+   "puntaje": 88.15,
+   "peso_lb": 595.25,
+   "precio_usd_lb": 15.1,
+   "total_usd": 8988.28,
+   "compradores": [
+    "Kyokuto Fadie Corporation"
+   ],
+   "pais_comprador": "Japan",
+   "fuente_url": "https://allianceforcoffeeexcellence.org/peru-2023/"
+  },
+  {
+   "anio": 2023,
+   "puesto": "20",
+   "finca": "Tranca Amarilluyuq",
+   "productor": "Marina Azorsa Quispe",
+   "region": "Cusco",
+   "variedad": "Geisha",
+   "puntaje": 88.12,
+   "peso_lb": 584.22,
+   "precio_usd_lb": 17.5,
+   "total_usd": 10223.85,
+   "compradores": [
+    "KAFFEBRENNERIET AS"
+   ],
+   "pais_comprador": "Norway",
+   "fuente_url": "https://allianceforcoffeeexcellence.org/peru-2023/"
+  },
+  {
+   "anio": 2023,
+   "puesto": "21",
+   "finca": "El Cedro",
+   "productor": "Nilson Silva Diaz",
+   "region": "Amazonas",
+   "variedad": "Geisha",
+   "puntaje": 87.88,
+   "peso_lb": 783.24,
+   "precio_usd_lb": 22.7,
+   "total_usd": 17779.55,
+   "compradores": [
+    "Sulalat Coffee Trading"
+   ],
+   "pais_comprador": "Saudi Arabia",
+   "fuente_url": "https://allianceforcoffeeexcellence.org/peru-2023/"
+  },
+  {
+   "anio": 2023,
+   "puesto": "22",
+   "finca": "Rosas Pata",
+   "productor": "Flavio Ccori Soncco",
+   "region": "Puno",
+   "variedad": "Bourbon",
+   "puntaje": 87.79,
+   "peso_lb": 617.29,
+   "precio_usd_lb": 16.8,
+   "total_usd": 10370.47,
+   "compradores": [
+    "NOZY COFFEE"
+   ],
+   "pais_comprador": "Japan",
+   "fuente_url": "https://allianceforcoffeeexcellence.org/peru-2023/"
+  },
+  {
+   "anio": 2023,
+   "puesto": "23",
+   "finca": "El Rejo",
+   "productor": "Jose Enrique Rivera Vega",
+   "region": "Cajamarca",
+   "variedad": "Bourbon",
+   "puntaje": 87.79,
+   "peso_lb": 621.61,
+   "precio_usd_lb": 13.35,
+   "total_usd": 8298.49,
+   "compradores": [
+    "Campos Coffee"
+   ],
+   "pais_comprador": "Australia",
+   "fuente_url": "https://allianceforcoffeeexcellence.org/peru-2023/"
+  },
+  {
+   "anio": 2023,
+   "puesto": "24",
+   "finca": "La Pomarrosa",
+   "productor": "Merci Judit Fernandez Silva",
+   "region": "Cajamarca",
+   "variedad": "Bourbon",
+   "puntaje": 87.76,
+   "peso_lb": 629.2,
+   "precio_usd_lb": 11.4,
+   "total_usd": 7172.88,
+   "compradores": [
+    "honu加藤珈琲店株式会社"
+   ],
+   "pais_comprador": "Japan",
+   "fuente_url": "https://allianceforcoffeeexcellence.org/peru-2023/"
+  },
+  {
+   "anio": 2023,
+   "puesto": "25",
+   "finca": "La Palta",
+   "productor": "Jose Elmer Tineo Mendoza",
+   "region": "Cajamarca",
+   "variedad": "Geisha-Catuahi-Caturra",
+   "puntaje": 87.76,
+   "peso_lb": 711.37,
+   "precio_usd_lb": 13.3,
+   "total_usd": 9461.22,
+   "compradores": [
+    "Kyokuto Fadie Corporation"
+   ],
+   "pais_comprador": "Japan",
+   "fuente_url": "https://allianceforcoffeeexcellence.org/peru-2023/"
+  },
+  {
+   "anio": 2023,
+   "puesto": "26",
+   "finca": "Alto Mirador",
+   "productor": "Adan Rodrigo Quispe",
+   "region": "Puno",
+   "variedad": "Bourbon-Caturra",
+   "puntaje": 87.71,
+   "peso_lb": 618.18,
+   "precio_usd_lb": 16.4,
+   "total_usd": 10138.15,
+   "compradores": [
+    "Wataru for Voila Coffee"
+   ],
+   "pais_comprador": "Japan",
+   "fuente_url": "https://allianceforcoffeeexcellence.org/peru-2023/"
+  },
+  {
+   "anio": 2023,
+   "puesto": "27",
+   "finca": "Kukipata",
+   "productor": "Yesica Chavez Nieve",
+   "region": "Cusco",
+   "variedad": "Geisha",
+   "puntaje": 87.68,
+   "peso_lb": 655.7,
+   "precio_usd_lb": 15.3,
+   "total_usd": 10032.21,
+   "compradores": [
+    "Wolfing Coffee",
+    "Doris Coffee Lab"
+   ],
+   "pais_comprador": "China",
+   "fuente_url": "https://allianceforcoffeeexcellence.org/peru-2023/"
+  },
+  {
+   "anio": 2023,
+   "puesto": "28",
+   "finca": "Arco Iris",
+   "productor": "Nelly Lucia Alagon Latorre",
+   "region": "Cusco",
+   "variedad": "Geisha",
+   "puntaje": 87.56,
+   "peso_lb": 633.12,
+   "precio_usd_lb": 13.5,
+   "total_usd": 8547.12,
+   "compradores": [
+    "Wataru & Co., Ltd."
+   ],
+   "pais_comprador": "Japan",
+   "fuente_url": "https://allianceforcoffeeexcellence.org/peru-2023/"
+  },
+  {
+   "anio": 2023,
+   "puesto": "29",
+   "finca": "Ermelita",
+   "productor": "Dreyde Perez Delgado",
+   "region": "Cajamarca",
+   "variedad": "Geisha",
+   "puntaje": 87.53,
+   "peso_lb": 716.5,
+   "precio_usd_lb": 15.9,
+   "total_usd": 11392.35,
+   "compradores": [
+    "M.I.Coffee Corporation"
+   ],
+   "pais_comprador": "South Korea",
+   "fuente_url": "https://allianceforcoffeeexcellence.org/peru-2023/"
+  },
+  {
+   "anio": 2023,
+   "puesto": "30",
+   "finca": "Rayos Del Sol",
+   "productor": "Percy Pintado Huaman",
+   "region": "Cajamarca",
+   "variedad": "Geisha",
+   "puntaje": 87.53,
+   "peso_lb": 650.36,
+   "precio_usd_lb": 11.6,
+   "total_usd": 7544.18,
+   "compradores": [
+    "Wataru & Co., Ltd."
+   ],
+   "pais_comprador": "Japan",
+   "fuente_url": "https://allianceforcoffeeexcellence.org/peru-2023/"
+  },
+  {
+   "anio": 2024,
+   "puesto": "1A",
+   "finca": "El Mirador",
+   "productor": "Miguel Padilla Chinguel",
+   "region": "Cajamarca",
+   "variedad": "Caturra, Bourbon, Geisha",
+   "puntaje": 90.54,
+   "peso_lb": 330.69,
+   "precio_usd_lb": 72.2,
+   "total_usd": 23875.82,
+   "compradores": [
+    "Angelino’s Coffee"
+   ],
+   "pais_comprador": null,
+   "fuente_url": "https://allianceforcoffeeexcellence.org/peru-2024/"
+  },
+  {
+   "anio": 2024,
+   "puesto": "1B",
+   "finca": "El Mirador",
+   "productor": "Miguel Padilla Chinguel",
+   "region": "Cajamarca",
+   "variedad": "Caturra, Bourbon, Geisha",
+   "puntaje": 90.54,
+   "peso_lb": 286.6,
+   "precio_usd_lb": 72,
+   "total_usd": 20635.2,
+   "compradores": [
+    "北京深浅白贸易有限公司 – Beijing Shenqianbai Trading Co., Ltd."
+   ],
+   "pais_comprador": null,
+   "fuente_url": "https://allianceforcoffeeexcellence.org/peru-2024/"
+  },
+  {
+   "anio": 2024,
+   "puesto": "2A",
+   "finca": "Campo Verde",
+   "productor": "Wilfredo Arias Candia",
+   "region": "Cusco",
+   "variedad": "Geisha, Bourbon",
+   "puntaje": 90.21,
+   "peso_lb": 330.69,
+   "precio_usd_lb": 70,
+   "total_usd": 23148.3,
+   "compradores": [
+    "Wataru & Co., Ltd. for WOODBERRY COFFEE"
+   ],
+   "pais_comprador": null,
+   "fuente_url": "https://allianceforcoffeeexcellence.org/peru-2024/",
+   "organico": true
+  },
+  {
+   "anio": 2024,
+   "puesto": "2B",
+   "finca": "Campo Verde",
+   "productor": "Wilfredo Arias Candia",
+   "region": "Cusco",
+   "variedad": "Geisha, Bourbon",
+   "puntaje": 90.21,
+   "peso_lb": 264.55,
+   "precio_usd_lb": 72,
+   "total_usd": 19047.6,
+   "compradores": [
+    "Snow Beans Coffee",
+    "Bean & Bean (NYC)"
+   ],
+   "pais_comprador": null,
+   "fuente_url": "https://allianceforcoffeeexcellence.org/peru-2024/",
+   "organico": true
+  },
+  {
+   "anio": 2024,
+   "puesto": "3",
+   "finca": "Flor De La Montaña",
+   "productor": "David Guevara Cotrina",
+   "region": "Cajamarca",
+   "variedad": "Geisha",
+   "puntaje": 89.86,
+   "peso_lb": 617.29,
+   "precio_usd_lb": 44,
+   "total_usd": 27160.76,
+   "compradores": [
+    "Vela Ethan維啦怡森 Simple Kaffa 興波咖啡"
+   ],
+   "pais_comprador": null,
+   "fuente_url": "https://allianceforcoffeeexcellence.org/peru-2024/"
+  },
+  {
+   "anio": 2024,
+   "puesto": "4",
+   "finca": "Montaña",
+   "productor": "Alcides Contreras Aguilar",
+   "region": "Cusco",
+   "variedad": "Geisha",
+   "puntaje": 89.64,
+   "peso_lb": 595.24,
+   "precio_usd_lb": 26,
+   "total_usd": 15476.24,
+   "compradores": [
+    "Cultivar Coffee",
+    "Roots by Earth Coffee Roastery",
+    "E.R Corporation",
+    "Ryans Coffee",
+    "Derail Coffee Roasters Co",
+    "Signature Roasters"
+   ],
+   "pais_comprador": null,
+   "fuente_url": "https://allianceforcoffeeexcellence.org/peru-2024/",
+   "organico": true
+  },
+  {
+   "anio": 2024,
+   "puesto": "5",
+   "finca": "Paqchaq Pata",
+   "productor": "Salustio Ugarte Laura",
+   "region": "Cusco",
+   "variedad": "Geisha",
+   "puntaje": 89.54,
+   "peso_lb": 617.29,
+   "precio_usd_lb": 25.8,
+   "total_usd": 15926.08,
+   "compradores": [
+    "Vela Ethan維啦怡森 Simple Kaffa 興波咖啡"
+   ],
+   "pais_comprador": null,
+   "fuente_url": "https://allianceforcoffeeexcellence.org/peru-2024/",
+   "organico": true
+  },
+  {
+   "anio": 2024,
+   "puesto": "6",
+   "finca": "El Nevado",
+   "productor": "Marlene Rojas Pereira",
+   "region": "Cusco",
+   "variedad": "Geisha",
+   "puntaje": 89.29,
+   "peso_lb": 644.85,
+   "precio_usd_lb": 25.9,
+   "total_usd": 16701.62,
+   "compradores": [
+    "MUSEO Co., Ltd. Blossom Valley 宸嶧國際"
+   ],
+   "pais_comprador": null,
+   "fuente_url": "https://allianceforcoffeeexcellence.org/peru-2024/"
+  },
+  {
+   "anio": 2024,
+   "puesto": "7",
+   "finca": "San Sebastian",
+   "productor": "Julio Cesar Chavez Nieve",
+   "region": "Cusco",
+   "variedad": "Sl-09",
+   "puntaje": 89.29,
+   "peso_lb": 623.9,
+   "precio_usd_lb": 25,
+   "total_usd": 15597.5,
+   "compradores": [
+    "Vela Ethan 維啦怡森",
+    "SmallArmsBigHeart有容乃大"
+   ],
+   "pais_comprador": null,
+   "fuente_url": "https://allianceforcoffeeexcellence.org/peru-2024/",
+   "organico": true
+  },
+  {
+   "anio": 2024,
+   "puesto": "8",
+   "finca": "Sillapata",
+   "productor": "Raul Velarde Juro",
+   "region": "Cusco",
+   "variedad": "Geisha",
+   "puntaje": 89.21,
+   "peso_lb": 619.49,
+   "precio_usd_lb": 25.7,
+   "total_usd": 15920.89,
+   "compradores": [
+    "oma coffee roaster",
+    "Blendin Coffee Club"
+   ],
+   "pais_comprador": null,
+   "fuente_url": "https://allianceforcoffeeexcellence.org/peru-2024/"
+  },
+  {
+   "anio": 2024,
+   "puesto": "9",
+   "finca": "El Cerro",
+   "productor": "Efrain Carhuallocllo Salvador",
+   "region": "Cajamarca",
+   "variedad": "Geisha",
+   "puntaje": 88.96,
+   "peso_lb": 595.24,
+   "precio_usd_lb": 30,
+   "total_usd": 17857.2,
+   "compradores": [
+    "coffee lusso",
+    "ArounZ"
+   ],
+   "pais_comprador": null,
+   "fuente_url": "https://allianceforcoffeeexcellence.org/peru-2024/"
+  },
+  {
+   "anio": 2024,
+   "puesto": "10",
+   "finca": "El Naranjo",
+   "productor": "Amaro Velasco Herrera",
+   "region": "Piura",
+   "variedad": "Geisha",
+   "puntaje": 88.64,
+   "peso_lb": 595.24,
+   "precio_usd_lb": 23,
+   "total_usd": 13690.52,
+   "compradores": [
+    "M.I.Coffee Corporation"
+   ],
+   "pais_comprador": null,
+   "fuente_url": "https://allianceforcoffeeexcellence.org/peru-2024/"
+  },
+  {
+   "anio": 2024,
+   "puesto": "11",
+   "finca": "El Pedregal",
+   "productor": "Abel Raymundo Arotaype Huayllas",
+   "region": "Cusco",
+   "variedad": "Geisha",
+   "puntaje": 88.18,
+   "peso_lb": 639.33,
+   "precio_usd_lb": 26.1,
+   "total_usd": 16686.51,
+   "compradores": [
+    "Caravela Coffee"
+   ],
+   "pais_comprador": null,
+   "fuente_url": "https://allianceforcoffeeexcellence.org/peru-2024/",
+   "organico": true
+  },
+  {
+   "anio": 2024,
+   "puesto": "12",
+   "finca": "La Florida",
+   "productor": "Maycol Aldair Torres Garcia",
+   "region": "Amazonas",
+   "variedad": "Geisha",
+   "puntaje": 88.14,
+   "peso_lb": 610.67,
+   "precio_usd_lb": 24.8,
+   "total_usd": 15144.62,
+   "compradores": [
+    "C&B coffee roasters"
+   ],
+   "pais_comprador": null,
+   "fuente_url": "https://allianceforcoffeeexcellence.org/peru-2024/"
+  },
+  {
+   "anio": 2024,
+   "puesto": "13",
+   "finca": "Huallhuayoc",
+   "productor": "Juan Pablo Luque Vargas",
+   "region": "Cusco",
+   "variedad": "Geisha",
+   "puntaje": 88.11,
+   "peso_lb": 617.29,
+   "precio_usd_lb": 22.6,
+   "total_usd": 13950.75,
+   "compradores": [
+    "KALDI COFFEE FARM (CAMEL COFFEE CO., LTD.)"
+   ],
+   "pais_comprador": null,
+   "fuente_url": "https://allianceforcoffeeexcellence.org/peru-2024/",
+   "organico": true
+  },
+  {
+   "anio": 2024,
+   "puesto": "14",
+   "finca": "Mamaruntu",
+   "productor": "Marcos Herrera Bustamante",
+   "region": "Amazonas",
+   "variedad": "Geisha",
+   "puntaje": 88.07,
+   "peso_lb": 793.66,
+   "precio_usd_lb": 19.1,
+   "total_usd": 15158.91,
+   "compradores": [
+    "KAFFEBRENNERIET AS"
+   ],
+   "pais_comprador": null,
+   "fuente_url": "https://allianceforcoffeeexcellence.org/peru-2024/"
+  },
+  {
+   "anio": 2024,
+   "puesto": "15",
+   "finca": "La Lucuma",
+   "productor": "Franco Huaches Montalvan",
+   "region": "Cajamarca",
+   "variedad": "Geisha",
+   "puntaje": 87.93,
+   "peso_lb": 639.33,
+   "precio_usd_lb": 20.3,
+   "total_usd": 12978.4,
+   "compradores": [
+    "Wataru & Co., Ltd."
+   ],
+   "pais_comprador": null,
+   "fuente_url": "https://allianceforcoffeeexcellence.org/peru-2024/"
+  },
+  {
+   "anio": 2024,
+   "puesto": "16",
+   "finca": "La Lima",
+   "productor": "Jorge Zamora Tamay",
+   "region": "Cajamarca",
+   "variedad": "Geisha",
+   "puntaje": 87.89,
+   "peso_lb": 595.24,
+   "precio_usd_lb": 22.1,
+   "total_usd": 13154.8,
+   "compradores": [
+    "Brew92"
+   ],
+   "pais_comprador": null,
+   "fuente_url": "https://allianceforcoffeeexcellence.org/peru-2024/"
+  },
+  {
+   "anio": 2024,
+   "puesto": "17",
+   "finca": "La Lucuma",
+   "productor": "Grimanes Morales Lizana",
+   "region": "Cajamarca",
+   "variedad": "Bourbon, Marcellesa",
+   "puntaje": 87.86,
+   "peso_lb": 727.52,
+   "precio_usd_lb": 17.4,
+   "total_usd": 12658.85,
+   "compradores": [
+    "Coffee Libre"
+   ],
+   "pais_comprador": null,
+   "fuente_url": "https://allianceforcoffeeexcellence.org/peru-2024/"
+  },
+  {
+   "anio": 2024,
+   "puesto": "18",
+   "finca": "Sillapata",
+   "productor": "Rolando Saldivar Moroccolla",
+   "region": "Cusco",
+   "variedad": "Geisha, Bourbon Hibrida",
+   "puntaje": 87.75,
+   "peso_lb": 619.49,
+   "precio_usd_lb": 20,
+   "total_usd": 12389.8,
+   "compradores": [
+    "SHRUB COFFEE",
+    "Glams Coffee Roastery",
+    "BASE COFFEE",
+    "Coffee Roastery 101",
+    "Fourth dimension coffee",
+    "cafe tia’m coffee roaster",
+    "IMOM inc.",
+    "soyogocoffee by Marukai"
+   ],
+   "pais_comprador": null,
+   "fuente_url": "https://allianceforcoffeeexcellence.org/peru-2024/",
+   "organico": true
+  },
+  {
+   "anio": 2024,
+   "puesto": "19",
+   "finca": "Vista Hermosa",
+   "productor": "Breinner Alanya Tello",
+   "region": "Cusco",
+   "variedad": "Geisha",
+   "puntaje": 87.75,
+   "peso_lb": 650.36,
+   "precio_usd_lb": 21,
+   "total_usd": 13657.56,
+   "compradores": [
+    "COFFEE COUNTY"
+   ],
+   "pais_comprador": null,
+   "fuente_url": "https://allianceforcoffeeexcellence.org/peru-2024/",
+   "organico": true
+  },
+  {
+   "anio": 2024,
+   "puesto": "20",
+   "finca": "La Encantada",
+   "productor": "Jhenrri Chavez Maytan",
+   "region": "Cusco",
+   "variedad": "Geisha",
+   "puntaje": 87.64,
+   "peso_lb": 654.77,
+   "precio_usd_lb": 19,
+   "total_usd": 12440.63,
+   "compradores": [
+    "Sugi Coffee Roasting",
+    "THOTH COFFEE",
+    "ADACHI COFFEE",
+    "YAMADA COFFEE",
+    "BRANCH COFFEE",
+    "COFFEE A GO! GO!",
+    "TABEI COFFEE"
+   ],
+   "pais_comprador": null,
+   "fuente_url": "https://allianceforcoffeeexcellence.org/peru-2024/",
+   "organico": true
+  },
+  {
+   "anio": 2024,
+   "puesto": "21",
+   "finca": "Aromas Del Corazon",
+   "productor": "Fidel Huancas Huancas",
+   "region": "Cajamarca",
+   "variedad": "Marcellesa, Caturra",
+   "puntaje": 87.54,
+   "peso_lb": 595.24,
+   "precio_usd_lb": 17.3,
+   "total_usd": 10297.65,
+   "compradores": [
+    "北京深浅白贸易有限公司 – Beijing Shenqianbai Trading Co., Ltd."
+   ],
+   "pais_comprador": null,
+   "fuente_url": "https://allianceforcoffeeexcellence.org/peru-2024/"
+  },
+  {
+   "anio": 2024,
+   "puesto": "22",
+   "finca": "Llaqtapata",
+   "productor": "Gilber Huayllas Huaman",
+   "region": "Cusco",
+   "variedad": "Gesisha",
+   "puntaje": 87.46,
+   "peso_lb": 621.7,
+   "precio_usd_lb": 22.1,
+   "total_usd": 13739.57,
+   "compradores": [
+    "Prodigal Coffee"
+   ],
+   "pais_comprador": null,
+   "fuente_url": "https://allianceforcoffeeexcellence.org/peru-2024/",
+   "organico": true
+  },
+  {
+   "anio": 2024,
+   "puesto": "23",
+   "finca": "Café Flor Del Santuario",
+   "productor": "Teodoro Montoya Pintado",
+   "region": "Cajamarca",
+   "variedad": "Geisha",
+   "puntaje": 87.32,
+   "peso_lb": 661.38,
+   "precio_usd_lb": 18.1,
+   "total_usd": 11970.98,
+   "compradores": [
+    "Blossom Valley 宸嶧國際 DreamHigh梦想舍咖啡"
+   ],
+   "pais_comprador": null,
+   "fuente_url": "https://allianceforcoffeeexcellence.org/peru-2024/"
+  },
+  {
+   "anio": 2024,
+   "puesto": "24",
+   "finca": "El Mirador",
+   "productor": "Hitler Tantalian Valqui",
+   "region": "Amazonas",
+   "variedad": "Villa Sarchi",
+   "puntaje": 87.25,
+   "peso_lb": 661.38,
+   "precio_usd_lb": 17.2,
+   "total_usd": 11375.74,
+   "compradores": [
+    "Wataru & Co., Ltd."
+   ],
+   "pais_comprador": null,
+   "fuente_url": "https://allianceforcoffeeexcellence.org/peru-2024/"
+  },
+  {
+   "anio": 2024,
+   "puesto": "25",
+   "finca": "Peña De Leon",
+   "productor": "Francisco Aurelio Rivera Alarcon",
+   "region": "Cajamarca",
+   "variedad": "Geisha",
+   "puntaje": 87,
+   "peso_lb": 595.24,
+   "precio_usd_lb": 18.05,
+   "total_usd": 10744.08,
+   "compradores": [
+    "Wataru & Co., Ltd."
+   ],
+   "pais_comprador": null,
+   "fuente_url": "https://allianceforcoffeeexcellence.org/peru-2024/"
+  },
+  {
+   "anio": 2025,
+   "puesto": "1A",
+   "finca": "La Catarata",
+   "productor": "Angel Antonio Manosalva Palomino",
+   "region": "Cajamarca",
+   "variedad": "Geisha",
+   "puntaje": 90.64,
+   "peso_lb": 330.75,
+   "precio_usd_lb": 80.1,
+   "total_usd": 26493.08,
+   "compradores": [
+    "La Cabra Coffee"
+   ],
+   "pais_comprador": null,
+   "fuente_url": "https://allianceforcoffeeexcellence.org/peru-2025/"
+  },
+  {
+   "anio": 2025,
+   "puesto": "1B",
+   "finca": "La Catarata",
+   "productor": "Angel Antonio Manosalva Palomino",
+   "region": "Cajamarca",
+   "variedad": "Geisha",
+   "puntaje": 90.64,
+   "peso_lb": 297.68,
+   "precio_usd_lb": 80.1,
+   "total_usd": 23844.17,
+   "compradores": [
+    "CAMEL COFFEE CO., LTD. (KALDI COFFEE FARM)"
+   ],
+   "pais_comprador": null,
+   "fuente_url": "https://allianceforcoffeeexcellence.org/peru-2025/"
+  },
+  {
+   "anio": 2025,
+   "puesto": "2A",
+   "finca": "Finca La Ponderoza",
+   "productor": "Dreyde Perez Delgado",
+   "region": "Cajamarca",
+   "variedad": "Geisha",
+   "puntaje": 90.42,
+   "peso_lb": 330.75,
+   "precio_usd_lb": 60,
+   "total_usd": 19845,
+   "compradores": [
+    "Pebble Coffee Co., Ltd."
+   ],
+   "pais_comprador": null,
+   "fuente_url": "https://allianceforcoffeeexcellence.org/peru-2025/"
+  },
+  {
+   "anio": 2025,
+   "puesto": "2B",
+   "finca": "Finca La Ponderoza",
+   "productor": "Dreyde Perez Delgado",
+   "region": "Cajamarca",
+   "variedad": "Geisha",
+   "puntaje": 90.42,
+   "peso_lb": 231.53,
+   "precio_usd_lb": 69,
+   "total_usd": 15975.57,
+   "compradores": [
+    "Wolfing Coffee 北京深浅白贸易有限公司"
+   ],
+   "pais_comprador": null,
+   "fuente_url": "https://allianceforcoffeeexcellence.org/peru-2025/"
+  },
+  {
+   "anio": 2025,
+   "puesto": "3",
+   "finca": "Llaqta Pata",
+   "productor": "Gilber Huayllas Huaman",
+   "region": "Cusco",
+   "variedad": "Sl-09",
+   "puntaje": 89.97,
+   "peso_lb": 654.89,
+   "precio_usd_lb": 46.1,
+   "total_usd": 30190.43,
+   "compradores": [
+    "George Howell Coffee",
+    "Moonwake Coffee Roasters",
+    "Vela Ethan 維啦怡森",
+    "穎鋒國際＆SWEET HOME COFFEE",
+    "Orca Spin Cafe",
+    "凱爾車業（TAIWAN)",
+    "Moonwake Coffee Roasters",
+    "CHG（手多多咖啡)",
+    "Taster’s Coffee 饕選咖啡",
+    "社會企業樂波波珈琲 LeBoBo Coffee"
+   ],
+   "pais_comprador": null,
+   "fuente_url": "https://allianceforcoffeeexcellence.org/peru-2025/"
+  },
+  {
+   "anio": 2025,
+   "puesto": "4",
+   "finca": "La Encantada",
+   "productor": "Jhenrri Chavez Maytan",
+   "region": "Cusco",
+   "variedad": "Sl-09",
+   "puntaje": 89.86,
+   "peso_lb": 529.2,
+   "precio_usd_lb": 31.1,
+   "total_usd": 16458.12,
+   "compradores": [
+    "Sulalat"
+   ],
+   "pais_comprador": null,
+   "fuente_url": "https://allianceforcoffeeexcellence.org/peru-2025/"
+  },
+  {
+   "anio": 2025,
+   "puesto": "5",
+   "finca": "Nueva Alianza",
+   "productor": "Dwight Aguilar Masias",
+   "region": "Cusco",
+   "variedad": "Geisha Amarilla",
+   "puntaje": 89.86,
+   "peso_lb": 628.43,
+   "precio_usd_lb": 32.7,
+   "total_usd": 20549.66,
+   "compradores": [
+    "Vela Ethan 維啦怡森",
+    "Cultivar Coffee Roasting Co.",
+    "La Boheme Café",
+    "社會企業樂波波珈琲 LeBoBo Coffee",
+    "GK Coffee (Taiwan 宜蘭)",
+    "Chanji Coffee Firm",
+    "Taster’s Coffee 饕選咖啡",
+    "i.e.Cafe’ 一即企業",
+    "Dedolatecoffee – 蠻荒咖啡"
+   ],
+   "pais_comprador": null,
+   "fuente_url": "https://allianceforcoffeeexcellence.org/peru-2025/"
+  },
+  {
+   "anio": 2025,
+   "puesto": "6",
+   "finca": "Corralpampa",
+   "productor": "Elizabet Navarro Sullca",
+   "region": "Cusco",
+   "variedad": "Geisha",
+   "puntaje": 89.86,
+   "peso_lb": 615.2,
+   "precio_usd_lb": 32.3,
+   "total_usd": 19870.96,
+   "compradores": [
+    "Sarutahiko Coffee Inc."
+   ],
+   "pais_comprador": null,
+   "fuente_url": "https://allianceforcoffeeexcellence.org/peru-2025/"
+  },
+  {
+   "anio": 2025,
+   "puesto": "7",
+   "finca": "La Miel",
+   "productor": "Yulisa Esther Carhuallocllo Arevalo",
+   "region": "Cajamarca",
+   "variedad": "Geisha",
+   "puntaje": 89.69,
+   "peso_lb": 679.14,
+   "precio_usd_lb": 36.3,
+   "total_usd": 24652.78,
+   "compradores": [
+    "Wataru for TAKAMURA COFFEE ROASTERS"
+   ],
+   "pais_comprador": null,
+   "fuente_url": "https://allianceforcoffeeexcellence.org/peru-2025/"
+  },
+  {
+   "anio": 2025,
+   "puesto": "8",
+   "finca": "Wallwayoq",
+   "productor": "Juan Pablo Luque Vargas",
+   "region": "Cusco",
+   "variedad": "Geisha",
+   "puntaje": 88.75,
+   "peso_lb": 652.68,
+   "precio_usd_lb": 30.1,
+   "total_usd": 19645.67,
+   "compradores": [
+    "Wataru & Co., Ltd."
+   ],
+   "pais_comprador": null,
+   "fuente_url": "https://allianceforcoffeeexcellence.org/peru-2025/"
+  },
+  {
+   "anio": 2025,
+   "puesto": "9",
+   "finca": "Finca´S Remi",
+   "productor": "Richard Velasque Damiano",
+   "region": "Junin",
+   "variedad": "Geisha",
+   "puntaje": 88.39,
+   "peso_lb": 529.2,
+   "precio_usd_lb": 18.4,
+   "total_usd": 9737.28,
+   "compradores": [
+    "Ecofarm Coffee(China) for Terraform Coffee",
+    "合咖啡&nam·é coffee",
+    "中国武汉铜山里TONGSHANLI COFFEE",
+    "有容乃大Small Arms Big Heart",
+    "Title coffee",
+    "FISHER COFFEE啡舍",
+    "咖乐乐KolaKola",
+    "Umber Coffee"
+   ],
+   "pais_comprador": null,
+   "fuente_url": "https://allianceforcoffeeexcellence.org/peru-2025/"
+  },
+  {
+   "anio": 2025,
+   "puesto": "10",
+   "finca": "Seb",
+   "productor": "Ronald Alejandro Baca Avila",
+   "region": "Piura",
+   "variedad": "Geisha,",
+   "puntaje": 88.28,
+   "peso_lb": 661.5,
+   "precio_usd_lb": 20.1,
+   "total_usd": 13296.15,
+   "compradores": [
+    "Sarutahiko Coffee Inc."
+   ],
+   "pais_comprador": null,
+   "fuente_url": "https://allianceforcoffeeexcellence.org/peru-2025/"
+  },
+  {
+   "anio": 2025,
+   "puesto": "11",
+   "finca": "Caminos Del Inka Coffee Estate",
+   "productor": "Samuel Smith Perez Aragon",
+   "region": "Cusco",
+   "variedad": "Geisha, Bourbon,Tipica, Caturra",
+   "puntaje": 88.25,
+   "peso_lb": 608.58,
+   "precio_usd_lb": 21.2,
+   "total_usd": 12901.9,
+   "compradores": [
+    "Brew92 Cafe & Roastery"
+   ],
+   "pais_comprador": null,
+   "fuente_url": "https://allianceforcoffeeexcellence.org/peru-2025/"
+  },
+  {
+   "anio": 2025,
+   "puesto": "12",
+   "finca": "Pacaybamba",
+   "productor": "Salustio Ugarte Laura",
+   "region": "Cusco",
+   "variedad": "Sl-09",
+   "puntaje": 88.22,
+   "peso_lb": 661.5,
+   "precio_usd_lb": 24,
+   "total_usd": 15876,
+   "compradores": [
+    "June’s Garden Coffee 六月花园咖啡",
+    "Rambach specialty coffee."
+   ],
+   "pais_comprador": null,
+   "fuente_url": "https://allianceforcoffeeexcellence.org/peru-2025/"
+  },
+  {
+   "anio": 2025,
+   "puesto": "13",
+   "finca": "Finca Wilder Garcia",
+   "productor": "Wilder Garcia Bravo",
+   "region": "Cajamarca",
+   "variedad": "Geisha",
+   "puntaje": 88.22,
+   "peso_lb": 646.07,
+   "precio_usd_lb": 20,
+   "total_usd": 12921.4,
+   "compradores": [
+    "ADACHI COFFEE",
+    "COFFEE A GO! GO!",
+    "YAMADA COFFEE",
+    "Sugi Coffee Roasting",
+    "TABEI COFFEE",
+    "BRANCH COFFEE",
+    "THOTH COFFEE",
+    "CHATORA COFFEE"
+   ],
+   "pais_comprador": null,
+   "fuente_url": "https://allianceforcoffeeexcellence.org/peru-2025/"
+  },
+  {
+   "anio": 2025,
+   "puesto": "14",
+   "finca": "Bella Rosa",
+   "productor": "Wilbert Almanza Cabrera",
+   "region": "Cusco",
+   "variedad": "Geisha",
+   "puntaje": 88.06,
+   "peso_lb": 710.01,
+   "precio_usd_lb": 19.2,
+   "total_usd": 13632.19,
+   "compradores": [
+    "Black Knight"
+   ],
+   "pais_comprador": null,
+   "fuente_url": "https://allianceforcoffeeexcellence.org/peru-2025/"
+  },
+  {
+   "anio": 2025,
+   "puesto": "15",
+   "finca": "Miscabamba",
+   "productor": "Armando Ramirez Sanchez",
+   "region": "Cusco",
+   "variedad": "Bourbon, Tipica, Geisha",
+   "puntaje": 88,
+   "peso_lb": 608.58,
+   "precio_usd_lb": 23.2,
+   "total_usd": 14119.06,
+   "compradores": [
+    "Wataru for TAKAMURA COFFEE ROASTERS"
+   ],
+   "pais_comprador": null,
+   "fuente_url": "https://allianceforcoffeeexcellence.org/peru-2025/"
+  },
+  {
+   "anio": 2025,
+   "puesto": "16",
+   "finca": "Paqhaq Alto",
+   "productor": "Juan Luis Flores Nuñez",
+   "region": "Cusco",
+   "variedad": "Catuai",
+   "puntaje": 88,
+   "peso_lb": 612.99,
+   "precio_usd_lb": 16.9,
+   "total_usd": 10359.53,
+   "compradores": [
+    "honu加藤珈琲店株式会社"
+   ],
+   "pais_comprador": null,
+   "fuente_url": "https://allianceforcoffeeexcellence.org/peru-2025/"
+  },
+  {
+   "anio": 2025,
+   "puesto": "17",
+   "finca": "Miscabamba Alta",
+   "productor": "Rolando Ramirez Sanchez",
+   "region": "Cusco",
+   "variedad": "Geisha, Bourbon",
+   "puntaje": 87.89,
+   "peso_lb": 595.35,
+   "precio_usd_lb": 18.2,
+   "total_usd": 10835.37,
+   "compradores": [
+    "COFFEE COUNTY"
+   ],
+   "pais_comprador": null,
+   "fuente_url": "https://allianceforcoffeeexcellence.org/peru-2025/"
+  },
+  {
+   "anio": 2025,
+   "puesto": "18",
+   "finca": "Santa Teresa",
+   "productor": "Andres Torres Goicochea",
+   "region": "Amazonas",
+   "variedad": "Geisha",
+   "puntaje": 87.83,
+   "peso_lb": 882,
+   "precio_usd_lb": 14.3,
+   "total_usd": 12612.6,
+   "compradores": [
+    "Wataru & Co., Ltd."
+   ],
+   "pais_comprador": null,
+   "fuente_url": "https://allianceforcoffeeexcellence.org/peru-2025/"
+  },
+  {
+   "anio": 2025,
+   "puesto": "19",
+   "finca": "El Gringo",
+   "productor": "Lenin Torres Ticlia",
+   "region": "Amazonas",
+   "variedad": "Geisha",
+   "puntaje": 87.78,
+   "peso_lb": 882,
+   "precio_usd_lb": 24,
+   "total_usd": 21168,
+   "compradores": [
+    "Terarosa (Haksan Co.Ltd)"
+   ],
+   "pais_comprador": null,
+   "fuente_url": "https://allianceforcoffeeexcellence.org/peru-2025/"
+  },
+  {
+   "anio": 2025,
+   "puesto": "20",
+   "finca": "La Rinconada",
+   "productor": "Roberto Carlos Palomino Flores",
+   "region": "Cusco",
+   "variedad": "Geisha",
+   "puntaje": 87.61,
+   "peso_lb": 643.86,
+   "precio_usd_lb": 20.6,
+   "total_usd": 13263.52,
+   "compradores": [
+    "Prodigal Coffee"
+   ],
+   "pais_comprador": null,
+   "fuente_url": "https://allianceforcoffeeexcellence.org/peru-2025/"
+  },
+  {
+   "anio": 2025,
+   "puesto": "21",
+   "finca": "La Lima",
+   "productor": "Jorge Zamora Tamay",
+   "region": "Cajamarca",
+   "variedad": "Geisha",
+   "puntaje": 87.61,
+   "peso_lb": 595.35,
+   "precio_usd_lb": 20.5,
+   "total_usd": 12204.68,
+   "compradores": [
+    "Prodigal Coffee"
+   ],
+   "pais_comprador": null,
+   "fuente_url": "https://allianceforcoffeeexcellence.org/peru-2025/"
+  },
+  {
+   "anio": 2025,
+   "puesto": "22",
+   "finca": "Aromas Del Aniz",
+   "productor": "Jhon Saenz Palomino",
+   "region": "Cusco",
+   "variedad": "Geisha",
+   "puntaje": 87.61,
+   "peso_lb": 608.58,
+   "precio_usd_lb": 20.6,
+   "total_usd": 12536.75,
+   "compradores": [
+    "Pebble Coffee Co., Ltd."
+   ],
+   "pais_comprador": null,
+   "fuente_url": "https://allianceforcoffeeexcellence.org/peru-2025/"
+  },
+  {
+   "anio": 2025,
+   "puesto": "23",
+   "finca": "El Romerillo",
+   "productor": "Eduar Troyes Puelles",
+   "region": "Cajamarca",
+   "variedad": "Geisha, Bourbon",
+   "puntaje": 87.44,
+   "peso_lb": 641.66,
+   "precio_usd_lb": 18.2,
+   "total_usd": 11678.21,
+   "compradores": [
+    "MI Coffee Corporation"
+   ],
+   "pais_comprador": null,
+   "fuente_url": "https://allianceforcoffeeexcellence.org/peru-2025/"
+  },
+  {
+   "anio": 2025,
+   "puesto": "24",
+   "finca": "Finca La Florida",
+   "productor": "Maycol Aldair Torres Garcia",
+   "region": "Amazonas",
+   "variedad": "Geisha",
+   "puntaje": 87.31,
+   "peso_lb": 694.58,
+   "precio_usd_lb": 16.6,
+   "total_usd": 11530.03,
+   "compradores": [
+    "Wataru & Co., Ltd."
+   ],
+   "pais_comprador": null,
+   "fuente_url": "https://allianceforcoffeeexcellence.org/peru-2025/"
+  },
+  {
+   "anio": 2025,
+   "puesto": "25",
+   "finca": "Sierra Dorada",
+   "productor": "Griselda Veronica Altamirano Vasquez",
+   "region": "Cusco",
+   "variedad": "Geisha",
+   "puntaje": 87.28,
+   "peso_lb": 617.4,
+   "precio_usd_lb": 18.1,
+   "total_usd": 11174.94,
+   "compradores": [
+    "WAVY COFFEE ROASTERS",
+    "SHRUB COFFEE by Marukai"
+   ],
+   "pais_comprador": null,
+   "fuente_url": "https://allianceforcoffeeexcellence.org/peru-2025/"
+  },
+  {
+   "anio": 2025,
+   "puesto": "26",
+   "finca": "Finca Los Cedros",
+   "productor": "Nevado Palacios Carrasco",
+   "region": "Cajamarca",
+   "variedad": "Geisha",
+   "puntaje": 87.25,
+   "peso_lb": 716.63,
+   "precio_usd_lb": 16.8,
+   "total_usd": 12039.38,
+   "compradores": [
+    "Kaffebrenneriet as"
+   ],
+   "pais_comprador": null,
+   "fuente_url": "https://allianceforcoffeeexcellence.org/peru-2025/"
+  },
+  {
+   "anio": 2025,
+   "puesto": "27",
+   "finca": "El Romerillo",
+   "productor": "Luis Darwin Abarca Monsalve",
+   "region": "Cajamarca",
+   "variedad": "Caturra, Bourbon",
+   "puntaje": 87.22,
+   "peso_lb": 595.35,
+   "precio_usd_lb": 11.5,
+   "total_usd": 6846.53,
+   "compradores": [
+    "Wataru & Co., Ltd."
+   ],
+   "pais_comprador": null,
+   "fuente_url": "https://allianceforcoffeeexcellence.org/peru-2025/"
+  },
+  {
+   "anio": 2025,
+   "puesto": "28",
+   "finca": "Palma Pampa",
+   "productor": "Alcidez Nicki Rodriguez Melgarejo",
+   "region": "Huanuco",
+   "variedad": "Geisha",
+   "puntaje": 87.19,
+   "peso_lb": 612.99,
+   "precio_usd_lb": 20.2,
+   "total_usd": 12382.4,
+   "compradores": [
+    "Loca Coffee (China) for BeamTimer治光师",
+    "少数派",
+    "Beanlink Trading Ltd. 缤联贸易"
+   ],
+   "pais_comprador": null,
+   "fuente_url": "https://allianceforcoffeeexcellence.org/peru-2025/"
+  },
+  {
+   "anio": 2025,
+   "puesto": "29",
+   "finca": "Camino Viejo",
+   "productor": "Elmer Eugenio Diaz Aguilar",
+   "region": "Cajamarca",
+   "variedad": "Geisha, Caturra Roja",
+   "puntaje": 87.19,
+   "peso_lb": 542.43,
+   "precio_usd_lb": 18.1,
+   "total_usd": 9817.98,
+   "compradores": [
+    "ECOM Japan for REC COFFEE",
+    "COFFEA EXLIBRIS",
+    "TRIBE",
+    "Your Coffee",
+    "ADACHI COFFEE",
+    "Sugi Coffee Roasting",
+    "THOTH COFFEE"
+   ],
+   "pais_comprador": null,
+   "fuente_url": "https://allianceforcoffeeexcellence.org/peru-2025/"
+  },
+  {
+   "anio": 2025,
+   "puesto": "30",
+   "finca": "Uscamayta",
+   "productor": "Marcos Severo Uscamayta Malpartida",
+   "region": "Junin",
+   "variedad": "Geisha",
+   "puntaje": 87.08,
+   "peso_lb": 608.58,
+   "precio_usd_lb": 20.2,
+   "total_usd": 12293.32,
+   "compradores": [
+    "Hangzhou Lihuang Foreign Trade Service Ltd"
+   ],
+   "pais_comprador": null,
+   "fuente_url": "https://allianceforcoffeeexcellence.org/peru-2025/"
+  }
+ ]
+}
