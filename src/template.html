@@ -1,5 +1,6 @@
 <title>Archivo FICAFE</title>
 <meta name="claude:viewport-fit-sides" content="cover">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cg transform='rotate(30 12 12)'%3E%3Cellipse cx='12' cy='12' rx='5.8' ry='9.2' fill='%2327417E'/%3E%3Cpath d='M12 3c-2.4 3.2 2.4 5.6 0 9s2.4 5.8 0 9' fill='none' stroke='white' stroke-width='1.7'/%3E%3C/g%3E%3C/svg%3E">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wdth,wght@12..96,75..100,400;12..96,75..100,700;12..96,75..100,800&family=Source+Serif+4:ital,opsz,wght@0,8..60,400;0,8..60,600;1,8..60,400&display=swap" rel="stylesheet">
@@ -56,7 +57,9 @@ a{color:var(--acc)}
 .dia.hoy{background:var(--acc);color:var(--on-acc);border-color:var(--acc)}
 
 /* Lentes */
-.lentes{display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:10px}
+.lentes{display:grid;grid-template-columns:minmax(0,1fr);gap:10px}
+@media(min-width:600px){.lentes{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media(min-width:1000px){.lentes{grid-template-columns:repeat(4,minmax(0,1fr))}}
 .lente{display:flex;flex-direction:column;gap:6px;text-align:left;background:var(--bg);color:var(--ink);border:1px solid var(--line);border-radius:0;padding:14px 16px 15px;cursor:pointer;min-width:0}
 .lente b{font-variation-settings:"wdth" 84;font-size:1.05rem;font-weight:700}
 .lente span{font-family:var(--text);font-weight:400;font-size:.88rem;line-height:1.4;color:var(--ink2)}
@@ -73,7 +76,8 @@ a{color:var(--acc)}
 .prop-lead{font-size:1.28rem;line-height:1.5;margin:0 0 14px;max-width:34em;text-wrap:pretty}
 .prop-no{margin:0;color:var(--ink2);font-size:.95rem;max-width:56ch}
 .prop-no b{color:var(--ink);font-family:var(--display)}
-.hechos{list-style:none;margin:22px 0 0;padding:0;display:grid;grid-template-columns:repeat(auto-fit,minmax(120px,1fr));gap:1px;background:var(--line);border:1px solid var(--line)}
+.hechos{list-style:none;margin:22px 0 0;padding:0;display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:1px;background:var(--line);border:1px solid var(--line)}
+@media(min-width:1100px){.hechos{grid-template-columns:repeat(4,minmax(0,1fr))}}
 .hechos li{background:var(--bg);padding:12px 14px;min-width:0}
 .hechos b{display:block;font-family:var(--display);font-variation-settings:"wdth" 80;font-weight:800;font-size:1.7rem;line-height:1;color:var(--acc)}
 .hechos span{display:block;font-size:.8rem;color:var(--ink2);line-height:1.3;margin-top:5px}
@@ -278,12 +282,33 @@ table.mx td .glifo{width:14px;height:14px}
 .comp td:last-child{text-align:right;white-space:nowrap;font-family:var(--display);font-weight:700}
 .anios{display:flex;flex-wrap:wrap;gap:3px;margin-top:3px}
 .anios span{font-family:var(--display);font-size:.7rem;font-weight:700;border:1px solid var(--acc-m);color:var(--acc);padding:0 5px}
+/* Íconos e ilustración */
+.i{width:1.15em;height:1.15em;stroke:currentColor;fill:none;stroke-width:1.8;stroke-linecap:round;stroke-linejoin:round;flex:none}
+.bloque > h2{display:flex;align-items:center;gap:.5em}
+.bloque > h2 .i{color:var(--acc);width:1em;height:1em}
+.celda-k,.ficha-bloque > .celda-k{display:flex;align-items:center;gap:7px}
+.celda-k .i{color:var(--acc);width:1.2em;height:1.2em}
+.lente .i{color:var(--acc);width:26px;height:26px;margin-bottom:2px}
+.lente[aria-pressed="true"] .i{color:var(--on-acc)}
+.lec h3{display:flex;align-items:flex-start;gap:10px}
+.lec h3 .i{color:var(--acc);width:1.3em;height:1.3em;margin-top:.02em}
+.btn{display:inline-flex;align-items:center;gap:9px}
+.btn .i{width:1.2em;height:1.2em}
+.pto-b{display:inline-grid;place-items:center;width:24px;height:24px;border-radius:50%;border:1.5px solid var(--acc-m);font-family:var(--display);font-weight:800;font-size:.8rem;color:var(--acc)}
+.pto-b.p1{background:var(--acc);border-color:var(--acc);color:var(--on-acc)}
+.hero{display:grid;grid-template-columns:minmax(0,1fr);gap:0}
+@media(min-width:900px){.hero{grid-template-columns:minmax(0,1fr) 340px;align-items:center;gap:30px}}
+.arte{display:none;width:100%;height:auto}
+@media(min-width:900px){.arte{display:block}}
+.arte text{font-family:var(--display);font-size:9px;font-weight:700;fill:var(--ink3);letter-spacing:.04em}
+footer .i{width:1.1em;height:1.1em;vertical-align:-.2em;margin-right:6px}
+
 footer{margin-top:64px;border-top:1px solid var(--line);padding-block:26px 70px;color:var(--ink3);font-size:.85rem}
 footer p{margin:0 0 6px;max-width:72ch}
 </style>
 
 <header class="cab env">
-  <h1>Archivo<br>FICAFE</h1>
+  <div class="hero"><h1>Archivo<br>FICAFE</h1><svg class="arte" id="arte" viewBox="0 0 360 300" aria-hidden="true" focusable="false"></svg></div>
   <p class="entrada">Registro histórico de la Feria Internacional de Cafés Especiales del Perú, de 2016 a 2026. Cada cifra lleva su fuente enlazada. Lo que no pudo verificarse se muestra vacío, nunca estimado.</p>
 
   <section class="prop" aria-labelledby="prop-t">
@@ -413,6 +438,7 @@ footer p{margin:0 0 6px;max-width:72ch}
     <p id="pie"></p>
     <p>Datos tomados de notas de prensa públicas y de los resultados oficiales de Alliance for Coffee Excellence, sujetos a corrección.</p>
     <p class="cita" id="cita"></p>
+    <p><a href="https://github.com/gabriela-pozo/Ficafe_2026" target="_blank" rel="noopener" id="repo"></a></p>
   </div>
 </footer>
 
@@ -425,6 +451,65 @@ const ROM=["","I","II","III","IV","V","VI","VII","VIII","IX","X"];
 const MESES=["enero","febrero","marzo","abril","mayo","junio","julio","agosto","septiembre","octubre","noviembre","diciembre"];
 const esc=s=>String(s??"").replace(/[&<>"]/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]));
 const $=id=>document.getElementById(id);
+/* ---------- Íconos (SVG propios, trazo de 24 px) ---------- */
+const ICONOS={
+  grano:'<g transform="rotate(30 12 12)"><ellipse cx="12" cy="12" rx="5.6" ry="8.8"/><path d="M12 3.4c-2.2 3 2.2 5.4 0 8.6s2.2 5.6 0 8.6"/></g>',
+  taza:'<path d="M5 9h11v5a4 4 0 0 1-4 4H9a4 4 0 0 1-4-4z"/><path d="M16 10h1.5a2.5 2.5 0 0 1 0 5H16"/><path d="M8.5 3.5c-1 1 1 2 0 3M12 3.5c-1 1 1 2 0 3"/>',
+  trofeo:'<path d="M8 4h8v5a4 4 0 0 1-8 0z"/><path d="M8 6H5a3 3 0 0 0 3 4M16 6h3a3 3 0 0 1-3 4M12 13v4M8.5 20h7M10 17h4"/>',
+  etiqueta:'<path d="M3 12.5V4h8.5l9 9a1.5 1.5 0 0 1 0 2.1l-6.4 6.4a1.5 1.5 0 0 1-2.1 0z"/><circle cx="7.5" cy="8.5" r="1.3"/>',
+  barras:'<path d="M5 20V11M12 20V5M19 20v-9"/>',
+  contraste:'<path d="M4 8h13m-4-4 4 4-4 4M20 16H7m4-4-4 4 4 4"/>',
+  libro:'<path d="M5 5a2 2 0 0 1 2-2h12v16H7a2 2 0 0 0-2 2z"/><path d="M5 21h14"/>',
+  montana:'<path d="M3 19l6-10 4 6 2-3 6 7z"/>',
+  metodo:'<path d="M9 4h6v3H9zM7 5.5H6a1 1 0 0 0-1 1V20a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V6.5a1 1 0 0 0-1-1h-1M9 14l2 2 4-4"/>',
+  tendencia:'<path d="M3 17l5-6 4 3 8-9M16 5h4v4"/>',
+  calendario:'<path d="M4 6h16v14H4zM4 10h16M8 3v4M16 3v4"/>',
+  brote:'<path d="M12 21v-8M12 13c0-4-3-6-7-6 0 4 3 6 7 6zM12 15c0-3 2.5-5 6-5 0 3.5-2.5 5-6 5z"/>',
+  bolsa:'<path d="M5 8h14l-1 12H6zM9 8V6a3 3 0 0 1 6 0v2"/>',
+  prensa:'<path d="M5 4h11v16H7a2 2 0 0 1-2-2zM16 8h3v10a2 2 0 0 1-2 2M8 8h5M8 12h5M8 16h3"/>',
+  lupa:'<circle cx="10.5" cy="10.5" r="6"/><path d="M15 15l5 5"/>',
+  descarga:'<path d="M12 4v11M7.5 10.5L12 15l4.5-4.5M5 20h14"/>',
+  pin:'<path d="M12 21s6-5.5 6-11a6 6 0 0 0-12 0c0 5.5 6 11 6 11z"/><circle cx="12" cy="10" r="2.2"/>',
+  personas:'<circle cx="9" cy="8" r="3.2"/><path d="M3 20c0-3.3 2.7-6 6-6s6 2.7 6 6M16 5.2a3 3 0 0 1 0 5.6M18 14.5c1.8.7 3 2.5 3 5.5"/>',
+  puesto:'<path d="M4 9l1.5-5h13L20 9M4 9v11h16V9M4 9a2.7 2.7 0 0 0 5.3 0 2.7 2.7 0 0 0 5.4 0 2.7 2.7 0 0 0 5.3 0M10 20v-5h4v5"/>',
+  moneda:'<circle cx="12" cy="12" r="8.5"/><path d="M12 7v10M14.5 9.5c-.5-1-1.5-1.5-2.7-1.5-1.5 0-2.5.8-2.5 2 0 3 5.4 1.5 5.4 4.2 0 1.2-1.2 2-2.7 2-1.3 0-2.4-.6-2.9-1.7"/>',
+  documento:'<path d="M7 3h7l5 5v13H7zM14 3v5h5M10 13h6M10 17h6"/>',
+  codigo:'<path d="M8 7l-5 5 5 5M16 7l5 5-5 5"/>',
+  nota:'<path d="M5 4h14v13l-4 4H5zM15 21v-4h4M8 9h8M8 13h5"/>'
+};
+function ico(n,px){return '<svg class="i" viewBox="0 0 24 24" aria-hidden="true"'+(px?' style="width:'+px+'px;height:'+px+'px"':'')+'>'+(ICONOS[n]||"")+'</svg>';}
+
+/* Ilustración del encabezado: curvas de nivel alrededor de un grano de café.
+   Decorativa; las dos cotas son el rango de altitud del cultivo que cita la sección "El café que llega a la feria". */
+function arte(){
+  const sv=$("arte"); if(!sv)return;
+  let g="";
+  for(let k=0;k<9;k++){
+    const r=24+k*15.5, pts=[];
+    for(let a=0;a<=64;a++){
+      const th=a/64*Math.PI*2;
+      const q=r*(1+.075*Math.sin(3*th+k*.7)+.04*Math.sin(5*th+k*1.3));
+      pts.push((180+q*1.22*Math.cos(th)).toFixed(1)+" "+(150+q*Math.sin(th)*.98).toFixed(1));
+    }
+    g+='<path d="M'+pts.join("L")+'Z" fill="none" stroke="var(--'+(k%4===0?"ink3":"line")+')" stroke-width="'+(k%4===0?1.3:1)+'"/>';
+  }
+  g+='<rect x="150" y="5" width="60" height="14" fill="var(--bg)"/><text x="180" y="15.5" text-anchor="middle">600 m</text>';
+  g+='<rect x="150" y="89" width="60" height="14" fill="var(--bg)"/><text x="180" y="99.5" text-anchor="middle">1 800 m</text>';
+  g+='<g transform="translate(180 150) rotate(28)"><ellipse rx="22" ry="34" fill="var(--acc)"/><path d="M0 -33c-8 11 8 20 0 33s8 21 0 33" fill="none" stroke="var(--bg)" stroke-width="3.2" stroke-linecap="round"/></g>';
+  sv.innerHTML=g;
+}
+
+/* Íconos que se agregan después de que la página ya se pintó */
+function decorar(){
+  const S={"b-lecturas":"tendencia","b-ediciones":"calendario","b-ganadores":"trofeo","b-montos":"barras","b-conflictos":"contraste","b-glosario":"libro","b-origen":"montana","b-metodo":"metodo"};
+  Object.entries(S).forEach(([id,n])=>{const h=document.querySelector("#"+id+" > h2");if(h&&!h.querySelector(".i"))h.insertAdjacentHTML("afterbegin",ico(n));});
+  const L={productor:"brote",comprador:"bolsa",prensa:"prensa",investigacion:"lupa"};
+  document.querySelectorAll(".lente").forEach(b=>{if(!b.querySelector(".i"))b.insertAdjacentHTML("afterbegin",ico(L[b.dataset.l]));});
+  const T={regiones:"pin",prima:"etiqueta",variedades:"grano",compradores:"bolsa"};
+  document.querySelectorAll(".lec").forEach(a=>{const h=a.querySelector("h3");const n=T[a.id.replace("lec-","")];if(h&&n&&!h.querySelector(".i"))h.insertAdjacentHTML("afterbegin",ico(n));});
+  [["dCsv","descarga"],["dJson","descarga"]].forEach(([id,n])=>{const b=$(id);if(b&&!b.querySelector(".i"))b.insertAdjacentHTML("afterbegin",ico(n));});
+}
+
 const nf=v=>v.toLocaleString("es-PE");
 const sello=s=>`<span class="sello"><span class="glifo ${s}" aria-hidden="true"></span>${ETIQ[s]||s}</span>`;
 function dinero(v,m){
@@ -517,22 +602,22 @@ function pintarEspina(){
       <span class="ed-anio">${e.anio}</span><span class="cubo" aria-hidden="true">${c}</span>
       <span class="ed-pct">${n} de ${CAMPOS.length}</span><span class="ed-sede">${esc(e.sede.ciudad)}</span></button>`;}).join("");
 }
-function celda(k,d,f){const hay=d.valor!==null;
-  return `<div class="celda"><p class="celda-k">${k}</p>${sello(d.estado)}
+function celda(k,d,f,ic){const hay=d.valor!==null;
+  return `<div class="celda"><p class="celda-k">${ico(ic)}${k}</p>${sello(d.estado)}
     <p class="celda-v ${hay?"":"vacia"}">${hay?f(d.valor):"sin dato"}</p>${d.criterio?`<p class="criterio">${esc(d.criterio)}</p>`:""}</div>`;}
 function pintarFicha(){
   const e=ED[activa],m=e.metricas;
   const lugar=`${e.sede.ciudad}, ${e.sede.region}${e.sede.recinto?". "+e.sede.recinto:""}`;
   const gan=["taza_excelencia","barismo","catacion"].map(k=>[{taza_excelencia:"Taza de Excelencia",barismo:"Barismo",catacion:"Catación"}[k],e.ganadores[k]]);
   const hayG=gan.some(([,l])=>l.length);
-  const oc=e.otras_cifras.length?`<div class="ficha-bloque"><p class="celda-k">Otras cifras</p><ul class="lista-c">${e.otras_cifras.map(c=>`
+  const oc=e.otras_cifras.length?`<div class="ficha-bloque"><p class="celda-k">${ico("barras")}Otras cifras</p><ul class="lista-c">${e.otras_cifras.map(c=>`
     <li><div><span class="lc-d">${esc(c.descripcion)}</span><span class="lc-c">${esc(c.criterio)}</span></div>
     <div><span class="lc-v">${dinero(c.valor,c.moneda)}</span><br>${sello(c.estado)} ${c.fuente_url?`<a class="mini" href="${esc(c.fuente_url)}" target="_blank" rel="noopener">fuente</a>`:""}</div></li>`).join("")}</ul></div>`:"";
-  const gh=hayG?`<div class="ficha-bloque"><p class="celda-k">Ganadores</p><ul class="lista-c">${gan.filter(([,l])=>l.length).map(([n,l])=>`
+  const gh=hayG?`<div class="ficha-bloque"><p class="celda-k">${ico("trofeo")}Ganadores</p><ul class="lista-c">${gan.filter(([,l])=>l.length).map(([n,l])=>`
     <li><div><span class="lc-d"><b>${n}</b></span>${l.map(g=>`<span class="lc-c">${g.puesto}.º ${esc(g.nombre)}${g.region?", "+esc(g.region):""}${g.puntaje?" · "+g.puntaje+" pts":""}</span>`).join("")}</div><div></div></li>`).join("")}</ul></div>`:"";
   const S=e.subasta, usd=(v,dec=2)=>"US$ "+v.toLocaleString("es-PE",{minimumFractionDigits:dec,maximumFractionDigits:dec});
   const dato=(k,v)=>`<div><span class="mini">${k}</span><br><span class="lc-v">${v}</span></div>`;
-  const su=(S.precio_usd_lb||S.lote_top_puntaje)?`<div class="ficha-bloque"><p class="celda-k">Subasta internacional de la Taza de Excelencia</p>${sello(S.estado)}
+  const su=(S.precio_usd_lb||S.lote_top_puntaje)?`<div class="ficha-bloque"><p class="celda-k">${ico("etiqueta")}Subasta internacional de la Taza de Excelencia</p>${sello(S.estado)}
     <div class="sub-datos">${S.precio_usd_lb?dato("Lote ganador, por libra",usd(S.precio_usd_lb)):""}${S.lote_top_puntaje?dato("Puntaje del lote ganador",S.lote_top_puntaje.toLocaleString("es-PE",{minimumFractionDigits:2})):""}${S.total_usd?dato("Total de la subasta",usd(S.total_usd,0)):""}${S.promedio_usd_lb?dato("Promedio por libra",usd(S.promedio_usd_lb)):""}${S.lotes?dato("Puestos premiados",S.lotes):""}${S.fecha?dato("Fecha",fecha(S.fecha)+" de "+S.fecha.slice(0,4)):""}</div>
     ${S.nota?`<p class="nota-ed" style="margin-top:12px">${esc(S.nota)}</p>`:""}</div>`:"";
   $("ficha").innerHTML=`
@@ -540,10 +625,10 @@ function pintarFicha(){
       <div><h3>${e.anio} · edición ${ROM[e.edicion]}</h3><div class="sub">${esc(lugar)}</div></div>
       <div>${sello(CAMPOS[2][1](e))}<div class="sub">${rango(e)||"Fechas sin documentar"}</div></div>
     </div>
-    <div class="rejilla">${celda("Visitantes",m.visitantes,nf)}${celda("Expositores u organizaciones",m.expositores,nf)}${celda("Monto reportado",m.monto_negocios_pen,v=>dinero(v,"PEN"))}</div>
+    <div class="rejilla">${celda("Visitantes",m.visitantes,nf,"personas")}${celda("Expositores u organizaciones",m.expositores,nf,"puesto")}${celda("Monto reportado",m.monto_negocios_pen,v=>dinero(v,"PEN"),"moneda")}</div>
     ${oc}${gh}${su}
-    ${e.notas?`<div class="ficha-bloque"><p class="celda-k">Notas</p><p class="nota-ed">${esc(e.notas)}</p></div>`:""}
-    <div class="ficha-bloque"><p class="celda-k">Fuentes</p>
+    ${e.notas?`<div class="ficha-bloque"><p class="celda-k">${ico("nota")}Notas</p><p class="nota-ed">${esc(e.notas)}</p></div>`:""}
+    <div class="ficha-bloque"><p class="celda-k">${ico("documento")}Fuentes</p>
       <ul class="fuentes-l">${e.fuentes.map(f=>`<li><a href="${esc(f.url)}" target="_blank" rel="noopener">${esc(f.medio)}</a> <small>${f.fecha_publicacion?fecha(f.fecha_publicacion)+" de "+f.fecha_publicacion.slice(0,4):"sin fecha de publicación"}</small></li>`).join("")}</ul></div>`;
 }
 $("espina").addEventListener("click",ev=>{const b=ev.target.closest(".ed");if(!b)return;activa=+b.dataset.i;pintarEspina();pintarFicha();});
@@ -559,7 +644,7 @@ function pintarChips(){
 function pintarG(){
   const f=$("q").value.trim().toLowerCase();
   const r=TODOS.filter(g=>(catSel==="todas"||g.k===catSel)&&(!f||[g.anio,g.cat,g.nombre,g.region,g.detalle].join(" ").toLowerCase().includes(f)));
-  $("tg").innerHTML=r.length?r.map(g=>`<tr><td class="anio">${g.anio}</td><td>${g.cat}</td><td>${g.puesto}.º</td>
+  $("tg").innerHTML=r.length?r.map(g=>`<tr><td class="anio">${g.anio}</td><td>${g.cat}</td><td><span class="pto-b p${g.puesto}" title="${g.puesto}.º lugar">${g.puesto}</span></td>
     <td>${esc(g.nombre)}${g.region?` <span class="mini">· ${esc(g.region)}</span>`:""}${g.detalle?`<span class="det">${esc(g.detalle)}</span>`:""}</td>
     <td class="pts">${g.puntaje?g.puntaje.toFixed(2)+" pts":"—"}</td></tr>`).join("")
     :`<tr><td colspan="5" style="color:var(--ink3);font-style:italic;padding:18px 0">Sin resultados para ese filtro.</td></tr>`;
@@ -776,7 +861,7 @@ document.querySelectorAll(".lente").forEach(b=>b.addEventListener("click",()=>{
   const H=[[ED.length,"ediciones, de "+ED[0].anio+" a "+ED[ED.length-1].anio],[tazas,"con podio de la Taza de Excelencia"],[lotes,"lotes de subasta con su comprador"],[Math.round(con/tot*100)+"%","de los campos tienen algún dato"]];
   $("hechos").innerHTML=H.map(([n,l])=>`<li><b>${n}</b><span>${l}</span></li>`).join("");
   const G=DATA.meta.glosario_estados||{};
-  $("sellos").innerHTML=["verificado","parcial","en_conflicto","no_verificado"].map(k=>`<div><dt><span class="glifo ${k}" aria-hidden="true"></span>${ETIQ[k]}</dt><dd>${esc(G[k]||"")}</dd></div>`).join("");
+  $("sellos").innerHTML=["verificado","parcial","en_conflicto","no_verificado"].map(k=>`<div><dt><span class="glifo ${k}" aria-hidden="true"></span>${ETIQ[k]}</dt><dd>${esc((G[k]||"").replace(/s*Ver conflictos[]./,""))}</dd></div>`).join("");
   $("cita").textContent="Cómo citar: Archivo FICAFE, versión "+DATA.meta.version+" de los datos ("+fecha(DATA.meta.actualizado)+" de "+DATA.meta.actualizado.slice(0,4)+"), licencia "+DATA.meta.licencia+".";
 })();
 
@@ -790,4 +875,6 @@ $("nav").addEventListener("click",ev=>{const a=ev.target.closest("a");if(!a)retu
 pintarNav(ORDEN0);
 
 pintarEspina();pintarFicha();pintarChips();pintarG();
+arte();decorar();
+$("repo").innerHTML=ico("codigo")+"Código y datos en GitHub";
 </script>
